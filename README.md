@@ -10,7 +10,7 @@
 
 ##使用前注意事项  
 
-导入程序后，先将db.sql导入到你的数据库，然后进入applicationContext.xml文件将bean的id为dataSource下的用户名，密码，数据库名改为你自己对应的.导入文件要符合相对应的student.xls/teacher.xls格式.   
+eclipse直接导入解压后的文件夹即可,tomcat则只需将sms1.war放进你的tomcat目录下的webapps文件夹下面，然后启动tomcat即可.导入程序后，先将db.sql导入到你的数据库，然后进入applicationContext.xml文件将bean的id为dataSource下的用户名，密码，数据库名改为你自己对应的.导入文件要符合相对应的student.xls/teacher.xls格式.   
 
 ##程序截图如下:  
 
