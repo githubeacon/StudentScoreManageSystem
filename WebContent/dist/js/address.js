@@ -1,4 +1,5 @@
 function initProvince(){
+			$("#province").empty();
 			var provinces=country.country;
 			for(var i=0;i<provinces.length;i++){
 				var province=provinces[i];
