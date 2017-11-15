@@ -131,7 +131,7 @@
 			<select id="searchOrder" name="scoreSearchBean.order">
 				<option value=0>默认</option>
 				<option value=1>由高分到低分</option>
-				<option value=2>有低分到高分</option>
+				<option value=2>由低分到高分</option>
 			</select>
 			<a href="javascript:searchScore()" class="easyui-linkbutton" iconCls="icon-search">搜索</a>
 			<a href="javascript:exportScore()" class="easyui-linkbutton" iconCls="icon-export">导出成绩</a>
