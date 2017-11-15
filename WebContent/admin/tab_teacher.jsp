@@ -19,7 +19,7 @@
 <script type="text/javascript" src="/sms1/dist/js/address.js"></script>
 <script>
 	$(document).ready(function() {
-		/* getDepartment(); */
+		 getDepartment(); 
 		$(".departmentCb").combobox({
 				url:"/sms1/major_getDepart.action",
 				valueField:"id",
@@ -41,15 +41,15 @@
 				    maximizable:false
 			}).window("close");
 	});
-	/* function getDepartment(){
+	 function getDepartment(){
 		var url="/sms1/major_getDepart.action";
 		$.post(url,null,function(data){
 				for(var i=0;i<data.length;i++){
-					var option="<option value='"+data[i].id+"'>"+data[i].name+"'</option>";
-					$(".departmentId").append(option);
+					var option="<option value='"+data[i].id+"'>"+data[i].name+"</option>";
+					$("#departmentId").append(option);
 					}
 			},"json");
-		} */
+		} 
 	function openImportFileWindow(){
 		
 		$("#importFileForm").form("clear");
