@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="/sms1/dist/css/main.css" />
 <script type="text/javascript" src="/sms1/dist/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/sms1/dist/js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/sms1/dist/js/loading.js"></script>
 <script type="text/javascript">
 $(function(){
 	$("#passwordWindow").window({
@@ -70,10 +71,12 @@ function modify(){
 
 
 </head>
+<div id='loading' style="position:absolute;z-index:1000;top:0px;left:0px;width:100%;height:100%;background:rgb(247,248,248);text-align:center;padding-top: 20%;">   
+</div>
 <body class="easyui-layout" id="b1">
  
 	<div region="north" class="header">
-		学生管理系统
+		<img alt="logo" src="/sms1/dist/images/logo1.PNG" >
 		<div style="font-size:12px;margin-right:20px" class="you" >
 			Welcome,${student.studentName}&nbsp;&nbsp;
 			<a href="javascript:openPasswordWindow()">修改密码</a>
@@ -100,7 +103,7 @@ function modify(){
 	</div>
 	<div region="south" class="footer">Copyright &copy;2017</div>
 </body>
-	<div class="easyui-window" style="width:300px;height:250px;" id="passwordWindow">
+	<div class="easyui-window" style="width:300px;height:250px;display:none" id="passwordWindow">
 		<form id="studentPasswordForm" method="post" style="margin-left:10px;margin-top:20px">
 			<table style="border-collapse:separate;border-spacing:0 10px">
 				<tr>
