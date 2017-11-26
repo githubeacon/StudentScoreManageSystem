@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="/sms1/dist/css/icon.css" />
 <script type="text/javascript" src="/sms1/dist/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/sms1/dist/js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/sms1/dist/js/loading.js"></script>
 </head>
 <script type="text/javascript">
 	$(function(){
@@ -33,31 +34,8 @@
 						"scoreSearchBean.order":order
 					});
 		}
-	function scoreFormSubmit(){
-		var url=$("#scoreForm").attr("url");
-			$("#scoreForm").form("submit",{
-					url:url,
-					success:function(data){
-							if(data==""){
-								alert("修改成功");
-								$("#scoreDatagrid").datagrid("reload");
-							}else{
-								alert("修改失败");
-							}
-							$("#scoreWindow").window("close");
-						}
-				});	
-		}
-	function showScoreWindow(index){
-		
-		$("#scoreDatagrid").datagrid("selectRow",index);
-		var row=$("#scoreDatagrid").datagrid("getSelected");
-		$("#scoreWindow").form("load",{
-				"score.score":row.score
-		});
-		$("#scoreForm").attr("url","/sms1/score_update.action?score.id="+row.id);
-		$("#scoreWindow").window("open");
-		}
+	
+	
 	function initSemester(){
 		$.post("/sms1/semester_list.action",null,function(data){
 					for(var i=0;i<data.length;i++){
@@ -96,6 +74,7 @@
 	
 </script>
 <body>
+<div id='loading' style="position:absolute;z-index:1000;top:0px;left:0px;width:100%;height:100%;background:#DDDDDB;text-align:center;padding-top: 20%;"></div>
 	<table class="easyui-datagrid" id="scoreDatagrid" url="/sms1/score_list.action"
 			toolbar="#tb" pagination="true" fit="true"
 	>
@@ -131,7 +110,7 @@
 			<select id="searchOrder" name="scoreSearchBean.order">
 				<option value=0>默认</option>
 				<option value=1>由高分到低分</option>
-				<option value=2>由低分到高分</option>
+				<option value=2>有低分到高分</option>
 			</select>
 			<a href="javascript:searchScore()" class="easyui-linkbutton" iconCls="icon-search">搜索</a>
 			<a href="javascript:exportScore()" class="easyui-linkbutton" iconCls="icon-export">导出成绩</a>

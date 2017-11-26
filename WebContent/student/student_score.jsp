@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="/sms1/dist/css/icon.css" />
 <script type="text/javascript" src="/sms1/dist/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/sms1/dist/js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/sms1/dist/js/loading.js"></script>
 </head>
 <script type="text/javascript">
 	$(function(){
@@ -57,6 +58,8 @@
 	
 </script>
 <body>
+<div id='loading' style="position:absolute;z-index:1000;top:0px;left:0px;width:100%;height:100%;background:#DDDDDB;text-align:center;padding-top: 20%;">   
+</div> 
 	<table class="easyui-datagrid" id="scoreDatagrid" url="/sms1/score_list.action"
 			toolbar="#tb" pagination="true" fit="true" singleSelect="true"
 	>

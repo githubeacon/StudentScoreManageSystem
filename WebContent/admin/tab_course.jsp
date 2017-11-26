@@ -10,13 +10,69 @@
 		<link rel="stylesheet" type="text/css" href="/sms1/dist/css/bootstrap.css"/>
 		<script type="text/javascript" src="/sms1/dist/js/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="/sms1/dist/js/jquery.easyui.min.js"></script>
-		<script >
+		<script type="text/javascript" src="/sms1/dist/js/loading.js"></script>
+	</head>
+	<body>
+	<div id='loading' style="position:absolute;z-index:1000;top:0px;left:0px;width:100%;height:100%;background:#DDDDDB;text-align:center;padding-top: 20%;"></div>
+		<table class="easyui-datagrid" id="courseDatagrid" url="/sms1/course_list.action"
+			 fit="true" toolbar="#tb" pagination="true" rowNumbers="true" >
+			<thead>
+				<tr>
+					<th field="cb" checkbox="true"></th>
+					<th field="courseName">课程名字</th>
+					<th field="credit">学分</th>
+					<th field="courseTime">课时</th>
+					<th field="type">类型</th>
+				</tr>
+			</thead>
+		</table>
+		<div id="tb">
+			<div style="margin-bottom:10px">
+				<a href="javascript:addCourse()" class="easyui-linkbutton" iconCls="icon-add">添加</a>
+				<a href="javascript:editCourse()" class="easyui-linkbutton" iconCls="icon-edit">修改</a>
+				<a href="javascript:deleteCourse()" class="easyui-linkbutton" iconCls="icon-clear">删除</a>
+			</div>
+			<div style="margin-bottom:10px">
+				<span>课程名称:</span>
+				<input type="text" id="searchName" placeHolder="请输入要搜索课程的关键字"/>
+				<a href="javascript:searchCourse()" class="easyui-linkbutton" iconCls="icon-search" >搜索</a>
+			</div>
+		</div>
+		<div id="courseWindow"  style="width:300px;padding:20px">
+			<form  id="courseForm" method="post">
+				<table style="border-collapse:separate;border-spacing:0px 10px;">
+					<tr >
+						<td>课程名称:</td>
+						<td><input type="text" name="course.courseName" /></td>
+					</tr>
+					<tr>
+						<td>学分:</td>
+						<td><input type="text" name="course.credit"  value="" /></td>
+					</tr>
+					<tr>
+						<td>课时:</td>
+						<td><input type="text" name="course.courseTime"  value="" /></td>
+					</tr>
+					<tr>
+						<td>课程类型:</td>
+						<td>
+							<select name="course.type" id="type">
+								<option value="必修">必修</option>						
+								<option value="选修">选修</option>						
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><a href="javascript:courseFormSubmit()" class="easyui-linkbutton" iconCls="icon-submit" >提交</a></td>
+					</tr>
+					
+				</table>
+			</form>
+		</div>
+	</body>
+	<script >
 		$(function(){
-			$("#courseWindow").window({
-				collapsible:false,
-				minimizable:false,
-				maximizable:false
-				}).window("close");
+			
 		});
 		function closeCourseWindow(){
 				$("#courseWindow").window("close");
@@ -40,6 +96,9 @@
 			$("#courseWindow").window({
 				title:"添加课程信息",
 				iconCls:"icon-add",
+				collapsible:false,
+				minimizable:false,
+				maximizable:false
 			});
 			$("#courseForm").form("clear");
 			$("#type").val("必修");
@@ -59,6 +118,9 @@
 			$("#courseWindow").window({
 				title:"修改课程信息",
 				iconCls:"icon-edit",
+				collapsible:false,
+				minimizable:false,
+				maximizable:false
 			});
 			var row = rows[0];
 			var courseId=row.id;
@@ -104,63 +166,4 @@
 
 		}
 	</script>
-	</head>
-	<body>
-		<table class="easyui-datagrid" id="courseDatagrid" url="/sms1/course_list.action"
-			 fit="true" toolbar="#tb" pagination="true" rowNumbers="true" >
-			<thead>
-				<tr>
-					<th field="cb" checkbox="true"></th>
-					<th field="courseName">课程名字</th>
-					<th field="credit">学分</th>
-					<th field="courseTime">课时</th>
-					<th field="type">类型</th>
-				</tr>
-			</thead>
-		</table>
-		<div id="tb">
-			<div style="margin-bottom:10px">
-				<a href="javascript:addCourse()" class="easyui-linkbutton" iconCls="icon-add">添加</a>
-				<a href="javascript:editCourse()" class="easyui-linkbutton" iconCls="icon-edit">修改</a>
-				<a href="javascript:deleteCourse()" class="easyui-linkbutton" iconCls="icon-clear">删除</a>
-			</div>
-			<div style="margin-bottom:10px">
-				<span>课程名称:</span>
-				<input type="text" id="searchName" placeHolder="请输入要搜索课程的关键字"/>
-				<a href="javascript:searchCourse()" class="easyui-linkbutton" iconCls="icon-search" >搜索</a>
-			</div>
-		</div>
-		<div id="courseWindow"  style="width:300px;height:300px;">
-			<form style="padding-left:20px" id="courseForm" method="post">
-				<table style="border-collapse:separate;border-spacing:0px 10px;">
-					<tr >
-						<td>课程名称:</td>
-						<td><input type="text" name="course.courseName" /></td>
-					</tr>
-					<tr>
-						<td>学分:</td>
-						<td><input type="text" name="course.credit"  value="" /></td>
-					</tr>
-					<tr>
-						<td>课时:</td>
-						<td><input type="text" name="course.courseTime"  value="" /></td>
-					</tr>
-					<tr>
-						<td>课程类型:</td>
-						<td>
-							<select name="course.type" id="type">
-								<option value="必修">必修</option>						
-								<option value="选修">选修</option>						
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td><a href="javascript:courseFormSubmit()" class="easyui-linkbutton" iconCls="icon-submit" >提交</a></td>
-					</tr>
-					
-				</table>
-			</form>
-		</div>
-	</body>
-	
 </html>
