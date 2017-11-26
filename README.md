@@ -24,33 +24,33 @@
 ## 程序截图如下:  
 
 #### 1.登录界面:
-![](https://i.imgur.com/v7aBMNG.png)
+![](https://i.imgur.com/cO7dAD2.png)
 #### 2.管理员界面:  
 ##### 1)主页
-![](https://i.imgur.com/8D6U2UY.png)
+![](https://i.imgur.com/r9QJDiB.png)
 ##### 2)学生管理
-![](https://i.imgur.com/Z21nBzz.png)
+![](https://i.imgur.com/MDdVJz6.png)
 ##### 3)教师管理
-![](https://i.imgur.com/tcWjWjK.png)
+![](https://i.imgur.com/Tl8CQv3.png)
 ##### 4)课程管理
-![](https://i.imgur.com/wLpnbHj.png)
+![](https://i.imgur.com/HXFcowy.png)
 ##### 5)授课管理
-![](https://i.imgur.com/0NzJaKp.png)
+![](https://i.imgur.com/1U2SJCK.png)
 ##### 6)成绩管理
-![](https://i.imgur.com/2NePabE.png)
+![](https://i.imgur.com/3UYuwiz.png)
 #### 3.学生界面:  
 ##### 1)主页
-![](https://i.imgur.com/tAsk7R6.png)
+![](https://i.imgur.com/1LkNvgs.png)
 ##### 2)学生信息
-![](https://i.imgur.com/wEeWSNG.png)
+![](https://i.imgur.com/UOAa96v.png)
 ##### 3)学生成绩
-![](https://i.imgur.com/1WBy2BL.png)
+![](https://i.imgur.com/bDv9xYZ.png)
 #### 4.教师界面:  
 ##### 1)主页
-![](https://i.imgur.com/vd9Eat9.png)
+![](https://i.imgur.com/zfs4NpJ.png)
 ##### 2)教师信息
-![](https://i.imgur.com/jIBgf0H.png)
+![](https://i.imgur.com/G8Hi3hO.png)
 ##### 3)教师课程
-![](https://i.imgur.com/tryxlRh.png)
+![](https://i.imgur.com/jLAJCw4.png)
 ##### 4)教师成绩管理
-![](https://i.imgur.com/RdL8000.png)
+![](https://i.imgur.com/T7ddQ3y.png)
