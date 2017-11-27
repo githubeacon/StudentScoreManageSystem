@@ -12,24 +12,11 @@ import com.beacon.sms.dao.ScoreDao;
  * 创建日期:2017年11月6日上午10:37:01
  * 描述:处理关于成绩的逻辑类
  */
-public class ScoreService {
-	private ScoreDao scoreDao;
+public interface ScoreService {
 	
-	public ScoreDao getScoreDao() {
-		return scoreDao;
-	}
+	
 
-	public void setScoreDao(ScoreDao scoreDao) {
-		this.scoreDao = scoreDao;
-	}
-
-	public List<Score> getScoreList(ScoreSearchBean scoreSearchBean){
-		return scoreDao.getScoreListByTeacherId(scoreSearchBean);
-	}
-	public int getScoreListSize(ScoreSearchBean scoreSearchBean){
-		return scoreDao.getScoreListSizeByTeacherId(scoreSearchBean);
-	}
-	public void updateScore(Score score){
-		scoreDao.updateScore(score);
-	}
+	public List<Score> getScoreList(ScoreSearchBean scoreSearchBean);
+	public int getScoreListSize(ScoreSearchBean scoreSearchBean);
+	public void updateScore(Score score);
 }

@@ -1,7 +1,5 @@
 package com.beacon.sms.action;
 
-import javax.management.relation.RoleUnresolved;
-
 import com.alibaba.fastjson.JSON;
 import com.beacon.sms.service.MajorService;
 import com.beacon.sms.utils.JsonUtil;

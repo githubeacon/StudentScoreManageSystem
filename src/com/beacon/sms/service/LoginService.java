@@ -12,43 +12,16 @@ import com.beacon.sms.utils.ValidateCodeUtil;
  * 创建日期:2017年10月22日上午9:32:44 
  * 描述:登录的逻辑类
  */
-public class LoginService {
-	private LoginDao loginDao;
-	private ValidateCodeUtil validateCodeUtil;
+public interface LoginService {
 	
-	public boolean isExist(String userName, String password) {
-		String checkPassword = loginDao.getPassword(userName);
-		if (checkPassword != null && password.equals(checkPassword)) {
-			return true;
-		}
-		return false;
-	}
+	public boolean isExist(String userName, String password);
 
-	public boolean isRightCode(HttpServletRequest request, String validateCode) {
-
-		return validateCodeUtil.checkValidateCode(request, validateCode);
-	}
+	public boolean isRightCode(HttpServletRequest request, String validateCode);
 	
-	public void updatePassword(String userName,String password){
-		loginDao.updatePassword(userName, password);
-	}
-	public Admin getAdmin(String userName,String password){
-		return loginDao.getAdmin(userName, password);
-	}
-	public LoginDao getLoginDao() {
-		return loginDao;
-	}
+	public void updatePassword(String userName,String password);
+	public Admin getAdmin(String userName,String password);
 
-	public void setLoginDao(LoginDao loginDao) {
-		this.loginDao = loginDao;
-	}
 
-	public ValidateCodeUtil getValidateCodeUtil() {
-		return validateCodeUtil;
-	}
-
-	public void setValidateCodeUtil(ValidateCodeUtil validateCodeUtil) {
-		this.validateCodeUtil = validateCodeUtil;
-	}
+	
 
 }

@@ -9,43 +9,18 @@ import com.beacon.sms.dao.CourseDao;
 
 /**
  * 
- * 作者:beacon
- * 创建日期:2017年10月31日下午9:20:40
- * 描述:处理课程的相关逻辑类
+ * 作者:beacon 创建日期:2017年10月31日下午9:20:40 描述:处理课程的相关逻辑类
  */
-public class CourseService {
-	private CourseDao courseDao;
-	
-	public CourseDao getCourseDao() {
-		return courseDao;
-	}
+public interface CourseService {
+	void addCourse(Course course);
 
-	public void setCourseDao(CourseDao courseDao) {
-		this.courseDao = courseDao;
-	}
+	void updateCourse(Course course);
 
-	public void addCourse(Course course){
-		courseDao.addCourse(course);
-	}
+	void deleteCourse(List<Integer> list);
 
-	public void updateCourse(Course course) {
-		courseDao.updateCourse(course);
-	}
+	List<Course> getCourseList(CourseSearchBean courseSearchBean);
 
-	public void deleteCourse(List<Integer> list) {
-		for(int i=0;i<list.size();i++){
-			courseDao.deleteCourse(list.get(i));
-		}
-	}
+	int getCourseListSize(CourseSearchBean courseSearchBean);
 
-	public List<Course> getCourseList(CourseSearchBean courseSearchBean) {
-		// TODO Auto-generated method stub
-		return courseDao.getCourseList(courseSearchBean);
-	}
-	public int getCourseListSize(CourseSearchBean courseSearchBean){
-		return courseDao.getCourseListSize(courseSearchBean);
-	}
-	public List<Course> getCourseList(){
-		return courseDao.getCourseList1();
-	}
+	List<Course> getCourseList();
 }

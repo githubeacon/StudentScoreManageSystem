@@ -11,18 +11,9 @@ import com.beacon.sms.dao.SemesterDao;
  * 创建日期:2017年11月3日下午10:39:14
  * 描述:处理学期的逻辑类
  */
-public class SemesterService {
-	private SemesterDao semesterDao;
+public interface SemesterService {
 	
-	public SemesterDao getSemesterDao() {
-		return semesterDao;
-	}
+	
 
-	public void setSemesterDao(SemesterDao semesterDao) {
-		this.semesterDao = semesterDao;
-	}
-
-	public List<Semester> getSemesterList(){
-		return semesterDao.getSemesterList(); 
-	}
+	public List<Semester> getSemesterList();
 }
