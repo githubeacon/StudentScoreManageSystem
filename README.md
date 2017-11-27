@@ -16,7 +16,7 @@
 - Eclipse使用者：在Eclipse直接导入解压后的整个文件夹即可,
 - Tomcat使用者：只需将sms1.war放进你的tomcat目录下的webapps文件夹下面，然后启动tomcat即可.   
 - 完成上述步骤其一,将db.sql导入到你的数据库.  
-- 然后进入applicationContext.xml文件将bean的id为dataSource下的用户名，密码，数据库名改为你自己的数据库相对应的.  
+- 然后修改db.properties文件中的用户名、密码、驱动、url改为你自己所对应的数据库即可.  
 - 登录账号密码自行查admin表，列power代表权限，1代表管理员，2代表学生，3代表教师
 - 管理员添加学生，教师会自动生成学号/职工号，并将登录账号、密码、权限添加到admin表中,初始化密码为学号/职工号.
 - 导入文件要符合相对应的student.xls/teacher.xls格式.     
