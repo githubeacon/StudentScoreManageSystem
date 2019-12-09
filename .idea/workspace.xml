@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="sms1:Web" />
+      <artifact name="sms1:Web exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/.jsdtscope" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tern-project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/asm-3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/asm-commons-3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/asm-tree-3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/aspectjweaver-1.6.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-codec-1.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-lang3-3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/commons-logging-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/fastjson-1.2.31.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/freemarker-2.3.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/javassist-3.11.0.GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/mybatis-3.4.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/mybatis-spring-1.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/mysql-connector-java-5.1.38.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/ognl-3.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/poi-3.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-aop-3.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-asm-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-beans-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-context-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-core-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-expression-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-jdbc-4.3.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-tx-3.1.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-web-3.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/struts2-core-2.3.16.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/struts2-spring-plugin-2.3.16.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/xwork-core-2.3.16.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/admin/admin_main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/admin/tab_course.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/admin/tab_score.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/admin/tab_student.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/admin/tab_teacher.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/admin/tab_teaching.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/easyui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/class.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/course.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/cut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/edit_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/edit_remove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/export.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/filesave.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/filter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/import.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/large_chart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/large_clipart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/large_picture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/large_shapes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/large_smartart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/message.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/mini_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/mini_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/mini_refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/more.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/ok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/pencil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/print.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/reload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/reset.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/score.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/student.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/submit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/sum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/teacher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/teaching.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/tip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/icons/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/accordion_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/calendar_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/combo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/datagrid_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/datebox_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/layout_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/linkbutton_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/menu_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/messager_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/pagination_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/panel_tools.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/passwordbox_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/passwordbox_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/searchbox_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/slider_handle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/spinner_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/tabs_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/tagbox_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/tree_icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/images/validatebox_warning.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/images/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/images/logo1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/images/logo_school.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/js/address.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/js/base-loading.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/js/country.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/js/jquery-3.1.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/js/jquery.easyui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/js/loading.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/dist/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/student/student_main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/student/student_message.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/student/student_score.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/teacher/teacher_main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/teacher/teacher_message.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/teacher/teacher_score.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/teacher/teacher_teaching.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/action/CourseAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/action/LoginAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/action/MajorAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/action/ScoreAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/action/SemesterAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/action/StudentAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/action/TeacherAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/action/TeachingAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/action/UpLoadAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/Class.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/CourseSearchBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/DatagridBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/Department.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/Major.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/PageBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/Score.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/ScoreSearchBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/Semester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/StudentSearchBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/TeacherSearchBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/Teaching.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/bean/TeachingSearchBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/CourseDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/CourseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/LoginDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/LoginMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/MajorDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/MajorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/ScoreDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/ScoreMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/SemesterDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/SemesterMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/StudentDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/StudentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/TeacherDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/TeacherMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/TeachingDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/dao/TeachingMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/filter/EncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/CourseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/CourseServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/LoginServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/MajorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/MajorServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/ScoreService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/ScoreServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/SemesterService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/SemesterServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/StudentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/TeacherService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/TeacherServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/TeachingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/service/TeachingServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/servlet/ValidateCodeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/utils/DateUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/utils/ExcelUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/utils/JsonUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/utils/StringUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/com/beacon/sms/utils/ValidateCodeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/struts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sms1.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/CourseAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/LoginAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/MajorAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/ScoreAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/SemesterAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/StudentAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/TeacherAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/TeachingAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/UpLoadAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Class.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/CourseSearchBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/DatagridBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Major.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/PageBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/ScoreSearchBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Semester.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/StudentSearchBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/TeacherSearchBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Teaching.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/TeachingSearchBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/CourseDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/CourseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/LoginDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/LoginMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/MajorDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/MajorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/ScoreDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/ScoreMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/SemesterDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/SemesterMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/StudentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/StudentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/TeacherDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/TeacherMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/TeachingDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/TeachingMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/filter/EncodingFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/CourseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/CourseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/LoginServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/MajorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/MajorServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/ScoreService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/ScoreServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/SemesterService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/SemesterServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/StudentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/TeacherService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/TeacherServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/TeachingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/TeachingServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/servlet/ValidateCodeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/utils/DateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/utils/ExcelUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/utils/JsonUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/utils/StringUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/utils/ValidateCodeUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/student.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher.xls" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Program Files/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UkEfj5u3MsgSzKCgaEQLANQia8" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/WEB-INF/lib/xwork-core-2.3.16.3.jar!/" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.20689656" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SpringBootPractice\StudentScoreManageSystem\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="cute cat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.26" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/sms1_Web/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="sms1:Web">
+          <settings>
+            <option name="CONTEXT_PATH" value="/sms1_Web" />
+          </settings>
+        </artifact>
+        <artifact name="sms1:Web exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/sms1" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ssms_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54730" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="sms1:Web" />
+          <artifact name="sms1:Web exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.23264684" />
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" name="Default Changelist" comment="" />
+      <created>1575892297307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575892297307</updated>
+      <workItem from="1575892302865" duration="1094000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="424" y="183" key="#Project_Structure" timestamp="1575894905769">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="424" y="183" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1575894905769" />
+    <state x="446" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575895158903">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="446" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575895158903" />
+    <state x="781" y="441" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1575894397364">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="781" y="441" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575894397364" />
+    <state x="666" y="269" key="FileChooserDialogImpl" timestamp="1575893700577">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="666" y="269" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1575893700577" />
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1575895437158">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575895437158" />
+    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1575895437158">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575895437158" />
+    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1575895437158">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575895437158" />
+    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1575895437158">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575895437158" />
+    <state width="1340" height="266" key="GridCell.Tab.1.bottom" timestamp="1575895237369">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575895237369" />
+    <state width="1340" height="266" key="GridCell.Tab.1.center" timestamp="1575895237369">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575895237369" />
+    <state width="1340" height="266" key="GridCell.Tab.1.left" timestamp="1575895237369">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575895237369" />
+    <state width="1340" height="266" key="GridCell.Tab.1.right" timestamp="1575895237369">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575895237369" />
+    <state width="1340" height="266" key="GridCell.Tab.2.bottom" timestamp="1575895224419">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575895224419" />
+    <state width="1340" height="266" key="GridCell.Tab.2.center" timestamp="1575895224419">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575895224419" />
+    <state width="1340" height="266" key="GridCell.Tab.2.left" timestamp="1575895224418">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575895224418" />
+    <state width="1340" height="266" key="GridCell.Tab.2.right" timestamp="1575895224419">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575895224419" />
+    <state width="1340" height="266" key="GridCell.Tab.5.bottom" timestamp="1575895222673">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.5.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575895222673" />
+    <state width="1340" height="266" key="GridCell.Tab.5.center" timestamp="1575895222673">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.5.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575895222673" />
+    <state width="1340" height="266" key="GridCell.Tab.5.left" timestamp="1575895222672">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.5.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575895222672" />
+    <state width="1340" height="266" key="GridCell.Tab.5.right" timestamp="1575895222673">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.5.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575895222673" />
+    <state x="472" y="103" key="SettingsEditor" timestamp="1575895011436">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="472" y="103" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1575895011436" />
+    <state x="367" y="141" key="new project wizard" timestamp="1575894985516">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="367" y="141" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1575894985516" />
+    <state x="512" y="213" key="spring file set editor" timestamp="1575894914077">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="512" y="213" key="spring file set editor/0.0.1920.1080@0.0.1920.1080" timestamp="1575894914077" />
+    <state x="617" y="262" key="struts2 file set editor" timestamp="1575894997202">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="617" y="262" key="struts2 file set editor/0.0.1920.1080@0.0.1920.1080" timestamp="1575894997202" />
+  </component>
+</project>
