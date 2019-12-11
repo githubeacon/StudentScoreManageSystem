@@ -6,9 +6,9 @@ import com.beacon.sms.utils.JsonUtil;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ28ÈÕÏÂÎç9:27:07
- * ÃèÊö:×¨ÒµAction
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ28æ—¥ä¸‹åˆ9:27:07
+ * æè¿°:ä¸“ä¸šAction
  */
 public class MajorAction {
 	private int departmentId;

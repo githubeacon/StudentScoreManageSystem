@@ -8,9 +8,9 @@ import com.beacon.sms.bean.StudentSearchBean;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ30ÈÕÉÏÎç9:58:17
- * ÃèÊö:¹ØÓÚÑ§ÉúµÄÏà¹Ø½Ó¿Ú·½·¨
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ30æ—¥ä¸Šåˆ9:58:17
+ * æè¿°:å…³äºå­¦ç”Ÿçš„ç›¸å…³æ¥å£æ–¹æ³•
  */
 public interface StudentDao {
 	public void add(Student student);

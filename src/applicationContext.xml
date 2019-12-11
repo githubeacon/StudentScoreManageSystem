@@ -29,7 +29,7 @@
 	</bean>
 	<bean id="validateCodeUtil" class="com.beacon.sms.utils.ValidateCodeUtil" />
 
-	<bean id="loginService" class="com.beacon.sms.service.LoginServiceImpl">
+	<bean id="loginService" class="com.beacon.sms.service.impl.LoginServiceImpl">
 		<property name="loginDao" ref="loginMapper" />
 		<property name="validateCodeUtil" ref="validateCodeUtil" />
 	</bean>
@@ -40,7 +40,7 @@
 	</bean>
 	<bean id="dateUtil" class="com.beacon.sms.utils.DateUtil" />
 	<bean id="stringUtil" class="com.beacon.sms.utils.StringUtil" />
-	<bean id="majorService" class="com.beacon.sms.service.MajorServiceImpl">
+	<bean id="majorService" class="com.beacon.sms.service.impl.MajorServiceImpl">
 		<property name="majorDao" ref="majorMapper" />
 		<property name="dateUtil" ref="dateUtil" />
 		<property name="stringUtil" ref="stringUtil" />
@@ -54,7 +54,7 @@
 		<property name="mapperInterface" value="com.beacon.sms.dao.StudentDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
-	<bean id="studentService" class="com.beacon.sms.service.StudentServiceImpl">
+	<bean id="studentService" class="com.beacon.sms.service.impl.StudentServiceImpl">
 		<property name="studentDao" ref="studentMapper" />
 		<property name="majorDao" ref="majorMapper" />
 		<property name="stringUtil" ref="stringUtil" />
@@ -68,7 +68,7 @@
 		<property name="mapperInterface" value="com.beacon.sms.dao.TeacherDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
-	<bean id="teacherService" class="com.beacon.sms.service.TeacherServiceImpl">
+	<bean id="teacherService" class="com.beacon.sms.service.impl.TeacherServiceImpl">
 		<property name="teacherDao" ref="teacherMapper" />
 		<property name="dateUtil" ref="dateUtil" />
 		<property name="stringUtil" ref="stringUtil" />
@@ -82,7 +82,7 @@
 		<property name="mapperInterface" value="com.beacon.sms.dao.CourseDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
-	<bean id="courseService" class="com.beacon.sms.service.CourseServiceImpl">
+	<bean id="courseService" class="com.beacon.sms.service.impl.CourseServiceImpl">
 		<property name="courseDao" ref="courseMapper" />
 	</bean>
 	<bean id="courseAction" class="com.beacon.sms.action.CourseAction">
@@ -93,7 +93,7 @@
 		<property name="mapperInterface" value="com.beacon.sms.dao.SemesterDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
-	<bean id="semesterService" class="com.beacon.sms.service.SemesterServiceImpl">
+	<bean id="semesterService" class="com.beacon.sms.service.impl.SemesterServiceImpl">
 		<property name="semesterDao" ref="semesterMapper" />
 	</bean>
 	<bean id="semesterAction" class="com.beacon.sms.action.SemesterAction">
@@ -108,7 +108,7 @@
 		<property name="mapperInterface" value="com.beacon.sms.dao.ScoreDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
-	<bean id="teachingService" class="com.beacon.sms.service.TeachingServiceImpl">
+	<bean id="teachingService" class="com.beacon.sms.service.impl.TeachingServiceImpl">
 		<property name="teachingDao" ref="teachingMapper" />
 		<property name="studentDao" ref="studentMapper" />
 		<property name="scoreDao" ref="scoreMapper" />
@@ -119,7 +119,7 @@
 	</bean>
 
 
-	<bean id="scoreService" class="com.beacon.sms.service.ScoreServiceImpl">
+	<bean id="scoreService" class="com.beacon.sms.service.impl.ScoreServiceImpl">
 		<property name="scoreDao" ref="scoreMapper" />
 	</bean>
 	<bean id="scoreAction" class="com.beacon.sms.action.ScoreAction">
@@ -140,7 +140,20 @@
 		<property name="scoreAction" ref="scoreAction" />
 		<property name="upLoadAction" ref="uploadAction" />
 	</bean>
-	
+
+	<!--添加平时成绩-->
+<!--	<bean id="dailyScoreMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">-->
+<!--		<property name="mapperInterface" value="com.beacon.sms.dao.DailyScoreDao" />-->
+<!--		<property name="sqlSessionFactory" ref="sqlSessionFactory" />-->
+<!--	</bean>-->
+<!--	<bean id="dailyScoreService" class="com.beacon.sms.service.impl.DailyScoreServiceImpl">-->
+<!--		<property name="DailyScoreDao" ref="DailyScoreMapper" />-->
+<!--	</bean>-->
+<!--	<bean id="dailyScoreAction" class="com.beacon.sms.action.DailyScoreAction">-->
+<!--		<property name="DailyScoreService" ref="DailyScoreService" />-->
+<!--		<property name="jsonUtil" ref="jsonUtil" />-->
+<!--	</bean>-->
+
 	<context:component-scan base-package="com.beacon.sms.service"></context:component-scan>
 	<!-- 添加事务 -->
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">

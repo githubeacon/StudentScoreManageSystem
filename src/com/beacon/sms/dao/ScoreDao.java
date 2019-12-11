@@ -6,10 +6,8 @@ import com.beacon.sms.bean.Score;
 import com.beacon.sms.bean.ScoreSearchBean;
 
 /**
- * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ6ÈÕÉÏÎç9:42:17
- * ÃèÊö:³É¼¨Ïà¹Ø·½·¨µÄ½Ó¿Ú
+ * ä½œè€…:beacon
+ * æè¿°:æˆç»©ç›¸å…³æ–¹æ³•çš„æ¥å£
  */
 public interface ScoreDao {
 	public void addScore(Score score);

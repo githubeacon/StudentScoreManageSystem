@@ -82,13 +82,16 @@ function modify(){
 			<a href="/sms1/login_logout.action" onclick="return confirm('你确认要退出吗?')">注销</a>
 		</div>
 	</div>
-	<div region="west" class="left" title="教务管理系统">
+	<div region="west" class="left" title="成绩管理系统">
 		<div class="left-list">
 			<div class="left-list-item" url="/sms1/teacher/teacher_message.jsp" title="个人信息">
 				<a class="easyui-linkbutton" iconCls="icon-message" plain="true">个人信息</a>
 			</div>
 			<div class="left-list-item" url="/sms1/teacher/teacher_teaching.jsp" title="授课信息">
 				<a class="easyui-linkbutton" iconCls="icon-teaching" plain="true">授课信息</a>
+			</div>
+			<div class="left-list-item" url="/sms1/teacher/teacher_dailyScore.jsp" title="平时成绩">
+				<a class="easyui-linkbutton" iconCls="icon-score" plain="true">平时成绩</a>
 			</div>
 			<div class="left-list-item" url="/sms1/teacher/teacher_score.jsp" title="成绩管理">
 				<a class="easyui-linkbutton" iconCls="icon-score" plain="true">成绩管理</a>

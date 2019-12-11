@@ -10,9 +10,9 @@ import com.beacon.sms.utils.StringUtil;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ28ÈÕÏÂÎç9:35:52
- * ÃèÊö:×¨ÒµµÄÂß¼­Àà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ28æ—¥ä¸‹åˆ9:35:52
+ * æè¿°:ä¸“ä¸šçš„é€»è¾‘ç±»
  */
 public interface MajorService {
 	

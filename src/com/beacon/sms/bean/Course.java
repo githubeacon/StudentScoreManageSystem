@@ -1,50 +1,65 @@
 package com.beacon.sms.bean;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ31ÈÕÏÂÎç9:08:12
- * ÃèÊö:¿Î³ÌÊµÌåÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ31æ—¥ä¸‹åˆ9:08:12
+ * æè¿°:è¯¾ç¨‹å®ä½“ç±»
  */
-public class Course {
-	private int id;
-	private String courseName;
-	private int credit;
-	private int courseTime;
-	private String type;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getCourseName() {
-		return courseName;
-	}
-	public void setCourseName(String courseName) {
-		this.courseName = courseName;
-	}
-	public int getCredit() {
-		return credit;
-	}
-	public void setCredit(int credit) {
-		this.credit = credit;
-	}
-	public int getCourseTime() {
-		return courseTime;
-	}
-	public void setCourseTime(int courseTime) {
-		this.courseTime = courseTime;
-	}
-	public String getType() {
-		return type;
-	}
-	public void setType(String type) {
-		this.type = type;
-	}
+public class Course
+{
+	private int id;					//è¯¾ç¨‹id
+
+	private String courseName;		//è¯¾ç¨‹åç§°
+
+	private int credit;				//å­¦åˆ†
+
+	private int courseTime;			//å­¦æ—¶
+
+	private String type;			//ç±»å‹ï¼›é€‰ä¿®æˆ–å¿…ä¿®
+
 	@Override
 	public String toString() {
 		return "Course [id=" + id + ", courseName=" + courseName + ", credit=" + credit + ", courseTime=" + courseTime
 				+ ", type=" + type + "]";
 	}
-	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getCourseName() {
+		return courseName;
+	}
+
+	public void setCourseName(String courseName) {
+		this.courseName = courseName;
+	}
+
+	public int getCredit() {
+		return credit;
+	}
+
+	public void setCredit(int credit) {
+		this.credit = credit;
+	}
+
+	public int getCourseTime() {
+		return courseTime;
+	}
+
+	public void setCourseTime(int courseTime) {
+		this.courseTime = courseTime;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
 }

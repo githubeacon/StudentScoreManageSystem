@@ -27,7 +27,7 @@ import com.beacon.sms.utils.ExcelUtil;
 
 /**
  * 
- * ×÷Õß:beacon ´´½¨ÈÕÆÚ:2017Äê11ÔÂ8ÈÕÏÂÎç3:48:28 ÃèÊö:ÉÏ´«ÎÄ¼şAction
+ * ä½œè€…:beacon åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ8æ—¥ä¸‹åˆ3:48:28 æè¿°:ä¸Šä¼ æ–‡ä»¶Action
  */
 public class UpLoadAction {
 	private File upload;
@@ -199,7 +199,7 @@ public class UpLoadAction {
 		scoreSearchBean = new ScoreSearchBean();
 
 		if (power == 3) {
-			// ½ÌÊ¦
+			// æ•™å¸ˆ
 			Teacher teacher = (Teacher) session.getAttribute("teacher");
 			scoreSearchBean.setTeacherId(teacher.getId());
 			scoreSearchBean.setStudentId(0);
@@ -212,7 +212,7 @@ public class UpLoadAction {
 				scoreSearchBean.setStudentId(0);
 			}
 			if (power == 2) {
-				// Ñ§Éú
+				// å­¦ç”Ÿ
 				Student student = (Student) session.getAttribute("student");
 				scoreSearchBean.setStudentId(student.getId());
 			}

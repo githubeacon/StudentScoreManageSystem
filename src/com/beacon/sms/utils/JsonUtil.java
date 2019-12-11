@@ -9,9 +9,9 @@ import org.apache.struts2.ServletActionContext;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ28ÈÕÏÂÎç10:42:42
- * ÃèÊö:JsonÏà¹Ø¹¤¾ßÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ28æ—¥ä¸‹åˆ10:42:42
+ * æè¿°:Jsonç›¸å…³å·¥å…·ç±»
  */
 public class JsonUtil {
 	public void writeJson(String result) {

@@ -9,7 +9,7 @@ import com.beacon.sms.dao.CourseDao;
 
 /**
  * 
- * ×÷Õß:beacon ´´½¨ÈÕÆÚ:2017Äê10ÔÂ31ÈÕÏÂÎç9:20:40 ÃèÊö:´¦Àí¿Î³ÌµÄÏà¹ØÂß¼­Àà
+ * ä½œè€…:beacon åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ31æ—¥ä¸‹åˆ9:20:40 æè¿°:å¤„ç†è¯¾ç¨‹çš„ç›¸å…³é€»è¾‘ç±»
  */
 public interface CourseService {
 	void addCourse(Course course);

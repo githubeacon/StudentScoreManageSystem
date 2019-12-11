@@ -15,9 +15,9 @@ import sun.java2d.loops.DrawRect;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ21ÈÕÉÏÎç9:35:34
- * ÃèÊö:ÑéÖ¤Âë¹¤¾ßÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ21æ—¥ä¸Šåˆ9:35:34
+ * æè¿°:éªŒè¯ç å·¥å…·ç±»
  */
 public class ValidateCodeUtil {
 	private static final int WIDTH=120;

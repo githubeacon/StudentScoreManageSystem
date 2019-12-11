@@ -6,9 +6,9 @@ import com.beacon.sms.bean.Semester;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ3ÈÕÏÂÎç10:41:49
- * ÃèÊö:¹ØÓÚÑ§ÆÚµÄÏà¹Ø½Ó¿Ú
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ3æ—¥ä¸‹åˆ10:41:49
+ * æè¿°:å…³äºå­¦æœŸçš„ç›¸å…³æ¥å£
  */
 public interface SemesterDao {
 	public List<Semester> getSemesterList();

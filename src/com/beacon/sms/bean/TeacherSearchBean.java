@@ -1,43 +1,56 @@
 package com.beacon.sms.bean;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ3ÈÕÉÏÎç9:20:03
- * ÃèÊö:½ÌÊ¦ËÑË÷Ìõ¼şµÄÊµÌåÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ3æ—¥ä¸Šåˆ9:20:03
+ * æè¿°:æ•™å¸ˆæœç´¢æ¡ä»¶çš„å®ä½“ç±»
  */
-public class TeacherSearchBean extends PageBean {
-	private String teacherNo;
-	private String teacherName;
-	private String sex;
-	private int departmentId;
+public class TeacherSearchBean extends PageBean
+{
+	private String teacherNo;		//æ•™å¸ˆå·¥å·
+
+	private String teacherName;		//æ•™å¸ˆå§“å
+
+	private String sex;				//æ€§åˆ«
+
+	private int departmentId;		//æ‰€å±å­¦é™¢id
+
+	@Override
+	public String toString() {
+		return super.toString()+"TeacherSearchBean [teacherNo=" + teacherNo
+				+ ", teacherName=" + teacherName + ", sex=" + sex
+				+ ", departmentId=" + departmentId + "]";
+	}
+
 	public String getTeacherNo() {
 		return teacherNo;
 	}
+
 	public void setTeacherNo(String teacherNo) {
 		this.teacherNo = teacherNo;
 	}
+
 	public String getTeacherName() {
 		return teacherName;
 	}
+
 	public void setTeacherName(String teacherName) {
 		this.teacherName = teacherName;
 	}
+
 	public String getSex() {
 		return sex;
 	}
+
 	public void setSex(String sex) {
 		this.sex = sex;
 	}
+
 	public int getDepartmentId() {
 		return departmentId;
 	}
+
 	public void setDepartmentId(int departmentId) {
 		this.departmentId = departmentId;
 	}
-	@Override
-	public String toString() {
-		return super.toString()+"TeacherSearchBean [teacherNo=" + teacherNo + ", teacherName=" + teacherName + ", sex=" + sex
-				+ ", departmentId=" + departmentId + "]";
-	}
-	
 }

@@ -1,9 +1,9 @@
 package com.beacon.sms.utils;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ29ÈÕÏÂÎç3:24:29
- * ÃèÊö:¹ØÓÚ×Ö·û´®µÄ¹¤¾ßÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ29æ—¥ä¸‹åˆ3:24:29
+ * æè¿°:å…³äºå­—ç¬¦ä¸²çš„å·¥å…·ç±»
  */
 public class StringUtil {
 	public String num2String(int num){

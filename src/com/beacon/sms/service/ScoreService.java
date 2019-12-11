@@ -8,14 +8,11 @@ import com.beacon.sms.dao.ScoreDao;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ6ÈÕÉÏÎç10:37:01
- * ÃèÊö:´¦Àí¹ØÓÚ³É¼¨µÄÂß¼­Àà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ6æ—¥ä¸Šåˆ10:37:01
+ * æè¿°:å¤„ç†å…³äºæˆç»©çš„é€»è¾‘ç±»
  */
 public interface ScoreService {
-	
-	
-
 	public List<Score> getScoreList(ScoreSearchBean scoreSearchBean);
 	public int getScoreListSize(ScoreSearchBean scoreSearchBean);
 	public void updateScore(Score score);

@@ -8,9 +8,9 @@ import com.beacon.sms.bean.PageBean;
 
 /**
  * 
- * ×÷Õß:beacon 
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ31ÈÕÏÂÎç9:21:12
- * ÃèÊö:¿Î³ÌÏà¹Ø·½·¨µÄ½Ó¿Ú
+ * ä½œè€…:beacon 
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ31æ—¥ä¸‹åˆ9:21:12
+ * æè¿°:è¯¾ç¨‹ç›¸å…³æ–¹æ³•çš„æ¥å£
  */
 public interface CourseDao {
 	public void addCourse(Course course);
@@ -22,5 +22,6 @@ public interface CourseDao {
 	public List<Course> getCourseList(CourseSearchBean courseSearchBean);
 	
 	public int getCourseListSize(CourseSearchBean courseSearchBean);
-	public List<Course> getCourseList1(); 
+
+	public List<Course> getCourseList1();
 }

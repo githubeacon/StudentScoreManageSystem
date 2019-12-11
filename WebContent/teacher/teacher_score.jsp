@@ -125,7 +125,7 @@
 				<th field="courseType" formatter="getCourseType">课程类型</th>
 				<th field="courseTime" formatter="getCourseTime">总课时</th>
 				<th field="credit" formatter="getCredit">学分</th>
-				<th field="score">成绩</th>
+				<th field="score">考试成绩</th>
 				<th field="flag" formatter="getFlag">备注</th>
 				<th field="oprate" formatter="oprate">操作</th>
 			</tr>
@@ -157,10 +157,26 @@
 		style="width: 300px; height: 200px; padding: 20px;display:none">
 		<form method="post" id="scoreForm">
 			<span>成绩:</span> <input type="text" name="score.score" /> <br />
-			<br /> <a href="javascript:scoreFormSubmit()"
-				class="easyui-linkbutton">提交</a> <a href="javascript:exportScore()"
+			<br />
+			<a href="javascript:scoreFormSubmit()"
+				class="easyui-linkbutton">提交</a>
+			<a href="javascript:exportScore()"
 				class="easyui-linkbutton" iconCls="icon-export">导出成绩</a>
 		</form>
 	</div>
+
+	<%--导入成绩--%>
+	<div class="easyui-window" id="scoreWindow"
+		 style="width: 300px; height: 200px; padding: 20px;display:none">
+		<form method="post" id="inputScoreForm">
+			<span>成绩:</span> <input type="text" name="score.score" /> <br />
+			<br />
+			<a href="javascript:scoreFormSubmit()"
+			   class="easyui-linkbutton">提交</a>
+			<a href="javascript:exportScore()"
+			   class="easyui-linkbutton" iconCls="icon-export">导出成绩</a>
+		</form>
+</div>
+
 </body>
 </html>

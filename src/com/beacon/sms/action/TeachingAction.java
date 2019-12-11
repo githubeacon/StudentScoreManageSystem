@@ -19,9 +19,9 @@ import jdk.nashorn.internal.ir.RuntimeNode.Request;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ4ÈÕÉÏÎç10:02:28
- * ÃèÊö:ÊÚ¿ÎAction
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ4æ—¥ä¸Šåˆ10:02:28
+ * æè¿°:æˆè¯¾Action
  */
 public class TeachingAction {
 	private TeachingService teachingService;

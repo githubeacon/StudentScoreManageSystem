@@ -9,9 +9,9 @@ import com.beacon.sms.utils.JsonUtil;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ3ÈÕÏÂÎç10:38:36
- * ÃèÊö:Ñ§ÆÚAction
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ3æ—¥ä¸‹åˆ10:38:36
+ * æè¿°:å­¦æœŸAction
  */
 public class SemesterAction {
 	private SemesterService semesterService;

@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="/sms1/dist/css/easyui.css" />
 <link rel="stylesheet" type="text/css" href="/sms1/dist/css/icon.css" />
 <link rel="stylesheet" type="text/css" href="/sms1/dist/css/main.css" />
+<%--<link rel="stylesheet" type="text/css" href="/sms1/dist/css/main.css" />--%>
 <script type="text/javascript" src="/sms1/dist/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/sms1/dist/js/jquery.easyui.min.js"></script>
 <script type="text/javascript" src="/sms1/dist/js/loading.js"></script>
@@ -83,7 +84,7 @@ function modify(){
 			<a href="/sms1/login_logout.action" onclick="return confirm('你确认要退出吗?')">注销</a>
 		</div>
 	</div>
-	<div region="west" class="left" title="教务管理系统">
+	<div region="west" class="left" title="成绩管理系统">
 		<div class="left-list">
 			<div class="left-list-item" url="/sms1/student/student_message.jsp" title="个人信息">
 				<a class="easyui-linkbutton" iconCls="icon-message" plain="true">个人信息</a>

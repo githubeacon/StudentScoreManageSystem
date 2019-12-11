@@ -22,9 +22,9 @@ import jdk.nashorn.internal.runtime.UserAccessorProperty;
 
 /**
  * 
- * ×÷Õß:beacon 
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ22ÈÕÉÏÎç9:32:08 
- * ÃèÊö:µÇÂ¼Action
+ * ä½œè€…:beacon 
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ22æ—¥ä¸Šåˆ9:32:08 
+ * æè¿°:ç™»å½•Action
  */
 public class LoginAction {
 	private String userName;
@@ -135,11 +135,11 @@ public class LoginAction {
 		HttpServletResponse response = ServletActionContext.getResponse();
 		PrintWriter printWriter = response.getWriter();
 		if (!loginService.isRightCode(request, validateCode)) {
-			printWriter.write("ÑéÖ¤Âë²»ÕıÈ·!");
+			printWriter.write("éªŒè¯ç ä¸æ­£ç¡®!");
 			return;
 		}
 		if (!loginService.isExist(userName, password)) {
-			printWriter.write("ÕË»§Ãû»òÃÜÂë´íÎó!");
+			printWriter.write("è´¦æˆ·åæˆ–å¯†ç é”™è¯¯!");
 			return;
 		}
 		Admin admin=loginService.getAdmin(userName, password);
@@ -152,11 +152,11 @@ public class LoginAction {
 		PrintWriter printWriter = response.getWriter();
 		Admin admin=(Admin) request.getSession().getAttribute("user");
 		if(!newPassword.equals(checkPassword)){
-			printWriter.write("ĞÂÃÜÂë²»ÏàÍ¬!");
+			printWriter.write("æ–°å¯†ç ä¸ç›¸åŒ!");
 			return ;
 		}
 		if (!loginService.isExist(admin.getUserName(), oldPassword)) {
-			printWriter.write("Ô­ÃÜÂë²»ÕıÈ·!");
+			printWriter.write("åŸå¯†ç ä¸æ­£ç¡®!");
 			return;
 		}
 		loginService.updatePassword(admin.getUserName(),newPassword);

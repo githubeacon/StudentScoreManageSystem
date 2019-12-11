@@ -1,13 +1,19 @@
 package com.beacon.sms.bean;
 
-public class CourseSearchBean extends PageBean{
-	private String name;
+/**
+ * 课程查询
+ */
+public class CourseSearchBean extends PageBean
+{
+	private String name;	//课程名
 
-	public String getName() {
+	public String getName()
+	{
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name)
+	{
 		this.name = name;
 	}
 
@@ -15,5 +21,4 @@ public class CourseSearchBean extends PageBean{
 	public String toString() {
 		return super.toString()+"CourseSearchBean [name=" + name + "]";
 	}
-	
 }

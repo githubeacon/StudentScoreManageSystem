@@ -28,10 +28,10 @@ import com.beacon.sms.bean.Teaching;
 
 /**
  * 
- * ×÷Õß:beacon ´´½¨ÈÕÆÚ:2017Äê11ÔÂ8ÈÕÏÂÎç4:21:49 ÃèÊö:´¦ÀíExcelµÄ¹¤¾ßÀà
+ * ä½œè€…:beacon åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ8æ—¥ä¸‹åˆ4:21:49 æè¿°:å¤„ç†Excelçš„å·¥å…·ç±»
  */
 public class ExcelUtil {
-	private String[] headers = { "Ñ§ÄêÑ§ÆÚ", "Ñ§ºÅ", "ĞÕÃû", "ËùÔÚ°à¼¶", "¿Î³ÌÃû³Æ", "³É¼¨" };
+	private String[] headers = { "å­¦å¹´å­¦æœŸ", "å­¦å·", "å§“å", "æ‰€åœ¨ç­çº§", "è¯¾ç¨‹åç§°", "æˆç»©" };
 
 	public List<Student> readStudentExcel(InputStream inputStream) throws IOException {
 		List<Student> list = new ArrayList<Student>();
@@ -96,7 +96,7 @@ public class ExcelUtil {
 
 	public void exportExcel(List<Score> list) throws IOException {
 		HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
-		Sheet sheet = hssfWorkbook.createSheet("Ñ§Éú³É¼¨±í");
+		Sheet sheet = hssfWorkbook.createSheet("å­¦ç”Ÿæˆç»©è¡¨");
 		Row header = sheet.createRow(0);
 		for (int i = 0; i < headers.length; i++) {
 			header.createCell(i).setCellValue(headers[i]);
@@ -129,7 +129,7 @@ public class ExcelUtil {
 
 	public InputStream getExcelInputStream(List<Score> list) throws IOException {
 		HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
-		Sheet sheet = hssfWorkbook.createSheet("Ñ§Éú³É¼¨±í");
+		Sheet sheet = hssfWorkbook.createSheet("å­¦ç”Ÿæˆç»©è¡¨");
 		Row header = sheet.createRow(0);
 		for (int i = 0; i < headers.length; i++) {
 			header.createCell(i).setCellValue(headers[i]);

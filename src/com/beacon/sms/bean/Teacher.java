@@ -1,95 +1,126 @@
 package com.beacon.sms.bean;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ31ÈÕÏÂÎç5:29:12
- * ÃèÊö:½ÌÊ¦ÊµÌåÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ31æ—¥ä¸‹åˆ5:29:12
+ * æè¿°:æ•™å¸ˆå®ä½“ç±»
  */
-public class Teacher {
-	private int id;
-	private String teacherNo;
-	private String teacherName;
-	private String cellphone;
-	private String sex;
-	private String birthday;
-	private Department department;
-	private String education;
-	private Address address;
-	private String idCard;
-	private String voucher;
-	
-	public String getIdCard() {
-		return idCard;
-	}
-	public void setIdCard(String idCard) {
-		this.idCard = idCard;
-	}
-	public String getVoucher() {
-		return voucher;
-	}
-	public void setVoucher(String voucher) {
-		this.voucher = voucher;
-	}
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getTeacherNo() {
-		return teacherNo;
-	}
-	public void setTeacherNo(String teacherNo) {
-		this.teacherNo = teacherNo;
-	}
-	public String getTeacherName() {
-		return teacherName;
-	}
-	public void setTeacherName(String teacherName) {
-		this.teacherName = teacherName;
-	}
-	public String getCellphone() {
-		return cellphone;
-	}
-	public void setCellphone(String cellphone) {
-		this.cellphone = cellphone;
-	}
-	public String getSex() {
-		return sex;
-	}
-	public void setSex(String sex) {
-		this.sex = sex;
-	}
-	public String getBirthday() {
-		return birthday;
-	}
-	public void setBirthday(String birthday) {
-		this.birthday = birthday;
-	}
-	public Department getDepartment() {
-		return department;
-	}
-	public void setDepartment(Department department) {
-		this.department = department;
-	}
-	public String getEducation() {
-		return education;
-	}
-	public void setEducation(String education) {
-		this.education = education;
-	}
-	public Address getAddress() {
-		return address;
-	}
-	public void setAddress(Address address) {
-		this.address = address;
-	}
+public class Teacher
+{
+	private int id;					//æ•™å¸ˆid
+
+	private String teacherNo;		//æ•™å¸ˆå·¥å·
+
+	private String teacherName;		//å§“å
+
+	private String cellphone;		//ç”µè¯
+
+	private String sex;				//æ€§åˆ«
+
+	private String birthday;		//ç”Ÿæ—¥
+
+	private Department department;	//æ‰€å±å­¦é™¢
+
+	private String education;		//å­¦å†
+
+	private Address address;		//ä½å€
+
+	private String idCard;			//èº«ä»½è¯
+
+	private String voucher;			//å¯†ç æ‰¾å›ç 
+
 	@Override
 	public String toString() {
 		return "Teacher [id=" + id + ", teacherNo=" + teacherNo + ", teacherName=" + teacherName + ", cellphone="
 				+ cellphone + ", sex=" + sex + ", birthday=" + birthday + ", department=" + department + ", education="
 				+ education + ", address=" + address + ", idCard=" + idCard + ", voucher=" + voucher + "]";
 	}
-	
-	
+
+	public String getIdCard() {
+		return idCard;
+	}
+
+	public void setIdCard(String idCard) {
+		this.idCard = idCard;
+	}
+
+	public String getVoucher() {
+		return voucher;
+	}
+
+	public void setVoucher(String voucher) {
+		this.voucher = voucher;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTeacherNo() {
+		return teacherNo;
+	}
+
+	public void setTeacherNo(String teacherNo) {
+		this.teacherNo = teacherNo;
+	}
+
+	public String getTeacherName() {
+		return teacherName;
+	}
+
+	public void setTeacherName(String teacherName) {
+		this.teacherName = teacherName;
+	}
+
+	public String getCellphone() {
+		return cellphone;
+	}
+
+	public void setCellphone(String cellphone) {
+		this.cellphone = cellphone;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public String getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+	public String getEducation() {
+		return education;
+	}
+
+	public void setEducation(String education) {
+		this.education = education;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 }

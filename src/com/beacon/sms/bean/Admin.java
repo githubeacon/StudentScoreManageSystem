@@ -2,15 +2,23 @@ package com.beacon.sms.bean;
 
 /**
  * 
- * ×÷Õß:beacon 
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ22ÈÕÏÂÎç3:19:04 
- * ÃèÊö:ÕËºÅÀà
+ * ä½œè€…:beacon 
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ22æ—¥ä¸‹åˆ3:19:04 
+ * æè¿°:è´¦å·ç±»
  */
 
-public class Admin {
-	private String userName;
-	private String password;
-	private int power;//1±íÊ¾¹ÜÀíÔ± 2±íÊ¾Ñ§Éú 3±íÊ¾ÀÏÊ¦
+public class Admin
+{
+	private String userName;		//ç”¨æˆ·å
+
+	private String password;		//å¯†ç ï¼Œé»˜è®¤ï¼šå¯†ç =ç”¨æˆ·å
+
+	private int power;				//èº«ä»½æ ‡è¯†ï¼›1è¡¨ç¤ºç®¡ç†å‘˜ï¼Œ2è¡¨ç¤ºå­¦ç”Ÿï¼Œ3è¡¨ç¤ºè€å¸ˆ
+
+	@Override
+	public String toString() {
+		return "Admin [userName=" + userName + ", password=" + password + ", power=" + power + "]";
+	}
 	
 	public int getPower() {
 		return power;
@@ -20,8 +28,8 @@ public class Admin {
 		this.power = power;
 	}
 
-	public String getUserName() {
-
+	public String getUserName()
+	{
 		return userName;
 	}
 
@@ -36,12 +44,4 @@ public class Admin {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	@Override
-	public String toString() {
-		return "Admin [userName=" + userName + ", password=" + password + ", power=" + power + "]";
-	}
-
-	
-
 }

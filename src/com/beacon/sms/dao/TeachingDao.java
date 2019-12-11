@@ -7,9 +7,9 @@ import com.beacon.sms.bean.TeachingSearchBean;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ4ÈÕÉÏÎç10:05:04
- * ÃèÊö:´¦ÀíÊÚ¿ÎÏà¹Ø·½·¨µÄ½Ó¿Ú
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ4æ—¥ä¸Šåˆ10:05:04
+ * æè¿°:å¤„ç†æˆè¯¾ç›¸å…³æ–¹æ³•çš„æ¥å£
  */
 public interface TeachingDao {
 	public List<Teaching> getTeachingList(TeachingSearchBean teachingSearchBean);

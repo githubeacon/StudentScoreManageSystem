@@ -1,32 +1,35 @@
 package com.beacon.sms.bean;
 
 import java.util.List;
-
 /**
- * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ31ÈÕÏÂÎç4:14:20
- * ÃèÊö:·ÖÒ³ÊµÌåÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ31æ—¥ä¸‹åˆ4:14:20
+ * æè¿°:åˆ†é¡µå®ä½“ç±»
  */
-public class DatagridBean<T> {
-	private List<T> rows;
-	private int total;
+public class DatagridBean<T>
+{
+	private List<T> rows;		//åˆ—è¡¨ï¼Œè¡Œ
+
+	private int total;			//æ€»æ•°
+
 	public List<T> getRows() {
 		return rows;
 	}
+
 	public void setRows(List<T> rows) {
 		this.rows = rows;
 	}
+
 	public int getTotal() {
 		return total;
 	}
+
 	public void setTotal(int total) {
 		this.total = total;
 	}
+
 	@Override
 	public String toString() {
 		return "PageBean [rows=" + rows + ", total=" + total + "]";
 	}
-	
-	
 }
