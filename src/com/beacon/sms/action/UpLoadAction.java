@@ -1,29 +1,16 @@
 package com.beacon.sms.action;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.util.List;
-
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
-import org.apache.struts2.ServletActionContext;
-
-import com.beacon.sms.bean.Admin;
 import com.beacon.sms.bean.Class;
-import com.beacon.sms.bean.Department;
-import com.beacon.sms.bean.Score;
-import com.beacon.sms.bean.ScoreSearchBean;
-import com.beacon.sms.bean.Student;
-import com.beacon.sms.bean.Teacher;
+import com.beacon.sms.bean.*;
 import com.beacon.sms.service.ScoreService;
 import com.beacon.sms.service.StudentService;
 import com.beacon.sms.service.TeacherService;
 import com.beacon.sms.utils.ExcelUtil;
+import org.apache.struts2.ServletActionContext;
+
+import javax.servlet.http.HttpSession;
+import java.io.*;
+import java.util.List;
 
 /**
  * 

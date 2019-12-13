@@ -42,7 +42,6 @@
 	<bean id="excelUtil" class="com.beacon.sms.utils.ExcelUtil" />
 	<bean id="jsonUtil" class="com.beacon.sms.utils.JsonUtil" />
 	<bean id="validateCodeUtil" class="com.beacon.sms.utils.ValidateCodeUtil" />
-
 	<bean id="majorService" class="com.beacon.sms.service.impl.MajorServiceImpl">
 		<property name="majorDao" ref="majorMapper" />
 		<property name="dateUtil" ref="dateUtil" />
