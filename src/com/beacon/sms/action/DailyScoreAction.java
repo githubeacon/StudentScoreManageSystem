@@ -31,6 +31,7 @@ public class DailyScoreAction
     public void setScore(Score score) {
         this.score = score;
     }
+
     private ScoreSearchBean scoreSearchBean;
 
     public ScoreSearchBean getScoreSearchBean() {

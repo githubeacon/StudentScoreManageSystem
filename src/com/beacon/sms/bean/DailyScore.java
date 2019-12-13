@@ -1,7 +1,7 @@
 package com.beacon.sms.bean;
 
 /**
- * @see:
+ * @see: 平时成绩实体类
  * @program: StudentScoreManageSystem
  * @author: axxdllw
  * @create: 2019-12-11 12:07
@@ -22,11 +22,11 @@ public class DailyScore
 
     private int totalScore;         //平时总成绩
 
-    private int flag;				//状态，已登记或未登记
+    private int flag;			   	//状态，已登记或未登记
 
     public void setTotalScore(int homeworkScore, int attendanceScore, int experimentScore)
     {
-        this.totalScore = homeworkScore + attendanceScore + experimentScore;
+        this.totalScore = (homeworkScore + attendanceScore + experimentScore) / 3;
     }
 
     public int getHomeworkScore()

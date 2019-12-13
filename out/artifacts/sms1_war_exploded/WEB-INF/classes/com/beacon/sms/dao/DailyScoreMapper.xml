@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.beacon.sms.dao.ScoreDao">
-    <resultMap id="score" type="Score">
+<mapper namespace="com.beacon.sms.dao.DailyScoreDao">
+    <resultMap id="dailyScore" type="DailyScore">
         <result property="id" column="id" />
-        <result property="score" column="score" />
+        <result property="totalScore" column="totalScore" />            <!--平时总成绩-->
         <result property="flag" column="flag" />
+        <result property="homeworkScore" column="homeworkScore"/>       <!--作业成绩-->
+        <result property="attendanceScore" column="attendanceScore"/>   <!--考勤成绩-->
+        <result property="experimentScore" column="experimentScore"/>   <!--实验成绩-->
         <association property="teaching" javaType="Teaching">
             <association property="semester" javaType="Semester">
                 <result property="semesterName" column="semester_name" />
@@ -26,19 +29,21 @@
                 <result property="className" column="class_name" />
             </association>
         </association>
-
     </resultMap>
-    <insert id="addScore" parameterType="Score">
+
+    <insert id="addDailyScore" parameterType="DailyScore">
         insert into
-            score(student_id,score,flag,teaching_id)
-        values(#{student.id},#{score},#{flag},#{teaching.id});
+            daily_score(student_id,homework_score,attendance_score,experiment_score,total_score,flag,teaching_id)
+        values(#{student.id},#{homeworkScore},#{attendanceScore},#{experimentScore},
+               #{homeworkScore}/3+#{attendanceScore}/3+#{experimentScore}/3,#{flag},#{teaching.id});
     </insert>
-    <select id="getScoreListByTeacherId" resultMap="score"
+
+    <select id="getDailyScoreListByTeacherId" resultMap="dailyScore"
             parameterType="ScoreSearchBean">
         select s1.id ,s3.name as
         semester_name,student_no,student_name,class_name,
-        course_name,course_time,credit,type,score,flag,teacher_name
-        from score as s1,student as s2,semester as s3,class as c1,
+        course_name,course_time,credit,type,total_score,flag,teacher_name
+        from daily_score as s1,student as s2,semester as s3,class as c1,
         course as c2,teaching as t,teacher as t1
         where t.id=teaching_id and s1.student_id=s2.id and t.semester_id=s3.id and
         t.course_id=c2.id and t.teacher_id=t1.id
@@ -66,10 +71,10 @@
         </if>
         <choose>
             <when test="order==1">
-                order by score desc
+                order by totalScore desc
             </when>
             <when test="order==2">
-                order by score
+                order by totalScore
             </when>
         </choose>
         <if test="page!=0 and rows!=0">
@@ -77,6 +82,8 @@
         </if>
         ;
     </select>
+
+
     <select id="getScoreListSizeByTeacherId" parameterType="ScoreSearchBean"
             resultType="INTEGER">
         select count(s1.id)
@@ -109,10 +116,13 @@
 
         ;
     </select>
-    <update id="updateScore" parameterType="Score">
-        update score set score=#{score},flag=1 where id=#{id};
+
+    <update id="updateDailyScore" parameterType="DailyScore">
+        update daily_score set daily_score.homework_score=#{homeworkScore},attendance_score=#{attendanceScore},experiment_score=#{experimentScore},
+                               total_score=#{homeworkScore}/3+#{attendanceScore}/3+#{experimentScore}/3,flag=1 where id=#{id};
     </update>
+
     <delete id="deleteScoreByTeachingId" parameterType="INTEGER">
-        delete from score where teaching_id=#{teachingId};
+        delete from daily_score where teaching_id=#{teachingId};
     </delete>
 </mapper>

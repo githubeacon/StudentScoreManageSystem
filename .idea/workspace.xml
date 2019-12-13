@@ -8,134 +8,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/LENOVO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2ba101be-8d6e-404a-9885-dc02bed604ba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2ba101be-8d6e-404a-9885-dc02bed604ba.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/admin/admin_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/admin/admin_main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/student/student_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/student/student_main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/teacher/teacher_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teacher/teacher_main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/teacher/teacher_score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teacher/teacher_score.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war/sms1_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war/sms1_war.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/action/CourseAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/action/CourseAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Class.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Class.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/CourseSearchBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/CourseSearchBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/DatagridBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/DatagridBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Major.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Major.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/PageBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/PageBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Score.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/ScoreSearchBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/ScoreSearchBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Semester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Semester.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/StudentSearchBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/StudentSearchBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/TeacherSearchBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/TeacherSearchBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Teaching.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Teaching.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/TeachingSearchBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/TeachingSearchBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/service/CourseServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/service/LoginServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/service/MajorServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/service/ScoreServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/service/SemesterServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/service/StudentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/service/TeacherServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/service/TeachingServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/student/student_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/student/student_main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/teacher/teacher_score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/teacher/teacher_score.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/action/CourseAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/action/CourseAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Class.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Class.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/CourseSearchBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/CourseSearchBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/DatagridBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/DatagridBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Major.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Major.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/PageBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/PageBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Score.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/ScoreSearchBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/ScoreSearchBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Semester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Semester.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/StudentSearchBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/StudentSearchBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/TeacherSearchBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/TeacherSearchBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Teaching.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Teaching.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/TeachingSearchBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/TeachingSearchBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/service/CourseServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/service/LoginServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/service/MajorServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/service/ScoreServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/service/SemesterServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/service/StudentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/service/TeacherServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/service/TeachingServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/CourseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/action/CourseAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/action/LoginAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/MajorAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/action/MajorAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/ScoreAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/action/ScoreAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/SemesterAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/action/SemesterAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/StudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/action/StudentAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/TeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/action/TeacherAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/TeachingAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/action/TeachingAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/UpLoadAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/action/UpLoadAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/CourseSearchBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/CourseSearchBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/DatagridBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/DatagridBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Major.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/Major.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/PageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/PageBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/Score.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/ScoreSearchBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/ScoreSearchBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Semester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/Semester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/StudentSearchBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/StudentSearchBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/TeacherSearchBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/TeacherSearchBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Teaching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/Teaching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/TeachingSearchBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/TeachingSearchBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/CourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/CourseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/LoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/MajorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/MajorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/ScoreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/ScoreDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/SemesterDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/SemesterDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/TeacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/TeacherDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/TeachingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/TeachingDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/filter/EncodingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/MajorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/MajorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/MajorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/impl/MajorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/ScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/ScoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/ScoreServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/impl/ScoreServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/SemesterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/SemesterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/SemesterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/impl/SemesterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/TeacherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/impl/TeacherServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/TeachingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/TeachingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/TeachingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/impl/TeachingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/servlet/ValidateCodeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/servlet/ValidateCodeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/utils/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/utils/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/utils/ExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/utils/ExcelUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/utils/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/utils/JsonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/utils/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/utils/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/utils/ValidateCodeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/utils/ValidateCodeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/action/DailyScoreAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/action/DailyScoreAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/dao/DailyScoreDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/dao/DailyScoreDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/dao/DailyScoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/dao/DailyScoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/teacher/teacher_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/teacher/teacher_main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/action/DailyScoreAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/action/DailyScoreAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/dao/DailyScoreDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/dao/DailyScoreDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/dao/DailyScoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/dao/DailyScoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/DailyScoreAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/action/DailyScoreAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/DailyScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/DailyScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/DailyScoreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/DailyScoreDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/DailyScoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/DailyScoreMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +42,51 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="score@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="score@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="score@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="score: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="score@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="score: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="course: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="score@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="score: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="score: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="score@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="score: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="semester: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="score@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="score: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="student: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -348,7 +281,10 @@
       <workItem from="1575900596637" duration="7797000" />
       <workItem from="1575982960578" duration="5041000" />
       <workItem from="1576035751021" duration="3901000" />
-      <workItem from="1576052603077" duration="2115000" />
+      <workItem from="1576052603077" duration="7118000" />
+      <workItem from="1576130887386" duration="8121000" />
+      <workItem from="1576168601023" duration="624000" />
+      <workItem from="1576208397060" duration="4108000" />
     </task>
     <task id="LOCAL-00001" summary="配置修改完毕，在本机上正常运行">
       <created>1575895585927</created>
@@ -364,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575902241642</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加了实体类的注释，写了dailyScore相关的一些类，未放入容器中，此版本可正常运行">
+      <created>1576055071394</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576055071394</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,9 +345,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="配置修改完毕，在本机上正常运行" />
     <MESSAGE value="1、更新了README;&#10;2、修复了验证码无法显示的bug；&#10;3、修复了tomcat服务器无法正常启动的bug&#10;  1)class path resource [applicationContext.xml] cannot be opened because it doesn't exist;&#10;  2)Artifacts:Error during artifact deployment." />
-    <option name="LAST_COMMIT_MESSAGE" value="1、更新了README;&#10;2、修复了验证码无法显示的bug；&#10;3、修复了tomcat服务器无法正常启动的bug&#10;  1)class path resource [applicationContext.xml] cannot be opened because it doesn't exist;&#10;  2)Artifacts:Error during artifact deployment." />
+    <MESSAGE value="增加了实体类的注释，写了dailyScore相关的一些类，未放入容器中，此版本可正常运行" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了实体类的注释，写了dailyScore相关的一些类，未放入容器中，此版本可正常运行" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="201" key="#Notifications" timestamp="1576208458057">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="201" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1576208458057" />
     <state x="424" y="183" key="#Project_Structure" timestamp="1575901054576">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -413,10 +361,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="203" key="#SQL_Dialects/0.0.1920.1080@0.0.1920.1080" timestamp="1575903570019" />
-    <state x="446" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575903699484">
+    <state x="446" y="183" width="806" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576208668417">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="446" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575903699484" />
+    <state x="446" y="183" width="806" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576208668417" />
     <state x="767" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1576052198040">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -433,10 +381,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="722" y="283" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575901604056" />
-    <state x="406" y="114" key="CommitChangelistDialog2" timestamp="1575902302656">
+    <state x="406" y="114" key="CommitChangelistDialog2" timestamp="1576055065180">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="406" y="114" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1575902302656" />
+    <state x="406" y="114" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1576055065180" />
     <state x="232" y="122" width="1200" height="800" key="DiffContextDialog" timestamp="1575895831161">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -449,54 +397,66 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="707" y="417" width="274" height="210" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575895781261" />
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1576054739731">
+    <state width="1026" height="387" key="GridCell.Tab.0.bottom" timestamp="1576210972133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576054739731" />
-    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1576054739731">
+    <state width="1493" height="296" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576138296062" />
+    <state width="1026" height="387" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576210972133" />
+    <state width="1026" height="387" key="GridCell.Tab.0.center" timestamp="1576210972132">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576054739731" />
-    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1576054739731">
+    <state width="1493" height="296" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1576138296062" />
+    <state width="1026" height="387" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576210972132" />
+    <state width="1026" height="387" key="GridCell.Tab.0.left" timestamp="1576210972132">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576054739731" />
-    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1576054739731">
+    <state width="1493" height="296" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1576138296062" />
+    <state width="1026" height="387" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576210972132" />
+    <state width="1026" height="387" key="GridCell.Tab.0.right" timestamp="1576210972132">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576054739731" />
-    <state width="1340" height="266" key="GridCell.Tab.1.bottom" timestamp="1576054739732">
+    <state width="1493" height="296" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1576138296062" />
+    <state width="1026" height="387" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576210972132" />
+    <state width="1026" height="387" key="GridCell.Tab.1.bottom" timestamp="1576210972133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576054739732" />
-    <state width="1340" height="266" key="GridCell.Tab.1.center" timestamp="1576054739732">
+    <state width="1493" height="296" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576138296063" />
+    <state width="1026" height="387" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576210972133" />
+    <state width="1026" height="387" key="GridCell.Tab.1.center" timestamp="1576210972133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576054739732" />
-    <state width="1340" height="266" key="GridCell.Tab.1.left" timestamp="1576054739732">
+    <state width="1493" height="296" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1576138296062" />
+    <state width="1026" height="387" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576210972133" />
+    <state width="1026" height="387" key="GridCell.Tab.1.left" timestamp="1576210972133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576054739732" />
-    <state width="1340" height="266" key="GridCell.Tab.1.right" timestamp="1576054739732">
+    <state width="1493" height="296" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1576138296062" />
+    <state width="1026" height="387" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576210972133" />
+    <state width="1026" height="387" key="GridCell.Tab.1.right" timestamp="1576210972133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576054739732" />
-    <state width="1340" height="266" key="GridCell.Tab.2.bottom" timestamp="1576054739732">
+    <state width="1493" height="296" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1576138296063" />
+    <state width="1026" height="387" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576210972133" />
+    <state width="1026" height="387" key="GridCell.Tab.2.bottom" timestamp="1576210972133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576054739732" />
-    <state width="1340" height="266" key="GridCell.Tab.2.center" timestamp="1576054739732">
+    <state width="1493" height="296" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576138296063" />
+    <state width="1026" height="387" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576210972133" />
+    <state width="1026" height="387" key="GridCell.Tab.2.center" timestamp="1576210972133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576054739732" />
-    <state width="1340" height="266" key="GridCell.Tab.2.left" timestamp="1576054739732">
+    <state width="1493" height="296" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1576138296063" />
+    <state width="1026" height="387" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576210972133" />
+    <state width="1026" height="387" key="GridCell.Tab.2.left" timestamp="1576210972133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576054739732" />
-    <state width="1340" height="266" key="GridCell.Tab.2.right" timestamp="1576054739732">
+    <state width="1493" height="296" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1576138296063" />
+    <state width="1026" height="387" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576210972133" />
+    <state width="1026" height="387" key="GridCell.Tab.2.right" timestamp="1576210972133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576054739732" />
+    <state width="1493" height="296" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1576138296063" />
+    <state width="1026" height="387" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576210972133" />
     <state width="1340" height="266" key="GridCell.Tab.5.bottom" timestamp="1575997289571">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -513,9 +473,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1340" height="266" key="GridCell.Tab.5.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575997289571" />
-    <state x="734" y="250" key="RollbackChangesDialog" timestamp="1575900654223">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="587" y="200" key="RollbackChangesDialog" timestamp="1576065359121">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="587" y="200" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1576065359121" />
     <state x="734" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575900654223" />
     <state x="472" y="103" key="SettingsEditor" timestamp="1575902969077">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -529,10 +490,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="232" y="122" width="1200" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575895831161" />
-    <state x="524" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1576052606569">
+    <state x="524" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1576208405322">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="524" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576052606569" />
+    <state x="419" y="279" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1576130906119" />
+    <state x="524" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576208405322" />
     <state x="367" y="141" key="new project wizard" timestamp="1575894985516">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
