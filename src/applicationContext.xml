@@ -11,8 +11,7 @@
      http://www.springframework.org/schema/tx 
       http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
 	<context:property-placeholder location="classpath:db.properties"/>      
-	<bean id="dataSource"
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="url" value="${url}"/>
 		<property name="driverClassName" value="${driver}"/>
 		<property name="username" value="${name}"/>
@@ -27,7 +26,6 @@
 		<property name="mapperInterface" value="com.beacon.sms.dao.LoginDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
-	<bean id="validateCodeUtil" class="com.beacon.sms.utils.ValidateCodeUtil" />
 
 	<bean id="loginService" class="com.beacon.sms.service.impl.LoginServiceImpl">
 		<property name="loginDao" ref="loginMapper" />
@@ -38,14 +36,19 @@
 		<property name="mapperInterface" value="com.beacon.sms.dao.MajorDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
+
 	<bean id="dateUtil" class="com.beacon.sms.utils.DateUtil" />
 	<bean id="stringUtil" class="com.beacon.sms.utils.StringUtil" />
+	<bean id="excelUtil" class="com.beacon.sms.utils.ExcelUtil" />
+	<bean id="jsonUtil" class="com.beacon.sms.utils.JsonUtil" />
+	<bean id="validateCodeUtil" class="com.beacon.sms.utils.ValidateCodeUtil" />
+
 	<bean id="majorService" class="com.beacon.sms.service.impl.MajorServiceImpl">
 		<property name="majorDao" ref="majorMapper" />
 		<property name="dateUtil" ref="dateUtil" />
 		<property name="stringUtil" ref="stringUtil" />
 	</bean>
-	<bean id="jsonUtil" class="com.beacon.sms.utils.JsonUtil" />
+
 	<bean id="majorAction" class="com.beacon.sms.action.MajorAction">
 		<property name="majorService" ref="majorService" />
 		<property name="jsonUtil" ref="jsonUtil" />
@@ -126,7 +129,7 @@
 		<property name="scoreService" ref="scoreService" />
 		<property name="jsonUtil" ref="jsonUtil" />
 	</bean>
-	<bean id="excelUtil" class="com.beacon.sms.utils.ExcelUtil" />
+
 	<bean id="uploadAction" class="com.beacon.sms.action.UpLoadAction">
 		<property name="excelUtil" ref="excelUtil" />
 		<property name="studentService" ref="studentService" />
@@ -142,17 +145,17 @@
 	</bean>
 
 	<!--添加平时成绩-->
-<!--	<bean id="dailyScoreMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">-->
-<!--		<property name="mapperInterface" value="com.beacon.sms.dao.DailyScoreDao" />-->
-<!--		<property name="sqlSessionFactory" ref="sqlSessionFactory" />-->
-<!--	</bean>-->
-<!--	<bean id="dailyScoreService" class="com.beacon.sms.service.impl.DailyScoreServiceImpl">-->
-<!--		<property name="DailyScoreDao" ref="DailyScoreMapper" />-->
-<!--	</bean>-->
-<!--	<bean id="dailyScoreAction" class="com.beacon.sms.action.DailyScoreAction">-->
-<!--		<property name="DailyScoreService" ref="DailyScoreService" />-->
-<!--		<property name="jsonUtil" ref="jsonUtil" />-->
-<!--	</bean>-->
+	<bean id="dailyScoreMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.beacon.sms.dao.DailyScoreDao" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+	<bean id="dailyScoreService" class="com.beacon.sms.service.impl.DailyScoreServiceImpl">
+		<property name="dailyScoreDao" ref="dailyScoreMapper" />
+	</bean>
+	<bean id="dailyScoreAction" class="com.beacon.sms.action.DailyScoreAction">
+		<property name="dailyScoreService" ref="dailyScoreService" />
+		<property name="jsonUtil" ref="jsonUtil" />
+	</bean>
 
 	<context:component-scan base-package="com.beacon.sms.service"></context:component-scan>
 	<!-- 添加事务 -->

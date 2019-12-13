@@ -95,7 +95,7 @@
     <select id="getScoreListSizeByTeacherId" parameterType="ScoreSearchBean"
             resultType="INTEGER">
         select count(s1.id)
-        from score as s1,student as s2,semester as s3,class as c1,
+        from daily_score as s1,student as s2,semester as s3,class as c1,
         course as c2,teaching as t,teacher as t1
         where t.id=teaching_id and s1.student_id=s2.id and t.semester_id=s3.id and
         t.course_id=c2.id and t.teacher_id=t1.id

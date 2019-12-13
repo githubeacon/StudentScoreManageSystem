@@ -1,10 +1,10 @@
 package com.beacon.sms.service.impl;
 
+import com.beacon.sms.bean.DailyScore;
 import com.beacon.sms.bean.Score;
 import com.beacon.sms.bean.ScoreSearchBean;
-import com.beacon.sms.dao.ScoreDao;
+import com.beacon.sms.dao.DailyScoreDao;
 import com.beacon.sms.service.DailyScoreService;
-import org.mybatis.spring.mapper.MapperFactoryBean;
 
 import java.util.List;
 
@@ -16,29 +16,27 @@ import java.util.List;
  */
 public class DailyScoreServiceImpl implements DailyScoreService
 {
-    private ScoreDao scoreDao;
+    private DailyScoreDao dailyScoreDao;
 
-    public ScoreDao getScoreDao() {
-        return scoreDao;
+    public List<DailyScore> getDailyScoreList(ScoreSearchBean scoreSearchBean) {
+        return dailyScoreDao.getDailyScoreListByTeacherId(scoreSearchBean);
     }
 
-    public void setScoreDao(ScoreDao scoreDao) {
-        this.scoreDao = scoreDao;
+    public int getDailyScoreListSize(ScoreSearchBean scoreSearchBean) {
+        return dailyScoreDao.getDailyScoreListSizeByTeacherId(scoreSearchBean);
     }
 
-    public List<Score> getScoreList(ScoreSearchBean scoreSearchBean) {
-        return scoreDao.getScoreListByTeacherId(scoreSearchBean);
+    public void updateDailyScore(DailyScore dailyScore) {
+        dailyScoreDao.updateDailyScore(dailyScore);
     }
 
-    public int getScoreListSize(ScoreSearchBean scoreSearchBean) {
-        return scoreDao.getScoreListSizeByTeacherId(scoreSearchBean);
-    }
-
-    public void updateScore(Score score) {
-        scoreDao.updateScore(score);
-    }
-
-    public void setDailyScoreDao(MapperFactoryBean dailyScoreDao)
+    public DailyScoreDao getDailyScoreDao()
     {
+        return dailyScoreDao;
+    }
+
+    public void setDailyScoreDao(DailyScoreDao dailyScoreDao)
+    {
+        this.dailyScoreDao = dailyScoreDao;
     }
 }

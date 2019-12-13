@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.beacon.sms.dao.DailyScoreDao">
+    <!-- resultMap最终还是要将结果映射到pojo上，type就是指定映射到哪一个pojo -->
+    <!-- id：设置ResultMap的id -->
     <resultMap id="dailyScore" type="DailyScore">
-        <result property="id" column="id" />
-        <result property="totalScore" column="totalScore" />            <!--平时总成绩-->
+        <!-- property：主键在pojo中的属性名 -->
+        <!-- column：主键在数据库中的列名 -->
+        <result property="id" column="id" />                             <!-- 定义主键 ,非常重要。如果是多个字段,则定义多个id -->
+        <result property="totalScore" column="total_score" />            <!--平时总成绩-->
         <result property="flag" column="flag" />
-        <result property="homeworkScore" column="homeworkScore"/>       <!--作业成绩-->
-        <result property="attendanceScore" column="attendanceScore"/>   <!--考勤成绩-->
-        <result property="experimentScore" column="experimentScore"/>   <!--实验成绩-->
+        <result property="homeworkScore" column="homework_score"/>       <!--作业成绩-->
+        <result property="attendanceScore" column="attendance_score"/>   <!--考勤成绩-->
+        <result property="experimentScore" column="experiment_score"/>   <!--实验成绩-->
+        <!-- association ：配置一对一属性 -->
+        <!-- property:order里面的User属性名 -->
+        <!-- javaType:属性类型 -->
+        <!-- id:声明主键，表示其是关联查询对象的唯一标识-->
         <association property="teaching" javaType="Teaching">
             <association property="semester" javaType="Semester">
                 <result property="semesterName" column="semester_name" />
@@ -42,7 +50,7 @@
             parameterType="ScoreSearchBean">
         select s1.id ,s3.name as
         semester_name,student_no,student_name,class_name,
-        course_name,course_time,credit,type,total_score,flag,teacher_name
+        course_name,course_time,credit,type,total_Score,flag,teacher_name
         from daily_score as s1,student as s2,semester as s3,class as c1,
         course as c2,teaching as t,teacher as t1
         where t.id=teaching_id and s1.student_id=s2.id and t.semester_id=s3.id and
@@ -71,10 +79,10 @@
         </if>
         <choose>
             <when test="order==1">
-                order by totalScore desc
+                order by total_score desc
             </when>
             <when test="order==2">
-                order by totalScore
+                order by total_score
             </when>
         </choose>
         <if test="page!=0 and rows!=0">
@@ -87,7 +95,7 @@
     <select id="getScoreListSizeByTeacherId" parameterType="ScoreSearchBean"
             resultType="INTEGER">
         select count(s1.id)
-        from score as s1,student as s2,semester as s3,class as c1,
+        from daily_score as s1,student as s2,semester as s3,class as c1,
         course as c2,teaching as t,teacher as t1
         where t.id=teaching_id and s1.student_id=s2.id and t.semester_id=s3.id and
         t.course_id=c2.id and t.teacher_id=t1.id
@@ -118,11 +126,13 @@
     </select>
 
     <update id="updateDailyScore" parameterType="DailyScore">
-        update daily_score set daily_score.homework_score=#{homeworkScore},attendance_score=#{attendanceScore},experiment_score=#{experimentScore},
-                               total_score=#{homeworkScore}/3+#{attendanceScore}/3+#{experimentScore}/3,flag=1 where id=#{id};
+        update daily_score
+        set daily_score.homework_score=#{homeworkScore},attendance_score=#{attendanceScore},experiment_score=#{experimentScore},
+            total_score=#{homeworkScore}/3+#{attendanceScore}/3+#{experimentScore}/3,flag=1 where id=#{id};
     </update>
 
     <delete id="deleteScoreByTeachingId" parameterType="INTEGER">
-        delete from daily_score where teaching_id=#{teachingId};
+        delete from daily_score
+        where teaching_id=#{teachingId};
     </delete>
 </mapper>

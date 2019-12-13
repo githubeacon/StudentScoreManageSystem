@@ -1,6 +1,6 @@
 package com.beacon.sms.service;
 
-import com.beacon.sms.bean.Score;
+import com.beacon.sms.bean.DailyScore;
 import com.beacon.sms.bean.ScoreSearchBean;
 
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.List;
  */
 public interface DailyScoreService
 {
-    public List<Score> getScoreList(ScoreSearchBean scoreSearchBean);
-    public int getScoreListSize(ScoreSearchBean scoreSearchBean);
-    public void updateScore(Score score);
+    public List<DailyScore> getDailyScoreList(ScoreSearchBean scoreSearchBean);
+    public int getDailyScoreListSize(ScoreSearchBean scoreSearchBean);
+    public void updateDailyScore(DailyScore dailyScore);
 }

@@ -2,6 +2,7 @@ package com.beacon.sms.action;
 
 import com.alibaba.fastjson.JSON;
 import com.beacon.sms.bean.*;
+import com.beacon.sms.service.DailyScoreService;
 import com.beacon.sms.service.ScoreService;
 import com.beacon.sms.service.impl.ScoreServiceImpl;
 import com.beacon.sms.utils.JsonUtil;
@@ -18,18 +19,32 @@ import java.util.List;
  */
 public class DailyScoreAction
 {
-    private ScoreService scoreService;
+    private DailyScoreService dailyScoreService;
+    private DailyScore dailyScore;
+
     private JsonUtil jsonUtil;
     private int page;
     private int rows;
-    private Score score;
 
-    public Score getScore() {
-        return score;
+
+    public DailyScoreService getDailyScoreService()
+    {
+        return dailyScoreService;
     }
 
-    public void setScore(Score score) {
-        this.score = score;
+    public void setDailyScoreService(DailyScoreService dailyScoreService)
+    {
+        this.dailyScoreService = dailyScoreService;
+    }
+
+    public DailyScore getDailyScore()
+    {
+        return dailyScore;
+    }
+
+    public void setDailyScore(DailyScore dailyScore)
+    {
+        this.dailyScore = dailyScore;
     }
 
     private ScoreSearchBean scoreSearchBean;
@@ -66,15 +81,8 @@ public class DailyScoreAction
         this.jsonUtil = jsonUtil;
     }
 
-    public ScoreService getScoreService() {
-        return scoreService;
-    }
 
-    public void setScoreService(ScoreService scoreService) {
-        this.scoreService = scoreService;
-    }
-
-    public void list(){
+    /*public void list(){
         scoreSearchBean.setPage(page);
         scoreSearchBean.setRows(rows);
         System.out.println(scoreSearchBean);
@@ -86,7 +94,7 @@ public class DailyScoreAction
         String result= JSON.toJSONString(datagridBean);
         System.out.println(result);
         jsonUtil.writeJson(result);
-    }
+    }*/
 
     public void init() {
         HttpSession session= ServletActionContext.getRequest().getSession();
@@ -113,10 +121,10 @@ public class DailyScoreAction
             }
         }
     }
-    public void update(){
+    /*public void update(){
         System.out.println(score);
         scoreService.updateScore(score);
-    }
+    }*/
 
     public void setDailyScoreService(ScoreServiceImpl dailyScoreService)
     {
