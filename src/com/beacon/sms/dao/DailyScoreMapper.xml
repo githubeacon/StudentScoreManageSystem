@@ -79,10 +79,10 @@
         </if>
         <choose>
             <when test="order==1">
-                order by totalScore desc
+                order by total_score desc
             </when>
             <when test="order==2">
-                order by totalScore
+                order by total_score
             </when>
         </choose>
         <if test="page!=0 and rows!=0">

@@ -8,22 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/LENOVO.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2ba101be-8d6e-404a-9885-dc02bed604ba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2ba101be-8d6e-404a-9885-dc02bed604ba.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/teacher/teacher_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teacher/teacher_main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war/sms1_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war/sms1_war.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/action/DailyScoreAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/action/DailyScoreAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/dao/DailyScoreDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/dao/DailyScoreDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/dao/DailyScoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/dao/DailyScoreMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/teacher/teacher_main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/teacher/teacher_main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/action/DailyScoreAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/action/DailyScoreAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/dao/DailyScoreDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/dao/DailyScoreDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/dao/DailyScoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/dao/DailyScoreMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/action/DailyScoreAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/action/DailyScoreAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/DailyScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/DailyScore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/DailyScoreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/DailyScoreDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/DailyScoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/DailyScoreMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -284,7 +269,7 @@
       <workItem from="1576052603077" duration="7118000" />
       <workItem from="1576130887386" duration="8121000" />
       <workItem from="1576168601023" duration="624000" />
-      <workItem from="1576208397060" duration="4108000" />
+      <workItem from="1576208397060" duration="5223000" />
     </task>
     <task id="LOCAL-00001" summary="配置修改完毕，在本机上正常运行">
       <created>1575895585927</created>
@@ -307,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576055071394</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="完成了平时成绩实体、DAO的编写">
+      <created>1576220580397</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576220580397</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +338,8 @@
     <MESSAGE value="配置修改完毕，在本机上正常运行" />
     <MESSAGE value="1、更新了README;&#10;2、修复了验证码无法显示的bug；&#10;3、修复了tomcat服务器无法正常启动的bug&#10;  1)class path resource [applicationContext.xml] cannot be opened because it doesn't exist;&#10;  2)Artifacts:Error during artifact deployment." />
     <MESSAGE value="增加了实体类的注释，写了dailyScore相关的一些类，未放入容器中，此版本可正常运行" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了实体类的注释，写了dailyScore相关的一些类，未放入容器中，此版本可正常运行" />
+    <MESSAGE value="完成了平时成绩实体、DAO的编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了平时成绩实体、DAO的编写" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="201" key="#Notifications" timestamp="1576208458057">
@@ -381,10 +374,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="722" y="283" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575901604056" />
-    <state x="406" y="114" key="CommitChangelistDialog2" timestamp="1576055065180">
+    <state x="406" y="114" key="CommitChangelistDialog2" timestamp="1576220578297">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="406" y="114" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1576055065180" />
+    <state x="406" y="114" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1576220578297" />
     <state x="232" y="122" width="1200" height="800" key="DiffContextDialog" timestamp="1575895831161">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -473,11 +466,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1340" height="266" key="GridCell.Tab.5.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575997289571" />
-    <state x="587" y="200" key="RollbackChangesDialog" timestamp="1576065359121">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="734" y="250" key="RollbackChangesDialog" timestamp="1576220922126">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="587" y="200" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1576065359121" />
-    <state x="734" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575900654223" />
+    <state x="734" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576220922126" />
     <state x="472" y="103" key="SettingsEditor" timestamp="1575902969077">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
