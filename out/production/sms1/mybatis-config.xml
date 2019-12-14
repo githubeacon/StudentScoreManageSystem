@@ -16,5 +16,6 @@
 	    <mapper resource="com/beacon/sms/dao/SemesterMapper.xml"/>
 	    <mapper resource="com/beacon/sms/dao/TeachingMapper.xml"/>
 	    <mapper resource="com/beacon/sms/dao/ScoreMapper.xml"/>
+		<mapper resource="com/beacon/sms/dao/DailyScoreMapper.xml"/>
 	</mappers>
 </configuration>

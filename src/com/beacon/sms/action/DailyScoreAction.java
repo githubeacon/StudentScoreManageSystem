@@ -21,11 +21,11 @@ public class DailyScoreAction
 {
     private DailyScoreService dailyScoreService;
     private DailyScore dailyScore;
+    private ScoreSearchBean scoreSearchBean;
 
     private JsonUtil jsonUtil;
     private int page;
     private int rows;
-
 
     public DailyScoreService getDailyScoreService()
     {
@@ -46,8 +46,6 @@ public class DailyScoreAction
     {
         this.dailyScore = dailyScore;
     }
-
-    private ScoreSearchBean scoreSearchBean;
 
     public ScoreSearchBean getScoreSearchBean() {
         return scoreSearchBean;
@@ -81,20 +79,24 @@ public class DailyScoreAction
         this.jsonUtil = jsonUtil;
     }
 
-
-    /*public void list(){
+    public void list()
+    {
         scoreSearchBean.setPage(page);
         scoreSearchBean.setRows(rows);
         System.out.println(scoreSearchBean);
-        List<Score> list=scoreService.getScoreList(scoreSearchBean);
-        int total=scoreService.getScoreListSize(scoreSearchBean);
-        DatagridBean<Score> datagridBean=new DatagridBean<Score>();
+
+        List<DailyScore> list = dailyScoreService.getDailyScoreList(scoreSearchBean);
+
+        int total = dailyScoreService.getDailyScoreListSize(scoreSearchBean);
+        DatagridBean<DailyScore> datagridBean = new DatagridBean<DailyScore>();
         datagridBean.setRows(list);
         datagridBean.setTotal(total);
-        String result= JSON.toJSONString(datagridBean);
+
+        String result = JSON.toJSONString(datagridBean);
         System.out.println(result);
+
         jsonUtil.writeJson(result);
-    }*/
+    }
 
     public void init() {
         HttpSession session= ServletActionContext.getRequest().getSession();
@@ -121,10 +123,12 @@ public class DailyScoreAction
             }
         }
     }
-    /*public void update(){
-        System.out.println(score);
-        scoreService.updateScore(score);
-    }*/
+
+    public void update()
+    {
+        System.out.println(dailyScore);
+        dailyScoreService.updateDailyScore(dailyScore);
+    }
 
     public void setDailyScoreService(ScoreServiceImpl dailyScoreService)
     {
