@@ -5,6 +5,7 @@ import java.util.List;
 import com.beacon.sms.bean.Score;
 import com.beacon.sms.bean.ScoreSearchBean;
 import com.beacon.sms.dao.ScoreDao;
+import org.springframework.stereotype.Service;
 
 /**
  * 

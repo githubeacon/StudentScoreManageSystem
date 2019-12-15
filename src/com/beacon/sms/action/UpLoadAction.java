@@ -8,6 +8,7 @@ import com.beacon.sms.service.StudentService;
 import com.beacon.sms.service.TeacherService;
 import com.beacon.sms.utils.ExcelUtil;
 import org.apache.struts2.ServletActionContext;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.http.HttpSession;
 import java.io.*;
@@ -29,6 +30,8 @@ public class UpLoadAction {
 	private ScoreSearchBean scoreSearchBean;
 	private ScoreService scoreService;
 	private InputStream exportFile;
+
+	@Autowired
 	private DailyScoreService dailyScoreService;
 
 	public DailyScoreService getDailyScoreService()

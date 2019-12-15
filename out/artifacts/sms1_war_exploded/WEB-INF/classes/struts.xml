@@ -54,7 +54,7 @@
 		</action>
 		<!--平时成绩Action-->
 		<action name="dailyScore_*" class="dailyScoreAction" method="{1}">
-			<allowed-methods>list, update</allowed-methods>
+			<allowed-methods>list,update</allowed-methods>
 		</action>
 
 		<action name="upload_*" class="uploadAction" method="{1}">

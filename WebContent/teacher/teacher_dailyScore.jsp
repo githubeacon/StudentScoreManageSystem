@@ -130,7 +130,7 @@
         }
     }
     function oprate(value, row, index) {
-        return "<a href='javascript:showScoreWindow(" + index + ")'>查看</a>";
+        return "<a href='javascript:showDailyScoreWindow(" + index + ")'>查看</a>";
     }
 </script>
 <body>

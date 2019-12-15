@@ -5,6 +5,8 @@ import com.beacon.sms.bean.Score;
 import com.beacon.sms.bean.ScoreSearchBean;
 import com.beacon.sms.dao.DailyScoreDao;
 import com.beacon.sms.service.DailyScoreService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -14,8 +16,10 @@ import java.util.List;
  * @author: axxdllw
  * @create: 2019-12-11 16:32
  */
+@Service
 public class DailyScoreServiceImpl implements DailyScoreService
 {
+    @Autowired
     private DailyScoreDao dailyScoreDao;
 
     public List<DailyScore> getDailyScoreList(ScoreSearchBean scoreSearchBean) {

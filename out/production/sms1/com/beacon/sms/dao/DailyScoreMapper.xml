@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.beacon.sms.dao.DailyScoreDao">
-    <!-- resultMap最终还是要将结果映射到pojo上，type就是指定映射到哪一个pojo -->
-    <!-- id：设置ResultMap的id -->
+
     <resultMap id="dailyScore" type="DailyScore">
-        <!-- property：主键在pojo中的属性名 -->
-        <!-- column：主键在数据库中的列名 -->
-        <result property="id" column="id" />                             <!-- 定义主键 ,非常重要。如果是多个字段,则定义多个id -->
-        <result property="totalScore" column="total_score" />            <!--平时总成绩-->
+
+        <result property="id" column="id" />
+        <result property="totalScore" column="total_score" />
         <result property="flag" column="flag" />
-        <result property="homeworkScore" column="homework_score"/>       <!--作业成绩-->
-        <result property="attendanceScore" column="attendance_score"/>   <!--考勤成绩-->
-        <result property="experimentScore" column="experiment_score"/>   <!--实验成绩-->
-        <!-- association ：配置一对一属性 -->
-        <!-- property:order里面的User属性名 -->
-        <!-- javaType:属性类型 -->
-        <!-- id:声明主键，表示其是关联查询对象的唯一标识-->
+        <result property="homeworkScore" column="homework_score"/>
+        <result property="attendanceScore" column="attendance_score"/>
+        <result property="experimentScore" column="experiment_score"/>
+
         <association property="teaching" javaType="Teaching">
             <association property="semester" javaType="Semester">
                 <result property="semesterName" column="semester_name" />
@@ -92,7 +87,7 @@
     </select>
 
 
-    <select id="getScoreListSizeByTeacherId" parameterType="ScoreSearchBean"
+    <select id="getDailyScoreListSizeByTeacherId" parameterType="ScoreSearchBean"
             resultType="INTEGER">
         select count(s1.id)
         from daily_score as s1,student as s2,semester as s3,class as c1,
@@ -131,7 +126,7 @@
             total_score=#{homeworkScore}/3+#{attendanceScore}/3+#{experimentScore}/3,flag=1 where id=#{id};
     </update>
 
-    <delete id="deleteScoreByTeachingId" parameterType="INTEGER">
+    <delete id="deleteDailyScoreByTeachingId" parameterType="INTEGER">
         delete from daily_score
         where teaching_id=#{teachingId};
     </delete>
