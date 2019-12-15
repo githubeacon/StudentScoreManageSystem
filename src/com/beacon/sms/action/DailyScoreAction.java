@@ -3,10 +3,10 @@ package com.beacon.sms.action;
 import com.alibaba.fastjson.JSON;
 import com.beacon.sms.bean.*;
 import com.beacon.sms.service.DailyScoreService;
-import com.beacon.sms.service.ScoreService;
 import com.beacon.sms.service.impl.ScoreServiceImpl;
 import com.beacon.sms.utils.JsonUtil;
 import org.apache.struts2.ServletActionContext;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
@@ -19,7 +19,9 @@ import java.util.List;
  */
 public class DailyScoreAction
 {
+    @Autowired
     private DailyScoreService dailyScoreService;
+
     private DailyScore dailyScore;
     private ScoreSearchBean scoreSearchBean;
 
@@ -98,6 +100,10 @@ public class DailyScoreAction
         jsonUtil.writeJson(result);
     }
 
+    /**
+     * 初始化
+     * 这里似乎不再需要初始化
+     */
     public void init() {
         HttpSession session= ServletActionContext.getRequest().getSession();
         scoreSearchBean=new ScoreSearchBean();

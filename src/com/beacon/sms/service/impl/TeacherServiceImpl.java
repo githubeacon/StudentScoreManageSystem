@@ -83,8 +83,6 @@ public class TeacherServiceImpl implements TeacherService
 			loginDao.deleteAdmin(teacherNo);
 			
 			teacherDao.deleteTeacher(id);
-			
-			
 		}
 	}
 	public List<Teacher> getTeacherOfDepart(int departmentId){

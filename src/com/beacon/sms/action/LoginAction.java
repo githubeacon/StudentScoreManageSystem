@@ -19,6 +19,7 @@ import com.beacon.sms.service.TeacherService;
 
 import jdk.nashorn.internal.ir.RuntimeNode.Request;
 import jdk.nashorn.internal.runtime.UserAccessorProperty;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * 
@@ -37,8 +38,19 @@ public class LoginAction {
 	private ScoreAction scoreAction;
 	
 	private UpLoadAction upLoadAction;
-	
-	
+	@Autowired
+	private DailyScoreAction dailyScoreAction;
+
+	public DailyScoreAction getDailyScoreAction()
+	{
+		return dailyScoreAction;
+	}
+
+	public void setDailyScoreAction(DailyScoreAction dailyScoreAction)
+	{
+		this.dailyScoreAction = dailyScoreAction;
+	}
+
 	public ScoreAction getScoreAction() {
 		return scoreAction;
 	}
@@ -126,7 +138,9 @@ public class LoginAction {
 			result="teacher";
 		}
 		scoreAction.init();
+		dailyScoreAction.init();
 		upLoadAction.init();
+
 		return result;
 	}
 

@@ -2,6 +2,7 @@ package com.beacon.sms.dao;
 
 import com.beacon.sms.bean.DailyScore;
 import com.beacon.sms.bean.ScoreSearchBean;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
  * @author: axxdllw
  * @create: 2019-12-11 16:26
  */
+@Repository
 public interface DailyScoreDao
 {
     public void addDailyScore(DailyScore dailyScore);

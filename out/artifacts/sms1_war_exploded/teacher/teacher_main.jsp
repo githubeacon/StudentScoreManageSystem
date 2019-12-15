@@ -91,7 +91,7 @@ function modify(){
 				<a class="easyui-linkbutton" iconCls="icon-teaching" plain="true">授课信息</a>
 			</div>
 			<div class="left-list-item" url="/sms1/teacher/teacher_dailyScore.jsp" title="平时成绩">
-				<a class="easyui-linkbutton" iconCls="icon-dailyScore" plain="true">平时成绩</a>
+				<a class="easyui-linkbutton" iconCls="icon-Score" plain="true">平时成绩</a>
 			</div>
 			<div class="left-list-item" url="/sms1/teacher/teacher_score.jsp" title="成绩管理">
 				<a class="easyui-linkbutton" iconCls="icon-score" plain="true">成绩管理</a>

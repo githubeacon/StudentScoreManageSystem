@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: LENOVO
+  User: axxdllw
   Date: 2019/12/11
   Time: 16:56
   To change this template use File | Settings | File Templates.
@@ -21,7 +21,7 @@
 <script type="text/javascript">
     $(function() {
         initSemester();
-        $("#scoreWindow").window({
+        $("#dailyScoreWindow").window({
             title : "批改成绩",
             iconCls : "icon-edit",
             collapsible : false,
@@ -38,7 +38,7 @@
         var className = $("#searchClassName").val();
         var flag = $("#searchFlag").val();
         var order = $("#searchOrder").val();
-        $("#scoreDatagrid").datagrid("load", {
+        $("#dailyScoreDatagrid").datagrid("load", {
             "scoreSearchBean.semesterId" : semesterId,
             "scoreSearchBean.courseName" : courseName,
             "scoreSearchBean.className" : className,
@@ -46,31 +46,48 @@
             "scoreSearchBean.order" : order
         });
     }
-    function scoreFormSubmit() {
-        var url = $("#scoreForm").attr("url");
-        $("#scoreForm").form("submit", {
+    function dailyScoreFormSubmit() {
+        var url = $("#dailyScoreForm").attr("url");
+        $("#dailyScoreForm").form("submit", {
             url : url,
             success : function(data) {
                 if (data == "") {
                     alert("修改成功");
-                    $("#scoreDatagrid").datagrid("reload");
+                    $("#dailyScoreDatagrid").datagrid("reload");
                 } else {
                     alert("修改失败");
                 }
-                $("#scoreWindow").window("close");
+                $("#dailyScoreWindow").window("close");
             }
         });
     }
-    function showScoreWindow(index) {
+    // function scoreFormSubmit() {
+    //     var url = $("#scoreForm").attr("url");
+    //     $("#scoreForm").form("submit", {
+    //         url : url,
+    //         success : function(data) {
+    //             if (data == "") {
+    //                 alert("修改成功");
+    //                 $("#scoreDatagrid").datagrid("reload");
+    //             } else {
+    //                 alert("修改失败");
+    //             }
+    //             $("#scoreWindow").window("close");
+    //         }
+    //     });
+    // }
 
-        $("#scoreDatagrid").datagrid("selectRow", index);
-        var row = $("#scoreDatagrid").datagrid("getSelected");
-        $("#scoreWindow").form("load", {
-            "score.score" : row.score
+    function showDailyScoreWindow(index) {
+        $("#dailyScoreDatagrid").datagrid("selectRow", index);
+        var row = $("#dailyScoreDatagrid").datagrid("getSelected");
+        $("#dailyScoreWindow").form("load", {
+            "dailyScore.homeworkScore" : row.homeworkScore,
+            "dailyScore.attendanceScore" : row.attendanceScore,
+            "daliyScore.experimentScore" : row.experimentScore
         });
-        $("#scoreForm").attr("url",
-            "/sms1/score_update.action?score.id=" + row.id);
-        $("#scoreWindow").window("open");
+        $("#dailyScoreForm").attr("url",
+            "/sms1/dailyScore_update.action?dailyScore.id=" + row.id);
+        $("#dailyScoreWindow").window("open");
     }
     function initSemester() {
         $.post("/sms1/semester_list.action", null, function(data) {
@@ -107,9 +124,9 @@
     }
     function getFlag(flag) {
         if (flag == 1) {
-            return "已给成绩";
+            return "已给平时成绩";
         } else {
-            return "<span style='color:red'>未给成绩</span>";
+            return "<span style='color:red'>未给平时成绩</span>";
         }
     }
     function oprate(value, row, index) {
@@ -119,8 +136,8 @@
 <body>
 <div id='loading' style="position:absolute;z-index:1000;top:0px;left:0px;width:100%;height:100%;background:#DDDDDB;text-align:center;padding-top: 20%;">
 </div>
-<table class="easyui-datagrid" id="scoreDatagrid"
-       url="/sms1/score_list.action" toolbar="#tb" pagination="true"
+<table class="easyui-datagrid" id="dailyScoreDatagrid"
+       url="/sms1/dailyScore_list.action" toolbar="#tb" pagination="true"
        fit="true" singleSelect="true">
     <thead>
     <tr>
@@ -132,40 +149,56 @@
         <th field="courseType" formatter="getCourseType">课程类型</th>
         <th field="courseTime" formatter="getCourseTime">总课时</th>
         <th field="credit" formatter="getCredit">学分</th>
-        <th field="score">平时成绩</th>
+        <th field="homeworkScore">作业成绩</th>
+        <th field="attendanceScore">考勤成绩</th>
+        <th field="experimentScore">实验成绩</th>
+        <th field="totalScore">平时总成绩</th>
         <th field="flag" formatter="getFlag">备注</th>
         <th field="oprate" formatter="oprate">操作</th>
     </tr>
     </thead>
 </table>
+<%--搜索导出模块--%>
 <div id="tb">
     <div>
         <form action="/sms1/upload_exportScore.action" method="post" id="scoreSearchForm">
-            <span>学期学年:</span> <select id="searchSemesterId">
+            <span>学期学年:</span>
+            <select id="searchSemesterId">
             <option value=0>全部</option>
-        </select> <span>班级:</span> <input type="text" id="searchClassName" /> <span>课程:</span>
-            <input type="text" id="searchCourseName" /> <span>状态</span> <select
-                id="searchFlag">
-            <option value=0>全部</option>
-            <option value=1>已给成绩</option>
-            <option value=2>未给成绩</option>
-        </select> <span>排序</span> <select id="searchOrder"
-                                          name="scoreSearchBean.order">
-            <option value=0>默认</option>
-            <option value=1>由高分到低分</option>
-            <option value=2>有低分到高分</option>
-        </select> <a href="javascript:searchScore()" class="easyui-linkbutton"
-                     iconCls="icon-search">搜索</a>
+            </select>
+            <span>班级:</span>
+            <input type="text" id="searchClassName" />
+            <span>课程:</span>
+            <input type="text" id="searchCourseName" />
+            <span>状态</span>
+            <select id="searchFlag">
+                <option value=0>全部</option>
+                <option value=1>已给成绩</option>
+                <option value=2>未给成绩</option>
+            </select>
+            <span>排序</span>
+            <select id="searchOrder" name="scoreSearchBean.order">
+                <option value=0>默认</option>
+                <option value=1>由高分到低分</option>
+                <option value=2>有低分到高分</option>
+            </select>
+            <a href="javascript:searchScore()" class="easyui-linkbutton" iconCls="icon-search">搜索</a>
             <a href="javascript:exportScore()" class="easyui-linkbutton" iconCls="icon-export">导出成绩</a>
         </form>
     </div>
 </div>
-<div class="easyui-window" id="scoreWindow"
+
+<div class="easyui-window" id="dailyScoreWindow"
      style="width: 300px; height: 200px; padding: 20px;display:none">
-    <form method="post" id="scoreForm">
-        <span>成绩:</span> <input type="text" name="score.score" /> <br />
+    <form method="post" id="dailyScoreForm">
+        <span>作业成绩:</span> <input type="text" name="dailyScore.homeworkScore" /> <br />
         <br />
-        <a href="javascript:scoreFormSubmit()"
+        <span>考勤成绩:</span> <input type="text" name="dailyScore.attendanceScore" /> <br />
+        <br />
+        <span>实验成绩:</span> <input type="text" name="dailyScore.experimentScore" /> <br />
+        <br />
+        <%--<span>比例:</span> <input type="text" name="dailyScore.homeworkScore" /> <br />--%>
+        <a href="javascript:dailyScoreFormSubmit()"
            class="easyui-linkbutton">提交</a>
         <a href="javascript:exportScore()"
            class="easyui-linkbutton" iconCls="icon-export">导出成绩</a>
@@ -173,12 +206,17 @@
 </div>
 
 <%--导入成绩--%>
-<div class="easyui-window" id="scoreWindow"
+<div class="easyui-window" id="dailyScoreWindow"
      style="width: 300px; height: 200px; padding: 20px;display:none">
-    <form method="post" id="inputScoreForm">
-        <span>成绩:</span> <input type="text" name="score.score" /> <br />
+    <form method="post" id="inputDailyScoreForm">
+        <span>作业成绩:</span> <input type="text" name="dailyScore.homeworkScore" /> <br />
         <br />
-        <a href="javascript:scoreFormSubmit()"
+        <span>考勤成绩:</span> <input type="text" name="dailyScore.attendanceScore" /> <br />
+        <br />
+        <span>实验成绩:</span> <input type="text" name="dailyScore.experimentScore" /> <br />
+        <br />
+        <%--<span>比例:</span> <input type="text" name="dailyScore.homeworkScore" /> <br />--%>
+        <a href="javascript:dailyScoreFormSubmit()"
            class="easyui-linkbutton">提交</a>
         <a href="javascript:exportScore()"
            class="easyui-linkbutton" iconCls="icon-export">导出成绩</a>

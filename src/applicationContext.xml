@@ -17,24 +17,17 @@
 		<property name="username" value="${name}"/>
 		<property name="password" value="${password}"/>
 	</bean>
+
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="configLocation" value="classpath:mybatis-config.xml" />
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 
-	<bean id="loginMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<property name="mapperInterface" value="com.beacon.sms.dao.LoginDao" />
-		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
-	</bean>
-
-	<bean id="loginService" class="com.beacon.sms.service.impl.LoginServiceImpl">
-		<property name="loginDao" ref="loginMapper" />
-		<property name="validateCodeUtil" ref="validateCodeUtil" />
-	</bean>
-
-	<bean id="majorMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<property name="mapperInterface" value="com.beacon.sms.dao.MajorDao" />
-		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	<bean id="uploadAction" class="com.beacon.sms.action.UpLoadAction">
+		<property name="excelUtil" ref="excelUtil" />
+		<property name="studentService" ref="studentService" />
+		<property name="teacherService" ref="teacherService" />
+		<property name="scoreService" ref="scoreService" />
 	</bean>
 
 	<bean id="dateUtil" class="com.beacon.sms.utils.DateUtil" />
@@ -42,16 +35,21 @@
 	<bean id="excelUtil" class="com.beacon.sms.utils.ExcelUtil" />
 	<bean id="jsonUtil" class="com.beacon.sms.utils.JsonUtil" />
 	<bean id="validateCodeUtil" class="com.beacon.sms.utils.ValidateCodeUtil" />
+
+	<bean id="majorMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.beacon.sms.dao.MajorDao" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
 	<bean id="majorService" class="com.beacon.sms.service.impl.MajorServiceImpl">
 		<property name="majorDao" ref="majorMapper" />
 		<property name="dateUtil" ref="dateUtil" />
 		<property name="stringUtil" ref="stringUtil" />
 	</bean>
-
 	<bean id="majorAction" class="com.beacon.sms.action.MajorAction">
 		<property name="majorService" ref="majorService" />
 		<property name="jsonUtil" ref="jsonUtil" />
 	</bean>
+
 	<bean id="studentMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.beacon.sms.dao.StudentDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
@@ -66,6 +64,7 @@
 		<property name="studentService" ref="studentService" />
 		<property name="jsonUtil" ref="jsonUtil" />
 	</bean>
+
 	<bean id="teacherMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.beacon.sms.dao.TeacherDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
@@ -80,6 +79,7 @@
 		<property name="teacherService" ref="teacherService" />
 		<property name="jsonUtil" ref="jsonUtil" />
 	</bean>
+
 	<bean id="courseMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.beacon.sms.dao.CourseDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
@@ -91,6 +91,7 @@
 		<property name="courseService" ref="courseService" />
 		<property name="jsonUtil" ref="jsonUtil" />
 	</bean>
+
 	<bean id="semesterMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.beacon.sms.dao.SemesterDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
@@ -102,12 +103,9 @@
 		<property name="semesterService" ref="semesterService" />
 		<property name="jsonUtil" ref="jsonUtil" />
 	</bean>
+
 	<bean id="teachingMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.beacon.sms.dao.TeachingDao" />
-		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
-	</bean>
-	<bean id="scoreMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<property name="mapperInterface" value="com.beacon.sms.dao.ScoreDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
 	<bean id="teachingService" class="com.beacon.sms.service.impl.TeachingServiceImpl">
@@ -120,27 +118,32 @@
 		<property name="jsonUtil" ref="jsonUtil" />
 	</bean>
 
-
-	<bean id="scoreService" class="com.beacon.sms.service.impl.ScoreServiceImpl">
-		<property name="scoreDao" ref="scoreMapper" />
-	</bean>
-	<bean id="scoreAction" class="com.beacon.sms.action.ScoreAction">
-		<property name="scoreService" ref="scoreService" />
-		<property name="jsonUtil" ref="jsonUtil" />
-	</bean>
-
-	<bean id="uploadAction" class="com.beacon.sms.action.UpLoadAction">
-		<property name="excelUtil" ref="excelUtil" />
-		<property name="studentService" ref="studentService" />
-		<property name="teacherService" ref="teacherService" />
-		<property name="scoreService" ref="scoreService" />
-	</bean>
 	<bean id="loginAction" class="com.beacon.sms.action.LoginAction">
 		<property name="loginService" ref="loginService" />
 		<property name="teacherService" ref="teacherService" />
 		<property name="studentService" ref="studentService" />
 		<property name="scoreAction" ref="scoreAction" />
 		<property name="upLoadAction" ref="uploadAction" />
+	</bean>
+	<bean id="loginMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.beacon.sms.dao.LoginDao" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+	<bean id="loginService" class="com.beacon.sms.service.impl.LoginServiceImpl">
+		<property name="loginDao" ref="loginMapper" />
+		<property name="validateCodeUtil" ref="validateCodeUtil" />
+	</bean>
+
+	<bean id="scoreMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.beacon.sms.dao.ScoreDao" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+	<bean id="scoreService" class="com.beacon.sms.service.impl.ScoreServiceImpl">
+		<property name="scoreDao" ref="scoreMapper" />
+	</bean>
+	<bean id="scoreAction" class="com.beacon.sms.action.ScoreAction">
+		<property name="scoreService" ref="scoreService" />
+		<property name="jsonUtil" ref="jsonUtil" />
 	</bean>
 
 	<!--添加平时成绩-->
@@ -168,8 +171,8 @@
 	        <tx:method name="update*" propagation="REQUIRED"/>
 	        <tx:method name="delete*" propagation="REQUIRED"/>
 	        <tx:method name="get*" propagation="SUPPORTS" read-only="true"/>
-	         <tx:method name="select*" propagation="SUPPORTS" read-only="true"/>
-	          <tx:method name="is*" propagation="SUPPORTS" read-only="true"/>
+			<tx:method name="select*" propagation="SUPPORTS" read-only="true"/>
+			<tx:method name="is*" propagation="SUPPORTS" read-only="true"/>
 	    </tx:attributes>
 	</tx:advice>
 	<aop:config>

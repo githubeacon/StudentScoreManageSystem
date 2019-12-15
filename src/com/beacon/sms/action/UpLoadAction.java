@@ -2,6 +2,7 @@ package com.beacon.sms.action;
 
 import com.beacon.sms.bean.Class;
 import com.beacon.sms.bean.*;
+import com.beacon.sms.service.DailyScoreService;
 import com.beacon.sms.service.ScoreService;
 import com.beacon.sms.service.StudentService;
 import com.beacon.sms.service.TeacherService;
@@ -28,6 +29,17 @@ public class UpLoadAction {
 	private ScoreSearchBean scoreSearchBean;
 	private ScoreService scoreService;
 	private InputStream exportFile;
+	private DailyScoreService dailyScoreService;
+
+	public DailyScoreService getDailyScoreService()
+	{
+		return dailyScoreService;
+	}
+
+	public void setDailyScoreService(DailyScoreService dailyScoreService)
+	{
+		this.dailyScoreService = dailyScoreService;
+	}
 
 	public InputStream getExportFile() {
 		return exportFile;
@@ -158,6 +170,12 @@ public class UpLoadAction {
 		}
 
 	}
+
+	//TODO Excel导出平时成绩
+//	public String exportDailyScore()
+//	{
+//
+//	}
 
 	public String exportScore() {
 
