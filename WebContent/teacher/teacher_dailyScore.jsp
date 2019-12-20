@@ -122,6 +122,9 @@
     function getCredit(value, row, index) {
         return row.teaching.course.credit;
     }
+    function getHomeworKScore(value, row, index) {
+        return row.dailyScore.homeworkScore;
+    }
     function getFlag(flag) {
         if (flag == 1) {
             return "已给平时成绩";
