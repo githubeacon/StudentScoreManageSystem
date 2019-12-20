@@ -234,6 +234,7 @@
 				}
 		});
 		}
+
 	function addStudentSubmit() {
 		var url=$("#studentForm").attr("url");
 		$("#studentForm").form("submit", {
