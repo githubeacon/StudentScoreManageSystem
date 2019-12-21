@@ -7,21 +7,23 @@
         <result property="credit" column="credit"/>
         <result property="courseTime" column="course_time"/>
         <result property="type" column="type"/>
+		<result property="weight" column="weight" />
     </resultMap>
 	<insert id="addCourse" parameterType="Course">
-	    insert into course(course_name,credit,course_time,type) 
-	    values(#{courseName},#{credit},#{courseTime},#{type});
+	    insert into course(course_name,credit,course_time,type,weight)
+	    values(#{courseName},#{credit},#{courseTime},#{type},#{weight});
 	</insert>
 	<update id="updateCourse" parameterType="Course">
 	    update course set course_name=#{courseName},credit=#{credit},
-	    				  course_time=#{courseTime},type=#{type}
+	    				  course_time=#{courseTime},type=#{type},
+	                      weight=#{weight}
 	    			  where id=#{id};
 	</update>
 	<delete id="deleteCourse" parameterType="INTEGER">
 	    delete from course where id = #{id};
 	</delete>
 	<select id="getCourseList" resultMap="course" parameterType="CourseSearchBean">
-	    select id,course_name, credit,course_time,type from course 
+	    select id,course_name, credit,course_time,type,weight from course
 	    <where>
 	        <if test="name!=null and name!=''">
 	            course_name like concat(concat('%',#{name}),'%')

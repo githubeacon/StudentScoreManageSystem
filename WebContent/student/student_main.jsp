@@ -102,7 +102,7 @@ function modify(){
 			</div>
 		</div>
 	</div>
-	<div region="south" class="footer">Copyright &copy;2017</div>
+	<div region="south" class="footer">Copyright &copy;2019/12</div>
 </body>
 	<div class="easyui-window" style="width:300px;height:250px;display:none" id="passwordWindow">
 		<form id="studentPasswordForm" method="post" style="margin-left:10px;margin-top:20px">

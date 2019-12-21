@@ -23,6 +23,7 @@
 					<th field="credit">学分</th>
 					<th field="courseTime">课时</th>
 					<th field="type">类型</th>
+					<th field="weight">权重</th>
 				</tr>
 			</thead>
 		</table>
@@ -60,6 +61,12 @@
 								<option value="必修">必修</option>						
 								<option value="选修">选修</option>						
 							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>权重</td>
+						<td>
+							<input type="text" name="course.weight" value=""/>
 						</td>
 					</tr>
 					<tr>
@@ -103,6 +110,7 @@
 			$("#courseForm").form("clear");
 			$("#type").val("必修");
 			$("#courseForm").attr("url","/sms1/course_add.action");
+			$("#weight").val("0.5");
 		}
 		function editCourse(){
 			
@@ -129,7 +137,8 @@
 					"course.courseName":row.courseName,
 					"course.credit":row.credit,
 					"course.courseTime":row.courseTime,
-					"course.type":row.type
+					"course.type":row.type,
+					"course.weight":row.weight
 				});
 		}
 		function searchCourse(){
@@ -162,8 +171,6 @@
 						alert("删除失败!");
 						}
 				});
-			
-
 		}
 	</script>
 </html>

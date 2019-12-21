@@ -1,4 +1,7 @@
 package com.beacon.sms.bean;
+
+import java.math.BigDecimal;
+
 /**
  * 
  * 作者:beacon
@@ -17,10 +20,24 @@ public class Course
 
 	private String type;			//类型；选修或必修
 
+	private BigDecimal weight;		//权重
+
 	@Override
-	public String toString() {
-		return "Course [id=" + id + ", courseName=" + courseName + ", credit=" + credit + ", courseTime=" + courseTime
-				+ ", type=" + type + "]";
+	public String toString()
+	{
+		return "Course{" + "id=" + id + ", courseName='" + courseName + '\''
+				+ ", credit=" + credit + ", courseTime=" + courseTime + ", type='"
+				+ type + '\'' + ", weight=" + weight + '}';
+	}
+
+	public BigDecimal getWeight()
+	{
+		return weight;
+	}
+
+	public void setWeight(BigDecimal weight)
+	{
+		this.weight = weight;
 	}
 
 	public int getId() {
