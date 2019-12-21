@@ -95,6 +95,9 @@
 	function getCourseType(value, row, index) {
 		return row.teaching.course.type;
 	}
+	function getCourseWeight(value, row, index) {
+		return row.teaching.course.weight;
+	}
 	function getCredit(value, row, index) {
 		return row.teaching.course.credit;
 	}
@@ -126,6 +129,7 @@
 				<th field="className" formatter="getClassName">所在班级</th>
 				<th field="courseName" formatter="getCourseName">课程名称</th>
 				<th field="courseType" formatter="getCourseType">课程类型</th>
+				<th field="courseWeight" formatter="getCourseWeight">权重</th>
 				<th field="courseTime" formatter="getCourseTime">总课时</th>
 				<th field="credit" formatter="getCredit">学分</th>
 				<th field="dailyScore" formatter="getDailyScore">平时成绩</th>

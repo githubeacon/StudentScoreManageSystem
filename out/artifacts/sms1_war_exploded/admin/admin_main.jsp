@@ -66,7 +66,7 @@ $(function() {
 	<div region="north" class="header" >
 		<img alt="logo" src="/sms1/dist/images/logo1.PNG" >
 	</div>
-	<div region="south" class="footer">Copyright &copy;2017</div>
+	<div region="south" class="footer">Copyright &copy;2019/12</div>
 	<div region="west" class="left" title="成绩管理系统">
 		<div class="left-list">
 			<div class="left-list-item" url="/sms1/admin/tab_student.jsp" title="学生管理">

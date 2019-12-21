@@ -45,9 +45,9 @@ public class Score
 		return finalScore;
 	}
 
-	public void setFinalScore(int dailyScore, int testScore)
+	public void setFinalScore(int finalScore)
 	{
-		this.finalScore = (dailyScore + testScore) / 2;
+		this.finalScore = finalScore;
 	}
 
 	public Teaching getTeaching() {

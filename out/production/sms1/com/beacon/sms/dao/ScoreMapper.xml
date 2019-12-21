@@ -18,6 +18,7 @@
 				<result property="courseTime" column="course_time" />
 				<result property="credit" column="credit" />
 				<result property="type" column="type" />
+				<result property="weight" column="weight" />
 			</association>
 		</association>
 		<association property="student" javaType="Student">
@@ -35,13 +36,13 @@
 	<insert id="addScore" parameterType="Score">
 		insert into
 		score(student_id,score,final_score,flag,teaching_id)
-		values(#{student.id},#{score},#{score}/2+#{dailyScore.totalScore}/2,#{flag},#{teaching.id});
+		values(#{student.id},#{score},#{score}*#{teaching.course.weight}+#{dailyScore.totalScore}*(1-#{teaching.course.weight}),#{flag},#{teaching.id});
 	</insert>
 	<select id="getScoreListByTeacherId" resultMap="score"
 		parameterType="ScoreSearchBean">
 		select s1.id ,s3.name as
 		semester_name,student_no,student_name,class_name,
-		course_name,course_time,credit,type,d.total_score,s1.score,s1.final_score,s1.flag,teacher_name
+		course_name,course_time,credit,type,weight,d.total_score,s1.score,s1.final_score,s1.flag,teacher_name
 		from score as s1,student as s2,semester as s3,class as c1,
 		course as c2,teaching as t,teacher as t1,daily_score as d
 		where t.id=s1.teaching_id and s1.student_id=s2.id and t.semester_id=s3.id and
@@ -116,16 +117,20 @@
 		<if test="flag!=0">
 			and s1.flag=#{flag}
 		</if>
-	
+
 		;
 	</select>
 	<update id="updateScore" parameterType="Score">
-		update score,daily_score set score.score=#{score},
-		                             score.flag=1,
-		                             score.final_score=#{score}/2+daily_score.total_score/2
-		where score.id=#{id}
+		update score,daily_score,course,teaching
+		set score.score=#{score},
+		    score.flag=1,
+		    score.final_score=#{score}*(1-course.weight)+daily_score.total_score*course.weight
+		where score.score.id=#{id}
 		    and score.score.student_id = daily_score.student_id
-			and score.score.teaching_id = daily_score.teaching_id;
+			and score.score.teaching_id = daily_score.teaching_id
+			and course.id = teaching.course_id
+			and teaching.id = score.score.teaching_id
+			and teaching.id = daily_score.teaching_id;
 	</update>
 	<delete id="deleteScoreByTeachingId" parameterType="INTEGER">
 	    delete from score where teaching_id=#{teachingId};
