@@ -82,6 +82,7 @@ public class TeachingServiceImpl implements TeachingService
 			score.setStudent(student);
 			score.setTeaching(teaching);
 			score.setScore(0);
+			score.setFinalScore(0, 0);
 			score.setFlag(2);
 			System.out.println(score);
 			scoreDao.addScore(score);

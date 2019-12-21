@@ -13,14 +13,41 @@ public class Score
 
 	private Student student;		//学生
 
-	private int score;				//分数
+	private int score;				//考试分数，为了方便，此处不再更名
+
+	private DailyScore dailyScore;	//平时成绩
+
+	private int finalScore;			//最终成绩
 
 	private int flag;				//状态，已登记或未登记
 
 	@Override
-	public String toString() {
-		return "Score [id=" + id + ", teaching=" + teaching + ", student=" + student + ", score=" + score + ", flag="
-				+ flag + "]";
+	public String toString()
+	{
+		return "Score{" + "id=" + id + ", teaching=" + teaching
+				+ ", student=" + student + ", score=" + score
+				+ ", dailyScore=" + dailyScore + ", finalScore="
+				+ finalScore + ", flag=" + flag + '}';
+	}
+
+	public DailyScore getDailyScore()
+	{
+		return dailyScore;
+	}
+
+	public void setDailyScore(DailyScore dailyScore)
+	{
+		this.dailyScore = dailyScore;
+	}
+
+	public int getFinalScore()
+	{
+		return finalScore;
+	}
+
+	public void setFinalScore(int dailyScore, int testScore)
+	{
+		this.finalScore = (dailyScore + testScore) / 2;
 	}
 
 	public Teaching getTeaching() {

@@ -5,6 +5,7 @@
 		<result property="id" column="id" />
 		<result property="score" column="score" />
 		<result property="flag" column="flag" />
+		<result property="finalScore" column="final_score" />
 		<association property="teaching" javaType="Teaching">
 			<association property="semester" javaType="Semester">
 				<result property="semesterName" column="semester_name" />
@@ -26,25 +27,31 @@
 				<result property="className" column="class_name" />
 			</association>
 		</association>
+		<association property="dailyScore" javaType="DailyScore">
+			<result property="totalScore" column="total_score" />
+		</association>
 
 	</resultMap>
 	<insert id="addScore" parameterType="Score">
 		insert into
-		score(student_id,score,flag,teaching_id)
-		values(#{student.id},#{score},#{flag},#{teaching.id});
+		score(student_id,score,final_score,flag,teaching_id)
+		values(#{student.id},#{score},#{score}/2+#{dailyScore.totalScore}/2,#{flag},#{teaching.id});
 	</insert>
 	<select id="getScoreListByTeacherId" resultMap="score"
 		parameterType="ScoreSearchBean">
 		select s1.id ,s3.name as
 		semester_name,student_no,student_name,class_name,
-		course_name,course_time,credit,type,score,flag,teacher_name
+		course_name,course_time,credit,type,d.total_score,s1.score,s1.final_score,s1.flag,teacher_name
 		from score as s1,student as s2,semester as s3,class as c1,
-		course as c2,teaching as t,teacher as t1
-		where t.id=teaching_id and s1.student_id=s2.id and t.semester_id=s3.id and
+		course as c2,teaching as t,teacher as t1,daily_score as d
+		where t.id=s1.teaching_id and s1.student_id=s2.id and t.semester_id=s3.id and
 		t.course_id=c2.id and t.teacher_id=t1.id
-		and t.class_id=c1.id 
+		and t.class_id=c1.id
+		and s1.teaching_id = d.teaching_id
+		and s1.student_id = d.student_id
 		<if test="studentId!=0">
 		    and s1.student_id=#{studentId}
+			and d.student_id=#{studentId}
 		</if>
 		<if test="teacherId!=0">
 		    and t.teacher_id=#{teacherId}
@@ -62,14 +69,14 @@
 			and course_name like concat(concat('%',#{courseName}),'%')
 		</if>
 		<if test="flag!=0">
-			and flag=#{flag}
+			and s1.flag=#{flag}
 		</if>
 		<choose>
 		    <when test="order==1">
-		        order by score desc
+		        order by final_score desc
 		    </when>
 		      <when test="order==2">
-		        order by score 
+		        order by final_score
 		    </when>
 		</choose>
 		<if test="page!=0 and rows!=0">
@@ -81,12 +88,15 @@
 		resultType="INTEGER">
 			select count(s1.id)
 		from score as s1,student as s2,semester as s3,class as c1,
-		course as c2,teaching as t,teacher as t1
-		where t.id=teaching_id and s1.student_id=s2.id and t.semester_id=s3.id and
+		course as c2,teaching as t,teacher as t1,daily_score as d
+		where t.id=s1.teaching_id and s1.student_id=s2.id and t.semester_id=s3.id and
 		t.course_id=c2.id and t.teacher_id=t1.id
-		and t.class_id=c1.id 
+		and t.class_id=c1.id
+		and s1.teaching_id = d.teaching_id
+		and s1.student_id = d.student_id
 		<if test="studentId!=0">
 		    and s1.student_id=#{studentId}
+		    and d.student_id=#{studentId}
 		</if>
 		<if test="teacherId!=0">
 		    and t.teacher_id=#{teacherId}
@@ -104,13 +114,18 @@
 			and course_name like concat(concat('%',#{courseName}),'%')
 		</if>
 		<if test="flag!=0">
-			and flag=#{flag}
+			and s1.flag=#{flag}
 		</if>
 	
 		;
 	</select>
 	<update id="updateScore" parameterType="Score">
-		update score set score=#{score},flag=1 where id=#{id};
+		update score,daily_score set score.score=#{score},
+		                             score.flag=1,
+		                             score.final_score=#{score}/2+daily_score.total_score/2
+		where score.id=#{id}
+		    and score.score.student_id = daily_score.student_id
+			and score.score.teaching_id = daily_score.teaching_id;
 	</update>
 	<delete id="deleteScoreByTeachingId" parameterType="INTEGER">
 	    delete from score where teaching_id=#{teachingId};

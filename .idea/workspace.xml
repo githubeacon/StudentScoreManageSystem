@@ -2,17 +2,29 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="sms1:war" />
       <artifact name="sms1:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/FinalScore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/FinalScoreDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/FinalScoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2ba101be-8d6e-404a-9885-dc02bed604ba.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2ba101be-8d6e-404a-9885-dc02bed604ba.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/teacher/teacher_dailyScore.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teacher/teacher_dailyScore.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/teacher/teacher_score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teacher/teacher_score.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war/sms1_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war/sms1_war.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/teacher/teacher_dailyScore.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/teacher/teacher_dailyScore.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/DailyScoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/DailyScoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/bean/Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/dao/ScoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/dao/ScoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/service/impl/TeachingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/WEB-INF/classes/com/beacon/sms/service/impl/TeachingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/teacher/teacher_score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/teacher/teacher_score.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/bean/Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/dao/ScoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/dao/ScoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/service/impl/TeachingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sms1/com/beacon/sms/service/impl/TeachingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sms1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sms1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/bean/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/bean/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/dao/ScoreMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/dao/ScoreMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/beacon/sms/service/impl/TeachingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/beacon/sms/service/impl/TeachingServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,17 +42,24 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="score@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Jsp File" />
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
         <option value="HTML File" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -51,7 +70,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
+    <option name="RESET_MODE" value="KEEP" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -100,7 +119,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/WEB-INF/lib/xwork-core-2.3.16.3.jar!/" />
@@ -111,23 +131,24 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20689656" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.beacon.sms.dao" />
       <recent name="com.beacon.sms.service.impl" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.beacon.sms.utils" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SpringBootPractice\StudentScoreManageSystem\src" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SpringBootPractice\StudentScoreManageSystem\src" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.beacon.sms.utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -144,11 +165,6 @@
         <artifact name="sms1:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/sms1" />
-          </settings>
-        </artifact>
-        <artifact name="sms1:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/sms1_war" />
           </settings>
         </artifact>
       </deployment>
@@ -212,7 +228,6 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="sms1:war exploded" />
-          <artifact name="sms1:war" />
         </option>
       </method>
     </configuration>
@@ -265,7 +280,8 @@
       <workItem from="1576666172283" duration="1850000" />
       <workItem from="1576673358116" duration="1546000" />
       <workItem from="1576685794304" duration="3044000" />
-      <workItem from="1576856426218" duration="2817000" />
+      <workItem from="1576856426218" duration="3509000" />
+      <workItem from="1576895240091" duration="27335000" />
     </task>
     <task id="LOCAL-00001" summary="配置修改完毕，在本机上正常运行">
       <created>1575895585927</created>
@@ -351,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576857147118</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="已修复平时成绩列表只显示总成绩的BUG">
+      <created>1576859374486</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859374486</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +422,8 @@
     <MESSAGE value="修复了前端不能正常显示平时成绩列表的BUG" />
     <MESSAGE value="修复了选择地址的乱码问题" />
     <MESSAGE value="未能修复前端地址选择器部分乱码的BUG" />
-    <option name="LAST_COMMIT_MESSAGE" value="未能修复前端地址选择器部分乱码的BUG" />
+    <MESSAGE value="已修复平时成绩列表只显示总成绩的BUG" />
+    <option name="LAST_COMMIT_MESSAGE" value="已修复平时成绩列表只显示总成绩的BUG" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="201" key="#Intentions" timestamp="1576236554407">
@@ -418,14 +442,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="469" y="203" key="#SQL_Dialects/0.0.1920.1080@0.0.1920.1080" timestamp="1575903570019" />
-    <state x="446" y="183" width="854" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576334299803">
+    <state x="446" y="183" width="1008" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576922792527">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="446" y="183" width="854" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576334299803" />
-    <state x="767" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1576387838335">
+    <state x="446" y="183" width="1008" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576922792527" />
+    <state x="767" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1576914082939">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="767" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576387838335" />
+    <state x="767" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576914082939" />
     <state x="690" y="320" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1576377352684">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -442,10 +466,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="722" y="283" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575901604056" />
-    <state x="406" y="114" key="CommitChangelistDialog2" timestamp="1576857144702">
+    <state x="406" y="114" key="CommitChangelistDialog2" timestamp="1576859373101">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="406" y="114" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1576857144702" />
+    <state x="406" y="114" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1576859373101" />
     <state x="488" y="92" width="1200" height="800" key="DiffContextDialog" timestamp="1576406007441">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -458,66 +482,66 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="707" y="417" width="274" height="210" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575895781261" />
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1576859254547">
+    <state width="1230" height="183" key="GridCell.Tab.0.bottom" timestamp="1576929984813">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="296" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576138296062" />
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576859254547" />
-    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1576859254547">
+    <state width="1230" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576929984813" />
+    <state width="1230" height="183" key="GridCell.Tab.0.center" timestamp="1576929984813">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="296" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1576138296062" />
-    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576859254547" />
-    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1576859254547">
+    <state width="1230" height="183" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576929984813" />
+    <state width="1230" height="183" key="GridCell.Tab.0.left" timestamp="1576929984813">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="296" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1576138296062" />
-    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576859254547" />
-    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1576859254547">
+    <state width="1230" height="183" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576929984813" />
+    <state width="1230" height="183" key="GridCell.Tab.0.right" timestamp="1576929984813">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="296" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1576138296062" />
-    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576859254547" />
-    <state width="1877" height="183" key="GridCell.Tab.1.bottom" timestamp="1576859254548">
+    <state width="1230" height="183" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576929984813" />
+    <state width="1230" height="183" key="GridCell.Tab.1.bottom" timestamp="1576929984814">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="296" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576138296063" />
-    <state width="1877" height="183" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576859254548" />
-    <state width="1877" height="183" key="GridCell.Tab.1.center" timestamp="1576859254548">
+    <state width="1230" height="183" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576929984814" />
+    <state width="1230" height="183" key="GridCell.Tab.1.center" timestamp="1576929984813">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="296" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1576138296062" />
-    <state width="1877" height="183" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576859254548" />
-    <state width="1877" height="183" key="GridCell.Tab.1.left" timestamp="1576859254548">
+    <state width="1230" height="183" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576929984813" />
+    <state width="1230" height="183" key="GridCell.Tab.1.left" timestamp="1576929984813">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="296" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1576138296062" />
-    <state width="1877" height="183" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576859254548" />
-    <state width="1877" height="183" key="GridCell.Tab.1.right" timestamp="1576859254548">
+    <state width="1230" height="183" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576929984813" />
+    <state width="1230" height="183" key="GridCell.Tab.1.right" timestamp="1576929984813">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="296" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1576138296063" />
-    <state width="1877" height="183" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576859254548" />
-    <state width="1877" height="183" key="GridCell.Tab.2.bottom" timestamp="1576859254548">
+    <state width="1230" height="183" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576929984813" />
+    <state width="1230" height="183" key="GridCell.Tab.2.bottom" timestamp="1576929984813">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="296" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1576138296063" />
-    <state width="1877" height="183" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576859254548" />
-    <state width="1877" height="183" key="GridCell.Tab.2.center" timestamp="1576859254548">
+    <state width="1230" height="183" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576929984813" />
+    <state width="1230" height="183" key="GridCell.Tab.2.center" timestamp="1576929984813">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="296" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1576138296063" />
-    <state width="1877" height="183" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576859254548" />
-    <state width="1877" height="183" key="GridCell.Tab.2.left" timestamp="1576859254548">
+    <state width="1230" height="183" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576929984813" />
+    <state width="1230" height="183" key="GridCell.Tab.2.left" timestamp="1576929984813">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="296" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1576138296063" />
-    <state width="1877" height="183" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576859254548" />
-    <state width="1877" height="183" key="GridCell.Tab.2.right" timestamp="1576859254548">
+    <state width="1230" height="183" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576929984813" />
+    <state width="1230" height="183" key="GridCell.Tab.2.right" timestamp="1576929984813">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1493" height="296" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1576138296063" />
-    <state width="1877" height="183" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576859254548" />
+    <state width="1230" height="183" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576929984813" />
     <state width="1340" height="266" key="GridCell.Tab.5.bottom" timestamp="1575997289571">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -538,15 +562,15 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="622" y="346" key="NewModule_or_Project.wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1576664999995" />
-    <state x="734" y="250" key="RollbackChangesDialog" timestamp="1576220922126">
+    <state x="734" y="250" key="RollbackChangesDialog" timestamp="1576921029299">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="587" y="200" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1576065359121" />
-    <state x="734" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576220922126" />
-    <state x="472" y="103" key="SettingsEditor" timestamp="1576319539755">
+    <state x="734" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576921029299" />
+    <state x="472" y="103" key="SettingsEditor" timestamp="1576911959133">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="472" y="103" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1576319539755" />
+    <state x="472" y="103" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1576911959133" />
     <state x="469" y="277" key="Vcs.Push.Dialog.v2" timestamp="1575902259154">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -559,19 +583,19 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="232" y="122" width="1200" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575895831161" />
-    <state x="612" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1576856488217">
+    <state x="612" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1576895307195">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="419" y="279" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1576130906119" />
-    <state x="612" y="357" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576856488217" />
-    <state x="659" y="440" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576377329906">
+    <state x="612" y="357" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576895307195" />
+    <state x="659" y="440" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576909386360">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="659" y="440" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1576377329906" />
-    <state x="726" y="257" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1576377354530">
+    <state x="659" y="440" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1576909386360" />
+    <state x="726" y="257" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1576910379259">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="726" y="257" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576377354530" />
+    <state x="726" y="257" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576910379259" />
     <state x="367" y="141" key="new project wizard" timestamp="1575894985516">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

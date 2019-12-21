@@ -98,11 +98,14 @@
 	function getCredit(value, row, index) {
 		return row.teaching.course.credit;
 	}
+	function getDailyScore(value, row, index) {
+		return row.dailyScore.totalScore;
+	}
 	function getFlag(flag) {
 		if (flag == 1) {
-			return "已给成绩";
+			return "已给考试成绩";
 		} else {
-			return "<span style='color:red'>未给成绩</span>";
+			return "<span style='color:red'>未给考试成绩</span>";
 		}
 	}
 	function oprate(value, row, index) {
@@ -111,7 +114,7 @@
 </script>
 <body>
 <div id='loading' style="position:absolute;z-index:1000;top:0px;left:0px;width:100%;height:100%;background:#DDDDDB;text-align:center;padding-top: 20%;">   
-</div> 
+</div>
 	<table class="easyui-datagrid" id="scoreDatagrid"
 		url="/sms1/score_list.action" toolbar="#tb" pagination="true"
 		fit="true" singleSelect="true">
@@ -125,7 +128,10 @@
 				<th field="courseType" formatter="getCourseType">课程类型</th>
 				<th field="courseTime" formatter="getCourseTime">总课时</th>
 				<th field="credit" formatter="getCredit">学分</th>
+				<th field="dailyScore" formatter="getDailyScore">平时成绩</th>
 				<th field="score">考试成绩</th>
+				<th field="finalScore">总成绩</th>
+<%--				<th field=""></th>--%>
 				<th field="flag" formatter="getFlag">备注</th>
 				<th field="oprate" formatter="oprate">操作</th>
 			</tr>
@@ -140,8 +146,8 @@
 				<input type="text" id="searchCourseName" /> <span>状态</span> <select
 					id="searchFlag">
 					<option value=0>全部</option>
-					<option value=1>已给成绩</option>
-					<option value=2>未给成绩</option>
+					<option value=1>已给考试成绩</option>
+					<option value=2>未给考试成绩</option>
 				</select> <span>排序</span> <select id="searchOrder"
 					name="scoreSearchBean.order">
 					<option value=0>默认</option>
