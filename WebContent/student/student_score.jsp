@@ -55,6 +55,9 @@
 	function getCredit(value,row,index){
 			return row.teaching.course.credit;
 		}
+	function getDailyScore(value, row, index) {
+		return row.dailyScore.totalScore;
+	}
 	
 </script>
 <body>
@@ -73,7 +76,9 @@
 				<th field="courseType" formatter="getCourseType">课程类型</th>
 				<th field="courseTime" formatter="getCourseTime">总课时</th>
 				<th field="credit" formatter="getCredit">学分</th>
-				<th field="score">成绩</th>
+				<th field="dailyScore" formatter="getDailyScore">平时成绩</th>
+				<th field="score">考试成绩</th>
+				<th field="finalScore">总成绩</th>
 			</tr>
 		</thead>
 	</table>

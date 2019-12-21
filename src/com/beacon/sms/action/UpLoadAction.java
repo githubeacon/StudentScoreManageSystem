@@ -174,6 +174,27 @@ public class UpLoadAction {
 
 	}
 
+	public void importDailyScore()
+	{
+		try
+		{
+			List<DailyScore> list = excelUtil.readDailyScoreExcel(new FileInputStream(upload));
+			System.out.println(list.toString());
+			for (int i = 0; i < list.size(); i++)
+			{
+				DailyScore dailyScore = list.get(i);
+				dailyScoreService.updateDailyScore(dailyScore);
+			}
+		}
+		catch(FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 	//TODO Excel导出平时成绩
 //	public String exportDailyScore()
 //	{

@@ -74,7 +74,7 @@
 					<td><input type="file" name="upload"/></td>
 				</tr>
 				<tr>
-					<td>班级:</td>
+					<td>学院:</td>
 					<td>
 						<input class="departmentCb" name="departmentId"/>
 					</td>

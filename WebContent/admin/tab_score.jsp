@@ -71,13 +71,14 @@
 	function getTeacherName(value,row,index){
 			return row.teaching.teacher.teacherName;
 		}
-	
+	function getDailyScore(value, row, index) {
+		return row.dailyScore.totalScore;
+	}
 </script>
 <body>
 <div id='loading' style="position:absolute;z-index:1000;top:0px;left:0px;width:100%;height:100%;background:#DDDDDB;text-align:center;padding-top: 20%;"></div>
 	<table class="easyui-datagrid" id="scoreDatagrid" url="/sms1/score_list.action"
-			toolbar="#tb" pagination="true" fit="true"
-	>
+			toolbar="#tb" pagination="true" fit="true">
 		<thead>
 			<tr>
 				<th field="semesterName" formatter="getSemesterName">学年学期</th>
@@ -89,7 +90,9 @@
 				<th field="courseType" formatter="getCourseType">课程类型</th>
 				<th field="courseTime" formatter="getCourseTime">总课时</th>
 				<th field="credit" formatter="getCredit">学分</th>
-				<th field="score">成绩</th>
+				<th field="dailyScore" formatter="getDailyScore">平时成绩</th>
+				<th field="score">考试成绩</th>
+				<th field="finalScore">总成绩</th>
 			</tr>
 		</thead>
 	</table>

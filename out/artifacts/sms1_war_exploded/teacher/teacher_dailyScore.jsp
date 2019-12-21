@@ -29,6 +29,27 @@
             maximizable : false
         }).window("close");
     });
+    // function openImportFileWindow(){
+    //     $("#importFileForm").form("clear");
+    //     loadDepartment();
+    //     $("#importFileWindow").window({
+    //         collapsible:false,
+    //         minimizable:false,
+    //         maximizable:false
+    //     });
+    // function importFileFormSubmit(){
+    //     $("#importFileForm").form("submit",{
+    //         success:function(data){
+    //             if(data==""){
+    //                 alert("导入成功");
+    //                 $("#dailyScoreDatagrid").datagrid("reload");
+    //             }else{
+    //                 alert("导入失败");
+    //             }
+    //             $("#importFileWindow").window("close");
+    //         }
+    //     });
+    // }
     function exportScore() {
         $("#scoreSearchForm").submit();
     }
@@ -187,9 +208,37 @@
             </select>
             <a href="javascript:searchScore()" class="easyui-linkbutton" iconCls="icon-search">搜索</a>
             <a href="javascript:exportScore()" class="easyui-linkbutton" iconCls="icon-export">导出成绩</a>
+<%--            <a href="javascript:openImportFileWindow()" class="easyui-linkbutton">导入文件</a>--%>
         </form>
     </div>
+    <div style="margin-bottom: 10px">
+<%--        <a class="easyui-linkbutton" href="javascript:addTeacher()" iconCls="icon-add">添加</a> --%>
+<%--        <a href="javascript:editTeacher()" class="easyui-linkbutton" iconCls="icon-edit">修改</a> --%>
+<%--        <a href="javascript:deleteTeacher()" class="easyui-linkbutton"--%>
+<%--            iconCls="icon-cancel">删除</a>--%>
+<%--        <a href="javascript:openImportFileWindow()" class="easyui-linkbutton">导入文件</a>--%>
+    </div>
 </div>
+
+<%--<div  id="importFileWindow" title="导入平时成绩" iconCls="icon-import" style="width:500px;padding:20px">--%>
+<%--    <form action="/sms1/upload_importDailyScore" id="importFileForm" method="post" enctype="multipart/form-data">--%>
+<%--        <table style="border-collapse:separate;border-spacing:0 10px">--%>
+<%--            <tr>--%>
+<%--                <td>请选择文件:</td>--%>
+<%--                <td><input type="file" name="upload"/></td>--%>
+<%--            </tr>--%>
+<%--            <tr>--%>
+<%--                <td>班级:</td>--%>
+<%--                <td>--%>
+<%--                    <input class="departmentCb" name="departmentId"/>--%>
+<%--                </td>--%>
+<%--            </tr>--%>
+<%--            <tr>--%>
+<%--                <td><a href="javascript:importFileFormSubmit()" class="easyui-linkbutton" iconCls="icon-import">导入</a></td>--%>
+<%--            </tr>--%>
+<%--        </table>--%>
+<%--    </form>--%>
+<%--</div>--%>
 
 <div class="easyui-window" id="dailyScoreWindow"
      style="width: 300px; height: 200px; padding: 20px;display:none">

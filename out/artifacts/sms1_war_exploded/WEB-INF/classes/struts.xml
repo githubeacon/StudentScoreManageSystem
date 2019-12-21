@@ -64,7 +64,7 @@
 				<param name="contentDisposition">filename="score.xls"</param> <!-- 下载文件的名字 -->
 				<param name="bufferSize">10240</param>  <!-- 下载文件的大小 10485760=10M -->
 			</result>
-			<allowed-methods>importStudent,importTeacher,exportScore</allowed-methods>
+			<allowed-methods>importStudent,importTeacher,importDailyScore,exportScore</allowed-methods>
 		</action>
 	</package>
 
