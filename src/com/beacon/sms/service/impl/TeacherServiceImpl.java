@@ -61,7 +61,7 @@ public class TeacherServiceImpl implements TeacherService
 		admin.setUserName(teacherNo);
 		admin.setPassword(teacherNo);
 		admin.setPower(3);
-		System.out.println(1/0);
+//		System.out.println(1/0);
 		loginDao.addAdmin(admin);
 		
 		

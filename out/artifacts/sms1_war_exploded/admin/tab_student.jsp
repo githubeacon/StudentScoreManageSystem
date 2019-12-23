@@ -128,19 +128,21 @@
 				</tr>
 				<tr>
 					<td>性别:</td>
-					<td><select name="student.sex" id="studentSex">
+					<td>
+						<select name="student.sex" id="studentSex">
 							<option value="男">男</option>
 							<option value="女">女</option>
-					</select></td>
+						</select>
+					</td>
 				</tr>
 				<tr>
 					<td>地址:</td>
-					<td><select id="province" name="student.address.province"
-						onchange="getCity()"></select> <select id="city"
-						name="student.address.city" onchange="getCounty()"></select> <select
-						id="county" name="student.address.county"></select> <input
-						type="text" name="student.address.detailedAddress"
-						placeholder="详细街道信息" /></td>
+					<td>
+						<select id="province" name="student.address.province" onchange="getCity()"></select>
+						<select id="city" name="student.address.city" onchange="getCounty()"></select>
+						<select id="county" name="student.address.county"></select>
+						<input type="text" name="student.address.detailedAddress" placeholder="详细街道信息" />
+					</td>
 				</tr>
 				<tr>
 					<td>出生日期:</td>

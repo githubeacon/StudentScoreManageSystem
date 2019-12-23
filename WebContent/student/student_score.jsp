@@ -52,9 +52,21 @@
 	function getCourseType(value,row,index){
 			return row.teaching.course.type;
 		}
+	function getWeight(value,row,index) {
+		return row.teaching.course.weight;
+	}
 	function getCredit(value,row,index){
 			return row.teaching.course.credit;
 		}
+	function getHomeworkScore(value, row, index) {
+		return row.dailyScore.homeworkScore;
+	}
+	function getAttendanceScore(value, row, index) {
+		return row.dailyScore.attendanceScore;
+	}
+	function getExperimentScore(value, row, index) {
+		return row.dailyScore.experimentScore;
+	}
 	function getDailyScore(value, row, index) {
 		return row.dailyScore.totalScore;
 	}
@@ -64,8 +76,7 @@
 <div id='loading' style="position:absolute;z-index:1000;top:0px;left:0px;width:100%;height:100%;background:#DDDDDB;text-align:center;padding-top: 20%;">   
 </div> 
 	<table class="easyui-datagrid" id="scoreDatagrid" url="/sms1/score_list.action"
-			toolbar="#tb" pagination="true" fit="true" singleSelect="true"
-	>
+			toolbar="#tb" pagination="true" fit="true" singleSelect="true">
 		<thead>
 			<tr>
 				<th field="semesterName" formatter="getSemesterName">学年学期</th>
@@ -74,8 +85,12 @@
 				<th field="className" formatter="getClassName">所在班级</th>
 				<th field="courseName" formatter="getCourseName">课程名称</th>
 				<th field="courseType" formatter="getCourseType">课程类型</th>
+				<th field="weight" formatter="getWeight">权重</th>
 				<th field="courseTime" formatter="getCourseTime">总课时</th>
 				<th field="credit" formatter="getCredit">学分</th>
+				<th field="homeworkScore" formatter="getHomeworkScore">作业成绩</th>
+				<th field="attendanceScore" formatter="getAttendanceScore">实验成绩</th>
+				<th field="experimentScore" formatter="getExperimentScore">实验成绩</th>
 				<th field="dailyScore" formatter="getDailyScore">平时成绩</th>
 				<th field="score">考试成绩</th>
 				<th field="finalScore">总成绩</th>

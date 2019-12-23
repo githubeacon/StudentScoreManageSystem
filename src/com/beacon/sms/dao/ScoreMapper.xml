@@ -29,6 +29,9 @@
 			</association>
 		</association>
 		<association property="dailyScore" javaType="DailyScore">
+			<result property="homeworkScore" column="homework_score" />
+			<result property="attendanceScore" column="attendance_score" />
+			<result property="experimentScore" column="experiment_score" />
 			<result property="totalScore" column="total_score" />
 		</association>
 
@@ -41,8 +44,8 @@
 	<select id="getScoreListByTeacherId" resultMap="score"
 		parameterType="ScoreSearchBean">
 		select s1.id ,s3.name as
-		semester_name,student_no,student_name,class_name,
-		course_name,course_time,credit,type,weight,d.total_score,s1.score,s1.final_score,s1.flag,teacher_name
+		semester_name,student_no,student_name,class_name,course_name,course_time,credit,type,weight,d.homework_score
+		     ,d.attendance_score,d.experiment_score,d.total_score,s1.score,s1.final_score,s1.flag,teacher_name
 		from score as s1,student as s2,semester as s3,class as c1,
 		course as c2,teaching as t,teacher as t1,daily_score as d
 		where t.id=s1.teaching_id and s1.student_id=s2.id and t.semester_id=s3.id and
@@ -123,13 +126,13 @@
 	<update id="updateScore" parameterType="Score">
 		update score,daily_score,course,teaching
 		set score.score=#{score},
-		    score.flag=1,
+			student_system.score.flag=1,
 		    score.final_score=#{score}*(1-course.weight)+daily_score.total_score*course.weight
-		where score.score.id=#{id}
-		    and score.score.student_id = daily_score.student_id
-			and score.score.teaching_id = daily_score.teaching_id
+		where score.id=#{id}
+		    and score.student_id = daily_score.student_id
+			and score.teaching_id = daily_score.teaching_id
 			and course.id = teaching.course_id
-			and teaching.id = score.score.teaching_id
+			and teaching.id = score.teaching_id
 			and teaching.id = daily_score.teaching_id;
 	</update>
 	<delete id="deleteScoreByTeachingId" parameterType="INTEGER">

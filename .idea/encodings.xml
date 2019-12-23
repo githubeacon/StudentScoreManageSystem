@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/WebContent/dist/js/address.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/WebContent/dist/js/country.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/out/artifacts/sms1_war_exploded/dist/js/country.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/beacon/sms/action/CourseAction.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/beacon/sms/action/LoginAction.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/beacon/sms/action/MajorAction.java" charset="UTF-8" />
