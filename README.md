@@ -83,62 +83,62 @@
 
 登陆界面：
 
-![image-20191229004508534](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\登录界面.png)
+![image-20191229004508534](doc/运行截图/登录界面.png)
 
 管理员界面：
 
 1）主页
 
-![image-20191229004741807](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\管理员主页.png)
+![image-20191229004741807](doc/运行截图/管理员主页.png)
 
 2）学生管理
 
-![image-20191229005017962](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\学生管理.png)
+![image-20191229005017962](doc/运行截图/学生管理.png)
 
 3）教师管理
 
-![image-20191229005049608](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\教师管理.png)
+![image-20191229005049608](doc/运行截图/教师管理.png)
 
 4）课程管理
 
-![image-20191229005110087](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\课程管理)
+![image-20191229005110087](doc/运行截图/课程管理)
 
 5）授课管理
 
-![image-20191229005129169](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\授课管理)
+![image-20191229005129169](doc/运行截图/授课管理)
 
 6）成绩管理
 
-![image-20191229005155096](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\管理员成绩管理.png)
+![image-20191229005155096](doc/运行截图/管理员成绩管理.png)
 
 学生界面：
 
 1）主页
 
-![image-20191229005700029](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\学生主页.png)
+![image-20191229005700029](doc/运行截图/学生主页.png)
 
 2）个人信息
 
-![image-20191229005629797](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\学生个人信息.png)
+![image-20191229005629797](doc/运行截图/学生个人信息.png)
 
 3）学生成绩
 
-![image-20191229005722154](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\学生成绩.png)
+![image-20191229005722154](doc/运行截图/学生成绩.png)
 
 教师界面：
 
 1）主页
 
-![image-20191229005402219](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\教师主页.png)
+![image-20191229005402219](doc/运行截图/教师主页.png)
 
 2）授课信息
 
-![image-20191229005339179](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\教师个人信息.png)
+![image-20191229005339179](doc/运行截图/教师个人信息.png)
 
 3）平时成绩管理
 
-![image-20191229005451551](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\平时成绩管理.png)
+![image-20191229005451551](doc/运行截图/平时成绩管理.png)
 
 4）考试成绩管理
 
-![image-20191229005509116](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\考试成绩管理.png)
+![image-20191229005509116](doc/运行截图/考试成绩管理.png)

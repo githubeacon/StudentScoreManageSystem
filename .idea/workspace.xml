@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="sms1:war" />
       <artifact name="sms1:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/teacher/teacher_score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/teacher/teacher_score.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war/sms1_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war/sms1_war.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/teacher/teacher_score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/teacher/teacher_score.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +298,7 @@
       <workItem from="1577095529807" duration="1039000" />
       <workItem from="1577266578995" duration="656000" />
       <workItem from="1577513484021" duration="627000" />
-      <workItem from="1577551450457" duration="826000" />
+      <workItem from="1577551450457" duration="1299000" />
     </task>
     <task id="LOCAL-00001" summary="配置修改完毕，在本机上正常运行">
       <created>1575895585927</created>
@@ -428,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577072349964</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="更新了README文档和war包">
+      <created>1577552447559</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1577552447559</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +487,8 @@
     <MESSAGE value="增加了Course属性weight" />
     <MESSAGE value="可根据权重分配平时成绩考试成绩比例，自动计算总成绩" />
     <MESSAGE value="修复地址选择乱码BUG" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复地址选择乱码BUG" />
+    <MESSAGE value="更新了README文档和war包" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了README文档和war包" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="201" key="#Intentions" timestamp="1576236554407">
@@ -525,10 +531,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="722" y="283" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575901604056" />
-    <state x="406" y="114" key="CommitChangelistDialog2" timestamp="1577072346285">
+    <state x="406" y="114" key="CommitChangelistDialog2" timestamp="1577552445473">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="406" y="114" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1577072346285" />
+    <state x="406" y="114" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1577552445473" />
     <state x="488" y="92" width="1200" height="800" key="DiffContextDialog" timestamp="1576406007441">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
