@@ -166,8 +166,19 @@
 	<div class="easyui-window" id="scoreWindow"
 		style="width: 300px; height: 200px; padding: 20px;display:none">
 		<form method="post" id="scoreForm">
-			<span>成绩:</span> <input type="text" name="score.score" /> <br />
+			<span>第一题:</span> <input type="text" id="1" /> <br />
 			<br />
+			<span>第二题:</span> <input type="text" id="2" /> <br />
+			<br />
+			<span>第三题:</span> <input type="text" id="3" /> <br />
+			<br />
+			<span>第四题:</span> <input type="text" id="4" /> <br />
+			<br />
+			<span>第五题:</span> <input type="text" id="5" /> <br />
+			<br />
+			<span>考试成绩:</span> <input type="text" name="score.score" /> <br />
+			<br />
+
 			<a href="javascript:scoreFormSubmit()"
 				class="easyui-linkbutton">提交</a>
 			<a href="javascript:exportScore()"

@@ -1,96 +1,144 @@
-# StudentScoreManageSystem
----
-   
-# 简介
-信息系统分析与设计作业。在原系统的基础上略微修改增加了部分功能
+## 学生成绩考评系统操作说明书(2019.12版)
 
-## 实验题目
-   根据你掌握的信息系统开发技能与所学的知识，结合以下系统要求及学校教学管理实际设计出一个“学生课程成绩考评系统”，并加以实施
-### 系统使用者
-   任课教师、学生
-### 系统要求说明：
-- 任课老师能根据学生平时的考勤情况、作业、实验情况完成学生平时成绩的评定
-- 任课老师需将课程考试试卷的每道大题得分录入系统，获得学生的考试成绩
-- 系统按照教学大纲要求的评分比率，将学生的平时成绩与考试成绩进行计算，得出课程总评成绩，并进行相关的统计查询
-### 系统需要实现的功能
-- 教师能根据实际授课情况修改、认定上课学生的相关信息
-- 系统能根据任课老师的要求，在期末按照课程平时成绩评定标准计算得出学生该门课程的平时成绩
-- 任课老师按授课班级能批量录入学生试卷成绩，并能逐条加以修改，试卷总分由系统自动加和得到
-- 系统按每门课程具体的评分标准（教学大纲要求），由学生的平时成绩与考试成绩得出总评成绩，并能按教学班级及个人信息进行查询统计
-- 学生可以上网查询到自己的课程学习情况和相关的成绩及统计信息，但不能查看到其他同学的成绩和学习情况
-## 实验要求
-- 设计并绘制新系统的输出端信息载体（如：教师授课情况统计表、学生选课统计表、上课考勤表、平时作业上交情况统计表、……）
-- 按模板编写系统分析说明书（要求绘制系统的业务流程图；建立系统的详细ER模型（包括主体、联系以及各个主体/联系的属性）；建立系统的O层DFD及必要的分层DFD；设计数据库中相应的数据模型等）
-- 系统实施
+## 简介
 
-# 使用技术
-* 前端：easyui
+本系统是一个学生成绩管理系统，系统相关人员使用本系统可实现学生平时及考试成绩录入、查询，学生和教师信息修改，授课分配等基础的教学成绩管理考评功能。
 
-* 后端：Struts2、Mybatis、Spring框架
+## 系统功能简介
 
-* 数据库：mysql
+> 系统分为成绩、用户、课程、系统四大主要管理模块。
+>
+> 角色分为学生、教师、管理员三种，各类用户经登录认证后方可使用系统。
 
-# 快速上手
+### 成绩管理模块
+
+- 任课老师能根据学生平时的考勤情况、作业、实验情况完成学生平时成绩的评定；
+- 任课老师需将课程考试成绩录入系统，获得学生的考试成绩；
+- 管理员能为课程设置要求的评分比率，将学生的平时成绩与考试成绩进行计算，得出课程总评成绩，并进行相关的统计查询；
+- 管理员和教师可根据筛选条件导出成绩（教师平时成绩的导出未实现）；
+
+### 用户管理模块
+
+- 管理员能学生、教师的信息数据进行相应的管理（增加、修改、删除、查询）
+- 管理员能批量录入学生、教师的信息数据；
+- 管理员能按学期班级给教师分配所授课程；
+- 学生和教师可看到自己的相关信息，但无法修改；
+- 教师可看到自己教授的所有的课程信息，只能对自己所教授课程的成绩进行考评；
+- 学生只能看到自己的学习成绩。
+
+### 课程管理模块
+
+- 管理员根据教学大纲设置课程的相关信息（学期，学分，性质，平时成绩考试成绩权重）
+- 学生根据兴趣选择想选修的课程（未实现）
+
+### 系统管理模块
+
+- 管理员能根据学院专业信息添加班级；
+- 可在后台设置用户的权限
+
+## 使用技术
+
+- 前端：EasyUI
+- 后端：Struts2、Mybatis、Spring框架
+- 数据库：MySQL
+
+## 快速上手
+
 ### 1、运行环境和所需工具
-* 编译器：IntelliJ IDEA 2019.2.3
-* 数据库：Mysql
-* JDK版本：jdk1.8
-* Tomcat版本：Tomcat9.0.26
+
+以下适用于此版本（2019.12）
+
+- 编译器：IntelliJ IDEA 2019.2.3
+- 数据库：MySQL
+- JDK版本：JDK1.8
+- Tomcat版本：Tomcat9.0.26
+
 ### 2、初始化项目
-* 在Mysql中导入项目中的.sql文件，配置数据库
-* 进入src/修改db.properties配置文件,把数据库登录名和密码、驱动、URL改为本地的
-* 在IDEA中导入项目
-* 配置Tomcat
-* 运行
 
-# 原系统介绍
-## 原系统功能简述   
+#### 1、IDEA使用者
 
-- 学生成绩管理系统中，系统的用户是学校的学生、教师和管理员。各类用户经登录认证后方可使用系统。
-- 学生使用本系统可以查询自己的信息和成绩。
-- 教师使用本系统查询个人信息、查询自己所授课程信息和自己所授课程考试成绩。
-- 管理员可以添加班级，学生的增删改查，教师的增删改查，课程的增删改查，授课的增删改查和查询教师已经批改成绩的成绩信息。(所有查询均支持多条件查询,支持导入学生教师信息/导出成绩信息)   
+- 在MySQL数据库中导入项目中doc文件夹下的db_new.sql文件，配置数据库
+- 进入src/修改db.properties配置文件,将数据库登录名和密码、驱动、URL改为用户本地的
+- 在IDEA中导入项目
+- 配置Tomcat
+- 运行
 
-## 使用注意事项  
+#### 2、 Tomcat使用者
 
-- Eclipse使用者：在Eclipse直接导入解压后的整个文件夹即可,
-- Tomcat使用者：只需将sms1.war放进你的tomcat目录下的webapps文件夹下面，然后启动tomcat即可.   
-- 完成上述步骤其一,将db.sql导入到你的数据库.  
-- 然后修改db.properties文件中的用户名、密码、驱动、url改为你自己所对应的数据库即可.  
-- 登录账号密码自行查admin表，列power代表权限，1代表管理员，2代表学生，3代表教师
-- 管理员添加学生，教师会自动生成学号/职工号，并将登录账号、密码、权限添加到admin表中,初始化密码为学号/职工号.
-- 导入文件要符合相对应的student.xls/teacher.xls格式.     
+-  将db_new.sql导入到你的MySQL数据库中
 
-## 程序截图如下:  
+-  进入项目out/artifacts/sms1_war目录，将sms1.war放进你的tomcat安装目录下的webapps文件夹下，之后启动tomcat即可 
 
-#### 1.登录界面:
-![](https://i.imgur.com/cO7dAD2.png)
-#### 2.管理员界面:  
-##### 1)主页
-![](https://i.imgur.com/r9QJDiB.png)
-##### 2)学生管理
-![](https://i.imgur.com/MDdVJz6.png)
-##### 3)教师管理
-![](https://i.imgur.com/Tl8CQv3.png)
-##### 4)课程管理
-![](https://i.imgur.com/HXFcowy.png)
-##### 5)授课管理
-![](https://i.imgur.com/1U2SJCK.png)
-##### 6)成绩管理
-![](https://i.imgur.com/3UYuwiz.png)
-#### 3.学生界面:  
-##### 1)主页
-![](https://i.imgur.com/1LkNvgs.png)
-##### 2)学生信息
-![](https://i.imgur.com/UOAa96v.png)
-##### 3)学生成绩
-![](https://i.imgur.com/bDv9xYZ.png)
-#### 4.教师界面:  
-##### 1)主页
-![](https://i.imgur.com/zfs4NpJ.png)
-##### 2)教师信息
-![](https://i.imgur.com/G8Hi3hO.png)
-##### 3)教师课程
-![](https://i.imgur.com/jLAJCw4.png)
-##### 4)教师成绩管理
-![](https://i.imgur.com/T7ddQ3y.png)
+#### 3、项目部署须知
+
+​    1）账号密码请查数据库中admin表，列power代表权限，1代表管理员，2代表学生，3代表教师 ；
+
+​    2）管理员添加学生，教师会自动生成学号/职工号，并将登录账号、密码、权限添加到admin表中,初始化密码为学号/职工号 ；
+
+​	3）导入文件应该符合相对应的student.xls/teacher.xls格式 ；
+
+​	4）如果遇到乱码错误请检查自己的数据库及Tomcat编码设置。
+
+## 程序运行截图示例
+
+登陆界面：
+
+![image-20191229004508534](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\登录界面.png)
+
+管理员界面：
+
+1）主页
+
+![image-20191229004741807](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\管理员主页.png)
+
+2）学生管理
+
+![image-20191229005017962](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\学生管理.png)
+
+3）教师管理
+
+![image-20191229005049608](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\教师管理.png)
+
+4）课程管理
+
+![image-20191229005110087](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\课程管理)
+
+5）授课管理
+
+![image-20191229005129169](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\授课管理)
+
+6）成绩管理
+
+![image-20191229005155096](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\管理员成绩管理.png)
+
+学生界面：
+
+1）主页
+
+![image-20191229005700029](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\学生主页.png)
+
+2）个人信息
+
+![image-20191229005629797](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\学生个人信息.png)
+
+3）学生成绩
+
+![image-20191229005722154](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\学生成绩.png)
+
+教师界面：
+
+1）主页
+
+![image-20191229005402219](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\教师主页.png)
+
+2）授课信息
+
+![image-20191229005339179](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\教师个人信息.png)
+
+3）平时成绩管理
+
+![image-20191229005451551](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\平时成绩管理.png)
+
+4）考试成绩管理
+
+![image-20191229005509116](D:\SpringBootPractice\StudentScoreManageSystem\doc\运行截图\考试成绩管理.png)
