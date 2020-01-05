@@ -5,17 +5,15 @@ import java.util.List;
 import com.beacon.sms.bean.Score;
 import com.beacon.sms.bean.ScoreSearchBean;
 import com.beacon.sms.dao.ScoreDao;
+import org.springframework.stereotype.Service;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ6ÈÕÉÏÎç10:37:01
- * ÃèÊö:´¦Àí¹ØÓÚ³É¼¨µÄÂß¼­Àà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ6æ—¥ä¸Šåˆ10:37:01
+ * æè¿°:å¤„ç†å…³äºæˆç»©çš„é€»è¾‘ç±»
  */
 public interface ScoreService {
-	
-	
-
 	public List<Score> getScoreList(ScoreSearchBean scoreSearchBean);
 	public int getScoreListSize(ScoreSearchBean scoreSearchBean);
 	public void updateScore(Score score);

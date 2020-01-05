@@ -6,9 +6,9 @@ import com.beacon.sms.bean.Class;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ28ÈÕÏÂÎç9:33:53
- * ÃèÊö:¹ØÓÚ×¨ÒµµÄÏà¹Ø½Ó¿Ú·½·¨
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ28æ—¥ä¸‹åˆ9:33:53
+ * æè¿°:å…³äºä¸“ä¸šçš„ç›¸å…³æ¥å£æ–¹æ³•
  */
 public interface MajorDao {
 	public List getDepartmentList();

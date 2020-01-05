@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ22ÈÕÉÏÎç10:25:53
- * ÃèÊö:×Ö·û¼¯À¹½ØÆ÷
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ22æ—¥ä¸Šåˆ10:25:53
+ * æè¿°:å­—ç¬¦é›†æ‹¦æˆªå™¨
  */
 public class EncodingFilter implements Filter {
 

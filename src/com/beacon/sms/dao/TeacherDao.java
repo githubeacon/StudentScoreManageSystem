@@ -7,9 +7,9 @@ import com.beacon.sms.bean.TeacherSearchBean;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ31ÈÕÏÂÎç6:38:26
- * ÃèÊö:´¦Àí½ÌÊ¦Ïà¹Ø·½·¨µÄ½Ó¿Ú
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ31æ—¥ä¸‹åˆ6:38:26
+ * æè¿°:å¤„ç†æ•™å¸ˆç›¸å…³æ–¹æ³•çš„æ¥å£
  */
 public interface TeacherDao {
 	public void addTeacher(Teacher teacher);

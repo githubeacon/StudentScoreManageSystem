@@ -11,9 +11,9 @@ import javax.servlet.http.HttpSession;
 import com.beacon.sms.utils.ValidateCodeUtil;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ21ÈÕÉÏÎç9:35:44
- * ÃèÊö:´¦ÀíÑéÖ¤ÂëÏà¹ØµÄservlet
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ21æ—¥ä¸Šåˆ9:35:44
+ * æè¿°:å¤„ç†éªŒè¯ç ç›¸å…³çš„servlet
  */
 public class ValidateCodeServlet  extends HttpServlet{
 	private ValidateCodeUtil validateCodeUtil=new ValidateCodeUtil();

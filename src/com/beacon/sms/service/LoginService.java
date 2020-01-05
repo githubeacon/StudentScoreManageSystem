@@ -8,9 +8,9 @@ import com.beacon.sms.utils.ValidateCodeUtil;
 
 /**
  * 
- * ×÷Õß:beacon 
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ22ÈÕÉÏÎç9:32:44 
- * ÃèÊö:µÇÂ¼µÄÂß¼­Àà
+ * ä½œè€…:beacon 
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ22æ—¥ä¸Šåˆ9:32:44 
+ * æè¿°:ç™»å½•çš„é€»è¾‘ç±»
  */
 public interface LoginService {
 	

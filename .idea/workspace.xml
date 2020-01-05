@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="sms1:war" />
+      <artifact name="sms1:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="88427263-c9b6-4c0c-8b21-a597e6e6f133" name="更新了SQL语句" comment="">
+      <change afterPath="$PROJECT_DIR$/doc/student_system.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/db_new.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/score.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="student_system@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="student_system@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="HTML File" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="axxdllw &lt;lilinwei0612@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="KEEP" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="git@github.com:/axxdllw/StudentScoreManageSystem.git" />
+      </set>
+    </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="11" end1="12" start2="11" end2="11" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="300" end1="301" start2="299" end2="300" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="435" end1="436" start2="434" end2="442" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="490" end1="491" start2="496" end2="498" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="533" end1="534" start2="540" end2="541" changelist="88427263-c9b6-4c0c-8b21-a597e6e6f133" />
+        <range start1="536" end1="537" start2="543" end2="544" changelist="88427263-c9b6-4c0c-8b21-a597e6e6f133" />
+        <range start1="549" end1="550" start2="556" end2="557" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="553" end1="555" start2="560" end2="562" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="558" end1="560" start2="565" end2="567" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="563" end1="565" start2="570" end2="572" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="568" end1="570" start2="575" end2="577" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="573" end1="575" start2="580" end2="582" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="578" end1="580" start2="585" end2="587" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="583" end1="585" start2="590" end2="592" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="588" end1="590" start2="595" end2="597" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="593" end1="595" start2="600" end2="602" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="598" end1="600" start2="605" end2="607" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="603" end1="605" start2="610" end2="612" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="608" end1="609" start2="615" end2="616" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="650" end1="651" start2="657" end2="658" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+        <range start1="654" end1="655" start2="661" end2="662" changelist="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" />
+      </ranges>
+    </file>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Program Files/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UkEfj5u3MsgSzKCgaEQLANQia8" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/sms1_war_exploded/dist/js" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.20689656" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.beacon.sms.dao" />
+      <recent name="com.beacon.sms.service.impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SpringBootPractice\StudentScoreManageSystem\doc" />
+      <recent name="D:\SpringBootPractice\StudentScoreManageSystem\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SpringBootPractice\StudentScoreManageSystem\out\artifacts\sms1_war_exploded\dist\js" />
+      <recent name="D:\SpringBootPractice\StudentScoreManageSystem" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.beacon.sms.utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="cute cat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.26" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=utf-8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="sms1:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/sms1" />
+          </settings>
+        </artifact>
+        <artifact name="sms1:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/sms1_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ssms_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54730" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="sms1:war exploded" />
+          <artifact name="sms1:war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.23264684" />
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e8a08c9-3008-4cb0-851c-c0aef3afbbfb" name="Default Changelist" comment="" />
+      <changelist id="88427263-c9b6-4c0c-8b21-a597e6e6f133" name="更新了SQL语句" comment="" />
+      <created>1575892297307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575892297307</updated>
+      <workItem from="1575892302865" duration="1094000" />
+      <workItem from="1575900190242" duration="366000" />
+      <workItem from="1575900596637" duration="7797000" />
+      <workItem from="1575982960578" duration="5041000" />
+      <workItem from="1576035751021" duration="3901000" />
+      <workItem from="1576052603077" duration="7118000" />
+      <workItem from="1576130887386" duration="8121000" />
+      <workItem from="1576168601023" duration="624000" />
+      <workItem from="1576208397060" duration="5223000" />
+      <workItem from="1576231914177" duration="6005000" />
+      <workItem from="1576238041201" duration="47000" />
+      <workItem from="1576238117854" duration="617000" />
+      <workItem from="1576238762850" duration="5245000" />
+      <workItem from="1576310498045" duration="2461000" />
+      <workItem from="1576334261142" duration="5215000" />
+      <workItem from="1576376433265" duration="25505000" />
+      <workItem from="1576416860320" duration="333000" />
+      <workItem from="1576417325888" duration="6511000" />
+      <workItem from="1576664926062" duration="653000" />
+      <workItem from="1576666172283" duration="1850000" />
+      <workItem from="1576673358116" duration="1546000" />
+      <workItem from="1576685794304" duration="3044000" />
+      <workItem from="1576856426218" duration="3509000" />
+      <workItem from="1576895240091" duration="42081000" />
+      <workItem from="1576946711676" duration="27000" />
+      <workItem from="1576991686381" duration="1952000" />
+      <workItem from="1577027781192" duration="2395000" />
+      <workItem from="1577035976610" duration="3214000" />
+      <workItem from="1577062130505" duration="5325000" />
+      <workItem from="1577068686923" duration="2541000" />
+      <workItem from="1577071400970" duration="289000" />
+      <workItem from="1577071835515" duration="531000" />
+      <workItem from="1577076410846" duration="3380000" />
+      <workItem from="1577082511446" duration="2792000" />
+      <workItem from="1577095529807" duration="1039000" />
+      <workItem from="1577266578995" duration="656000" />
+      <workItem from="1577513484021" duration="627000" />
+      <workItem from="1577551450457" duration="1756000" />
+      <workItem from="1577623162547" duration="280000" />
+    </task>
+    <task id="LOCAL-00001" summary="配置修改完毕，在本机上正常运行">
+      <created>1575895585927</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575895585927</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1、更新了README;&#10;2、修复了验证码无法显示的bug；&#10;3、修复了tomcat服务器无法正常启动的bug&#10;  1)class path resource [applicationContext.xml] cannot be opened because it doesn't exist;&#10;  2)Artifacts:Error during artifact deployment.">
+      <created>1575902241642</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575902241642</updated>
+    </task>
+    <task id="LOCAL-00003" summary="增加了实体类的注释，写了dailyScore相关的一些类，未放入容器中，此版本可正常运行">
+      <created>1576055071394</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576055071394</updated>
+    </task>
+    <task id="LOCAL-00004" summary="完成了平时成绩实体、DAO的编写">
+      <created>1576220580397</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576220580397</updated>
+    </task>
+    <task id="LOCAL-00005" summary="完成了service层的编写">
+      <created>1576237131388</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576237131388</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修复了Cannot resolve class 'ExcelUtil'的bug">
+      <created>1576237886223</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576237886223</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修复了Cannot resolve class 'ExcelUtil'的BUG">
+      <created>1576238837135</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576238837136</updated>
+    </task>
+    <task id="LOCAL-00008" summary="完成了DailyScoreAction的编写">
+      <created>1576337062817</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576337062817</updated>
+    </task>
+    <task id="LOCAL-00009" summary="注入了DailyScore的DAO">
+      <created>1576400880589</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1576400880589</updated>
+    </task>
+    <task id="LOCAL-00010" summary="修复了前端不能正常显示平时成绩列表的BUG">
+      <created>1576426944718</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1576426944719</updated>
+    </task>
+    <task id="LOCAL-00011" summary="修复了选择地址的乱码问题">
+      <created>1576688227962</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1576688227962</updated>
+    </task>
+    <task id="LOCAL-00012" summary="未能修复前端地址选择器部分乱码的BUG">
+      <created>1576857147118</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1576857147118</updated>
+    </task>
+    <task id="LOCAL-00013" summary="已修复平时成绩列表只显示总成绩的BUG">
+      <created>1576859374486</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859374486</updated>
+    </task>
+    <task id="LOCAL-00014" summary="完成了daily_score、score等关联查询修改，并已能正确在前端显示；">
+      <created>1576930123475</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1576930123476</updated>
+    </task>
+    <task id="LOCAL-00015" summary="修改了成绩表格的显示；完成了导入平时成绩逻辑的编写">
+      <created>1576940194301</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1576940194301</updated>
+    </task>
+    <task id="LOCAL-00016" summary="增加了Course属性weight">
+      <created>1576942963070</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1576942963070</updated>
+    </task>
+    <task id="LOCAL-00017" summary="可根据权重分配平时成绩考试成绩比例，自动计算总成绩">
+      <created>1576946019976</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1576946019976</updated>
+    </task>
+    <task id="LOCAL-00018" summary="修复地址选择乱码BUG">
+      <created>1577072349964</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1577072349964</updated>
+    </task>
+    <task id="LOCAL-00019" summary="更新了README文档和war包">
+      <created>1577552447559</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1577552447559</updated>
+    </task>
+    <task id="LOCAL-00020" summary="更新README，图片可以正常显示了">
+      <created>1577552783108</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1577552783108</updated>
+    </task>
+    <task id="LOCAL-00021" summary="更新了SQL语句">
+      <created>1577623353515</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1577623353515</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_WIDTH">
+                <map>
+                  <entry key="2" value="79" />
+                  <entry key="3" value="109" />
+                </map>
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="配置修改完毕，在本机上正常运行" />
+    <MESSAGE value="1、更新了README;&#10;2、修复了验证码无法显示的bug；&#10;3、修复了tomcat服务器无法正常启动的bug&#10;  1)class path resource [applicationContext.xml] cannot be opened because it doesn't exist;&#10;  2)Artifacts:Error during artifact deployment." />
+    <MESSAGE value="增加了实体类的注释，写了dailyScore相关的一些类，未放入容器中，此版本可正常运行" />
+    <MESSAGE value="完成了平时成绩实体、DAO的编写" />
+    <MESSAGE value="完成了service层的编写" />
+    <MESSAGE value="修复了Cannot resolve class 'ExcelUtil'的bug" />
+    <MESSAGE value="修复了Cannot resolve class 'ExcelUtil'的BUG" />
+    <MESSAGE value="完成了DailyScoreAction的编写" />
+    <MESSAGE value="注入了DailyScore的DAO" />
+    <MESSAGE value="修复了前端不能正常显示平时成绩列表的BUG" />
+    <MESSAGE value="修复了选择地址的乱码问题" />
+    <MESSAGE value="未能修复前端地址选择器部分乱码的BUG" />
+    <MESSAGE value="已修复平时成绩列表只显示总成绩的BUG" />
+    <MESSAGE value="完成了daily_score、score等关联查询修改，并已能正确在前端显示；" />
+    <MESSAGE value="修改了成绩表格的显示；完成了导入平时成绩逻辑的编写" />
+    <MESSAGE value="增加了Course属性weight" />
+    <MESSAGE value="可根据权重分配平时成绩考试成绩比例，自动计算总成绩" />
+    <MESSAGE value="修复地址选择乱码BUG" />
+    <MESSAGE value="更新了README文档和war包" />
+    <MESSAGE value="更新README，图片可以正常显示了" />
+    <MESSAGE value="更新了SQL语句" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了SQL语句" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="201" key="#Intentions" timestamp="1576236554407">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="201" key="#Intentions/0.0.1920.1080@0.0.1920.1080" timestamp="1576236554407" />
+    <state x="552" y="201" key="#Notifications" timestamp="1576232019425">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="201" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1576232019425" />
+    <state x="424" y="183" key="#Project_Structure" timestamp="1575901054576">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="424" y="183" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1575901054576" />
+    <state x="469" y="203" key="#SQL_Dialects" timestamp="1575903570019">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="469" y="203" key="#SQL_Dialects/0.0.1920.1080@0.0.1920.1080" timestamp="1575903570019" />
+    <state x="446" y="183" width="1008" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577552276540">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="446" y="183" width="1008" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577552276540" />
+    <state x="767" y="244" key="#com.intellij.ide.util.MemberChooser" timestamp="1576940327578">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="767" y="244" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576940327578" />
+    <state x="690" y="320" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1576377352684">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="320" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576377352684" />
+    <state x="781" y="441" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1575894397364">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="781" y="441" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575894397364" />
+    <state x="822" y="225" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1575901596087">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="822" y="225" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575901596087" />
+    <state x="722" y="283" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1575901604056">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="722" y="283" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575901604056" />
+    <state x="406" y="114" key="CommitChangelistDialog2" timestamp="1577623351910">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="406" y="114" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1577623351910" />
+    <state x="488" y="92" width="1200" height="800" key="DiffContextDialog" timestamp="1576406007441">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="488" y="92" width="1200" height="800" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576406007441" />
+    <state x="666" y="269" key="FileChooserDialogImpl" timestamp="1576664990606">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="666" y="269" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1576664990606" />
+    <state x="707" y="417" width="274" height="210" key="Github.ShareDialog" timestamp="1575895781261">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="707" y="417" width="274" height="210" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575895781261" />
+    <state width="1877" height="256" key="GridCell.Tab.0.bottom" timestamp="1577553209400">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1577101480696" />
+    <state width="1877" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577553209400" />
+    <state width="1877" height="256" key="GridCell.Tab.0.center" timestamp="1577553209400">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1577101480696" />
+    <state width="1877" height="256" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577553209400" />
+    <state width="1877" height="256" key="GridCell.Tab.0.left" timestamp="1577553209400">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1577101480696" />
+    <state width="1877" height="256" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577553209400" />
+    <state width="1877" height="256" key="GridCell.Tab.0.right" timestamp="1577553209400">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1577101480696" />
+    <state width="1877" height="256" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577553209400" />
+    <state width="1877" height="256" key="GridCell.Tab.1.bottom" timestamp="1577553209400">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1577101480696" />
+    <state width="1877" height="256" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577553209400" />
+    <state width="1877" height="256" key="GridCell.Tab.1.center" timestamp="1577553209400">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1577101480696" />
+    <state width="1877" height="256" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577553209400" />
+    <state width="1877" height="256" key="GridCell.Tab.1.left" timestamp="1577553209400">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1577101480696" />
+    <state width="1877" height="256" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577553209400" />
+    <state width="1877" height="256" key="GridCell.Tab.1.right" timestamp="1577553209400">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1577101480696" />
+    <state width="1877" height="256" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577553209400" />
+    <state width="1877" height="256" key="GridCell.Tab.2.bottom" timestamp="1577553209401">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1577101480697" />
+    <state width="1877" height="256" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577553209401" />
+    <state width="1877" height="256" key="GridCell.Tab.2.center" timestamp="1577553209401">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1577101480697" />
+    <state width="1877" height="256" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577553209401" />
+    <state width="1877" height="256" key="GridCell.Tab.2.left" timestamp="1577553209400">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1577101480696" />
+    <state width="1877" height="256" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577553209400" />
+    <state width="1877" height="256" key="GridCell.Tab.2.right" timestamp="1577553209401">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1493" height="194" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1577101480697" />
+    <state width="1877" height="256" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577553209401" />
+    <state width="1340" height="266" key="GridCell.Tab.5.bottom" timestamp="1575997289571">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.5.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575997289571" />
+    <state width="1340" height="266" key="GridCell.Tab.5.center" timestamp="1575997289570">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.5.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575997289570" />
+    <state width="1340" height="266" key="GridCell.Tab.5.left" timestamp="1575997289569">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.5.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575997289569" />
+    <state width="1340" height="266" key="GridCell.Tab.5.right" timestamp="1575997289571">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.5.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575997289571" />
+    <state x="622" y="346" key="NewModule_or_Project.wizard" timestamp="1576664999995">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="622" y="346" key="NewModule_or_Project.wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1576664999995" />
+    <state x="734" y="250" key="RollbackChangesDialog" timestamp="1577038526948">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="587" y="200" key="RollbackChangesDialog/0.0.1536.864@0.0.1536.864" timestamp="1576065359121" />
+    <state x="734" y="250" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577038526948" />
+    <state x="472" y="103" key="SettingsEditor" timestamp="1577070933528">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="472" y="103" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1577070933528" />
+    <state x="806" y="460" key="VCS.ChangelistChooser" timestamp="1577623408036">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="806" y="460" key="VCS.ChangelistChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1577623408036" />
+    <state x="469" y="277" key="Vcs.Push.Dialog.v2" timestamp="1575902259154">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="469" y="277" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1575902259154" />
+    <state x="669" y="0" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1576231972123">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="669" y="0" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576231972123" />
+    <state x="232" y="122" width="1200" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1575895831161">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="232" y="122" width="1200" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575895831161" />
+    <state x="612" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1577623161921">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="419" y="279" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1577095533176" />
+    <state x="612" y="357" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577623161921" />
+    <state x="659" y="440" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576909386360">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="659" y="440" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1080@0.0.1920.1080" timestamp="1576909386360" />
+    <state x="726" y="257" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1576910379259">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="726" y="257" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1576910379259" />
+    <state x="367" y="141" key="new project wizard" timestamp="1575894985516">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="367" y="141" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1575894985516" />
+    <state x="488" y="243" key="run.anything.popup" timestamp="1575895912548">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="488" y="243" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575895912548" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1576238884039">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1576238884039" />
+    <state x="512" y="213" key="spring file set editor" timestamp="1575901051561">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="512" y="213" key="spring file set editor/0.0.1920.1080@0.0.1920.1080" timestamp="1575901051561" />
+    <state x="617" y="262" key="struts2 file set editor" timestamp="1575894997202">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="617" y="262" key="struts2 file set editor/0.0.1920.1080@0.0.1920.1080" timestamp="1575894997202" />
+  </component>
+</project>

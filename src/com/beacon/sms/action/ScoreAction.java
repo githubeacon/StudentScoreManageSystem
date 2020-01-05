@@ -18,9 +18,9 @@ import com.beacon.sms.utils.JsonUtil;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ6ÈÕÉÏÎç10:36:25
- * ÃèÊö:³É¼¨Action
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ6æ—¥ä¸Šåˆ10:36:25
+ * æè¿°:æˆç»©Action
  */
 public class ScoreAction {
 	private ScoreService scoreService;
@@ -98,7 +98,7 @@ public class ScoreAction {
 		Admin admin=(Admin)session.getAttribute("user");
 		int power=admin.getPower();
 		if(power==3){
-			//½ÌÊ¦
+			//æ•™å¸ˆ
 			Teacher teacher=(Teacher) session.getAttribute("teacher");
 			scoreSearchBean.setTeacherId(teacher.getId());
 			scoreSearchBean.setStudentId(0);
@@ -111,7 +111,7 @@ public class ScoreAction {
 				scoreSearchBean.setStudentId(0);
 			}
 			if(power==2){
-				//Ñ§Éú
+				//å­¦ç”Ÿ
 				Student student=(Student) session.getAttribute("student");
 				scoreSearchBean.setStudentId(student.getId());
 			}
@@ -120,6 +120,5 @@ public class ScoreAction {
 	public void update(){
 		System.out.println(score);
 		scoreService.updateScore(score);
-		
 	}
 }

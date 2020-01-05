@@ -1,75 +1,99 @@
 package com.beacon.sms.bean;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ6ÈÕÏÂÎç9:08:46
- * ÃèÊö:³É¼¨²éÑ¯ÊµÌåÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ6æ—¥ä¸‹åˆ9:08:46
+ * æè¿°:æˆç»©æŸ¥è¯¢å®ä½“ç±»
  */
-public class ScoreSearchBean  extends PageBean{
-	private int semesterId;
-	private String className;
-	private String courseName;
-	private int flag;
-	private int teacherId;
-	private int studentId;
-	private String teacherName;
-	private int order;
+public class ScoreSearchBean extends PageBean
+{
+
+	private int semesterId;			//å­¦æœŸid
+
+	private String className;		//ç­çº§åç§°
+
+	private String courseName;		//è¯¾ç¨‹åç§°
+
+	private int flag;				//ç™»è®°çŠ¶æ€
+
+	private int teacherId;			//æ•™å¸ˆid
+
+	private int studentId;			//å­¦ç”Ÿid
+
+	private String teacherName;		//æ•™å¸ˆå§“å
+
+	private int order;				//æ’åºï¼›ç”±ä½åˆ°é«˜æˆ–ç”±é«˜åˆ°ä½
+
+	@Override
+	public String toString() {
+		return super.toString()+"ScoreSearchBean [semesterId=" + semesterId
+				+ ", className=" + className + ", courseName=" + courseName
+				+ ", flag=" + flag + ", teacherId=" + teacherId + ", studentId="
+				+ studentId + ", teacherName="
+				+ teacherName + ", order=" + order + "]";
+	}
 	
 	public int getOrder() {
 		return order;
 	}
+
 	public void setOrder(int order) {
 		this.order = order;
 	}
+
 	public String getTeacherName() {
 		return teacherName;
 	}
+
 	public void setTeacherName(String teacherName) {
 		this.teacherName = teacherName;
 	}
+
 	public int getStudentId() {
 		return studentId;
 	}
+
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
+
 	public int getTeacherId() {
 		return teacherId;
 	}
+
 	public void setTeacherId(int teacherId) {
 		this.teacherId = teacherId;
 	}
+
 	public int getFlag() {
 		return flag;
 	}
+
 	public void setFlag(int flag) {
 		this.flag = flag;
 	}
+
 	public int getSemesterId() {
 		return semesterId;
 	}
+
 	public void setSemesterId(int semesterId) {
 		this.semesterId = semesterId;
 	}
+
 	public String getClassName() {
 		return className;
 	}
+
 	public void setClassName(String className) {
 		this.className = className;
 	}
+
 	public String getCourseName() {
 		return courseName;
 	}
+
 	public void setCourseName(String courseName) {
 		this.courseName = courseName;
 	}
-	@Override
-	public String toString() {
-		return super.toString()+"ScoreSearchBean [semesterId=" + semesterId + ", className=" + className + ", courseName=" + courseName
-				+ ", flag=" + flag + ", teacherId=" + teacherId + ", studentId=" + studentId + ", teacherName="
-				+ teacherName + ", order=" + order + "]";
-	}
-	
-	
-	
 }

@@ -1,39 +1,47 @@
 package com.beacon.sms.bean;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ2ÈÕÏÂÎç5:47:35
- * ÃèÊö:·ÖÒ³ÊµÌåÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ2æ—¥ä¸‹åˆ5:47:35
+ * æè¿°:åˆ†é¡µå®ä½“ç±»
  */
-public class PageBean {
-	private int page;
-	private int rows;
-	private int start;
-	
-	public int getStart() {
-		start=(page-1)*rows;
+public class PageBean
+{
+	private int page;		//é¡µ
+
+	private int rows;		//è¡Œ
+
+	private int start;		//TODO æš‚æ—¶ä¸çŸ¥é“è¿™ä¸ªæ˜¯ä»€ä¹ˆï¼Œæ˜ç™½äº†å†å›æ¥æ”¹
+
+	@Override
+	public String toString() {
+		return "PageBean [page=" + page
+				+ ", rows=" + rows + ", start=" + start + "]";
+	}
+
+	public int getStart()
+	{
+		start = (page - 1) * rows;
 		return start;
 	}
+
 	public void setStart(int start) {
 		this.start = start;
 	}
+
 	public int getPage() {
 		return page;
 	}
+
 	public void setPage(int page) {
 		this.page = page;
 	}
+
 	public int getRows() {
 		return rows;
 	}
+
 	public void setRows(int rows) {
 		this.rows = rows;
 	}
-	@Override
-	public String toString() {
-		return "PageBean [page=" + page + ", rows=" + rows + ", start=" + start + "]";
-	}
-	
-	
-	
 }

@@ -1,33 +1,22 @@
 package com.beacon.sms.action;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
-import java.util.List;
-
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
-import org.apache.struts2.ServletActionContext;
-
-import com.beacon.sms.bean.Admin;
 import com.beacon.sms.bean.Class;
-import com.beacon.sms.bean.Department;
-import com.beacon.sms.bean.Score;
-import com.beacon.sms.bean.ScoreSearchBean;
-import com.beacon.sms.bean.Student;
-import com.beacon.sms.bean.Teacher;
+import com.beacon.sms.bean.*;
+import com.beacon.sms.service.DailyScoreService;
 import com.beacon.sms.service.ScoreService;
 import com.beacon.sms.service.StudentService;
 import com.beacon.sms.service.TeacherService;
 import com.beacon.sms.utils.ExcelUtil;
+import org.apache.struts2.ServletActionContext;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.servlet.http.HttpSession;
+import java.io.*;
+import java.util.List;
 
 /**
  * 
- * ×÷Õß:beacon ´´½¨ÈÕÆÚ:2017Äê11ÔÂ8ÈÕÏÂÎç3:48:28 ÃèÊö:ÉÏ´«ÎÄ¼şAction
+ * ä½œè€…:beacon åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ8æ—¥ä¸‹åˆ3:48:28 æè¿°:ä¸Šä¼ æ–‡ä»¶Action
  */
 public class UpLoadAction {
 	private File upload;
@@ -41,6 +30,19 @@ public class UpLoadAction {
 	private ScoreSearchBean scoreSearchBean;
 	private ScoreService scoreService;
 	private InputStream exportFile;
+
+	@Autowired
+	private DailyScoreService dailyScoreService;
+
+	public DailyScoreService getDailyScoreService()
+	{
+		return dailyScoreService;
+	}
+
+	public void setDailyScoreService(DailyScoreService dailyScoreService)
+	{
+		this.dailyScoreService = dailyScoreService;
+	}
 
 	public InputStream getExportFile() {
 		return exportFile;
@@ -172,6 +174,33 @@ public class UpLoadAction {
 
 	}
 
+	public void importDailyScore()
+	{
+		try
+		{
+			List<DailyScore> list = excelUtil.readDailyScoreExcel(new FileInputStream(upload));
+			System.out.println(list.toString());
+			for (int i = 0; i < list.size(); i++)
+			{
+				DailyScore dailyScore = list.get(i);
+				dailyScoreService.updateDailyScore(dailyScore);
+			}
+		}
+		catch(FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	//TODO Excelå¯¼å‡ºå¹³æ—¶æˆç»©
+//	public String exportDailyScore()
+//	{
+//
+//	}
+
 	public String exportScore() {
 
 		List<Score> list = scoreService.getScoreList(scoreSearchBean);
@@ -199,7 +228,7 @@ public class UpLoadAction {
 		scoreSearchBean = new ScoreSearchBean();
 
 		if (power == 3) {
-			// ½ÌÊ¦
+			// æ•™å¸ˆ
 			Teacher teacher = (Teacher) session.getAttribute("teacher");
 			scoreSearchBean.setTeacherId(teacher.getId());
 			scoreSearchBean.setStudentId(0);
@@ -212,7 +241,7 @@ public class UpLoadAction {
 				scoreSearchBean.setStudentId(0);
 			}
 			if (power == 2) {
-				// Ñ§Éú
+				// å­¦ç”Ÿ
 				Student student = (Student) session.getAttribute("student");
 				scoreSearchBean.setStudentId(student.getId());
 			}

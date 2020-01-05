@@ -1,28 +1,35 @@
 package com.beacon.sms.bean;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ3ÈÕÏÂÎç10:40:02
- * ÃèÊö:Ñ§ÆÚÊµÌåÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ3æ—¥ä¸‹åˆ10:40:02
+ * æè¿°:å­¦æœŸå®ä½“ç±»
  */
-public class Semester {
-	private int id;
-	private String semesterName;
+public class Semester
+{
+	private int id;					//å­¦æœŸid
+
+	private String semesterName;	//å­¦æœŸå
+
+	@Override
+	public String toString() {
+		return "Semester [id=" + id
+				+ ", semesterName=" + semesterName + "]";
+	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getSemesterName() {
 		return semesterName;
 	}
+
 	public void setSemesterName(String semesterName) {
 		this.semesterName = semesterName;
 	}
-	@Override
-	public String toString() {
-		return "Semester [id=" + id + ", semesterName=" + semesterName + "]";
-	}
-	
 }

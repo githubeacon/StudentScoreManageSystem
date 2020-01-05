@@ -4,9 +4,9 @@ import com.beacon.sms.bean.Admin;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ22ÈÕÉÏÎç9:32:28
- * ÃèÊö:µÇÂ¼µÄÏà¹Ø½Ó¿Ú·½·¨
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ22æ—¥ä¸Šåˆ9:32:28
+ * æè¿°:ç™»å½•çš„ç›¸å…³æ¥å£æ–¹æ³•
  */
 public interface LoginDao {
 	public String getPassword(String userName);

@@ -1,36 +1,45 @@
 package com.beacon.sms.bean;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ2ÈÕÏÂÎç6:04:23
- * ÃèÊö:Ñ§ÉúËÑË÷Ìõ¼şµÄÊµÌåÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ2æ—¥ä¸‹åˆ6:04:23
+ * æè¿°:å­¦ç”Ÿæœç´¢æ¡ä»¶çš„å®ä½“ç±»
  */
-public class StudentSearchBean  extends PageBean{
-	private String studentNo;
-	private String studentName;
-	private String sex;
+public class StudentSearchBean extends PageBean
+{
+	private String studentNo;		//å­¦å·
+
+	private String studentName;		//å§“å
+
+	private String sex;				//æ€§åˆ«
+
+	@Override
+	public String toString() {
+		return super.toString()+"StudentSearchBean [studentNo=" + studentNo
+				+ ", studentName=" + studentName + ", sex=" + sex + "]";
+	}
+
 	public String getStudentNo() {
 		return studentNo;
 	}
+
 	public void setStudentNo(String studentNo) {
 		this.studentNo = studentNo;
 	}
+
 	public String getStudentName() {
 		return studentName;
 	}
+
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
 	}
+
 	public String getSex() {
 		return sex;
 	}
+
 	public void setSex(String sex) {
 		this.sex = sex;
 	}
-	@Override
-	public String toString() {
-		return super.toString()+"StudentSearchBean [studentNo=" + studentNo + ", studentName=" + studentName + ", sex=" + sex + "]";
-	}
-	
-	
 }

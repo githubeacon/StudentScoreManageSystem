@@ -15,9 +15,9 @@ import com.beacon.sms.utils.JsonUtil;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ30ÈÕÉÏÎç9:48:08
- * ÃèÊö:Ñ§ÉúAction
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ30æ—¥ä¸Šåˆ9:48:08
+ * æè¿°:å­¦ç”ŸAction
  */
 public class StudentAction {
 	

@@ -1,35 +1,43 @@
 package com.beacon.sms.bean;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ28ÈÕÏÂÎç6:39:28
- * ÃèÊö:×¨Òµ
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ28æ—¥ä¸‹åˆ6:39:28
+ * æè¿°:ä¸“ä¸š
  */
-public class Major {
-	private int id;
-	private String name;
-	private Department department;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public Department getDepartment() {
-		return department;
-	}
-	public void setDepartment(Department department) {
-		this.department = department;
-	}
+public class Major
+{
+	private int id;						//ä¸“ä¸šid
+
+	private String name;				//ä¸“ä¸šå
+
+	private Department department;		//æ‰€å±å­¦é™¢
+
 	@Override
 	public String toString() {
 		return "Major [id=" + id + ", name=" + name + ", department=" + department + "]";
 	}
-	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
 }

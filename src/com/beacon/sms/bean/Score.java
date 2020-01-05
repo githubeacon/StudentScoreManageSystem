@@ -1,33 +1,75 @@
 package com.beacon.sms.bean;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ6ÈÕÉÏÎç9:35:48
- * ÃèÊö:³É¼¨ÊµÌåÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ6æ—¥ä¸Šåˆ9:35:48
+ * æè¿°:æˆç»©å®ä½“ç±»
  */
-public class Score {
-	private int id;
-	private Teaching teaching;
-	private Student student;
-	private int score;
-	private int flag;
-	
+public class Score
+{
+	private int id;					//id
+
+	private Teaching teaching;		//æˆè¯¾è€å¸ˆ
+
+	private Student student;		//å­¦ç”Ÿ
+
+	private int score;				//è€ƒè¯•åˆ†æ•°ï¼Œä¸ºäº†æ–¹ä¾¿ï¼Œæ­¤å¤„ä¸å†æ›´å
+
+	private DailyScore dailyScore;	//å¹³æ—¶æˆç»©
+
+	private int finalScore;			//æœ€ç»ˆæˆç»©
+
+	private int flag;				//çŠ¶æ€ï¼Œå·²ç™»è®°æˆ–æœªç™»è®°
+
+	@Override
+	public String toString()
+	{
+		return "Score{" + "id=" + id + ", teaching=" + teaching
+				+ ", student=" + student + ", score=" + score
+				+ ", dailyScore=" + dailyScore + ", finalScore="
+				+ finalScore + ", flag=" + flag + '}';
+	}
+
+	public DailyScore getDailyScore()
+	{
+		return dailyScore;
+	}
+
+	public void setDailyScore(DailyScore dailyScore)
+	{
+		this.dailyScore = dailyScore;
+	}
+
+	public int getFinalScore()
+	{
+		return finalScore;
+	}
+
+	public void setFinalScore(int finalScore)
+	{
+		this.finalScore = finalScore;
+	}
+
 	public Teaching getTeaching() {
 		return teaching;
 	}
+
 	public void setTeaching(Teaching teaching) {
 		this.teaching = teaching;
 	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
-	
+
 	public Student getStudent() {
 		return student;
 	}
+
 	public void setStudent(Student student) {
 		this.student = student;
 	}
@@ -35,20 +77,16 @@ public class Score {
 	public int getScore() {
 		return score;
 	}
+
 	public void setScore(int score) {
 		this.score = score;
 	}
+
 	public int getFlag() {
 		return flag;
 	}
+
 	public void setFlag(int flag) {
 		this.flag = flag;
 	}
-	@Override
-	public String toString() {
-		return "Score [id=" + id + ", teaching=" + teaching + ", student=" + student + ", score=" + score + ", flag="
-				+ flag + "]";
-	}
-	
-	
 }

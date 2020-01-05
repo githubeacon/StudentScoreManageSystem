@@ -1,50 +1,65 @@
 package com.beacon.sms.bean;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê11ÔÂ4ÈÕÉÏÎç9:42:14
- * ÃèÊö:ÊÚ¿ÎÊµÌåÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´11æœˆ4æ—¥ä¸Šåˆ9:42:14
+ * æè¿°:æˆè¯¾å®ä½“ç±»
  */
-public class Teaching {
-	private int id;
-	private Teacher teacher;
-	private Class class1;
-	private Semester semester;
-	private Course course;
+public class Teaching
+{
+	private int id;				//æˆè¯¾å…³ç³»id
+
+	private Teacher teacher;	//æ•™å¸ˆ
+
+	private Class class1;		//ç­çº§
+
+	private Semester semester;	//å­¦æœŸ
+
+	private Course course;		//è¯¾ç¨‹
+
+	@Override
+	public String toString() {
+		return "Teaching [id=" + id + ", teacher=" + teacher + ", class1="
+				+ class1 + ", semester=" + semester + ", course=" + course + "]";
+	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public Teacher getTeacher() {
 		return teacher;
 	}
+
 	public void setTeacher(Teacher teacher) {
 		this.teacher = teacher;
 	}
+
 	public Class getClass1() {
 		return class1;
 	}
+
 	public void setClass1(Class class1) {
 		this.class1 = class1;
 	}
+
 	public Semester getSemester() {
 		return semester;
 	}
+
 	public void setSemester(Semester semester) {
 		this.semester = semester;
 	}
+
 	public Course getCourse() {
 		return course;
 	}
+
 	public void setCourse(Course course) {
 		this.course = course;
 	}
-	@Override
-	public String toString() {
-		return "Teaching [id=" + id + ", teacher=" + teacher + ", class1=" + class1 + ", semester=" + semester
-				+ ", course=" + course + "]";
-	}
-	
 }

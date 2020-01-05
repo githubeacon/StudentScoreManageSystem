@@ -12,12 +12,14 @@ import com.beacon.sms.utils.JsonUtil;
 
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ31ÈÕÏÂÎç9:20:12
- * ÃèÊö:¿Î³ÌAction
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ31æ—¥ä¸‹åˆ9:20:12
+ * æè¿°:è¯¾ç¨‹Action
  */
-public class CourseAction {
+public class CourseAction
+{
 	private Course course;
+
 	private CourseService courseService;
 	
 	private String idString;
@@ -27,6 +29,7 @@ public class CourseAction {
 	private int courseId;
 	
 	private int page;
+
 	private int rows;
 	
 	private CourseSearchBean courseSearchBean;
@@ -94,28 +97,36 @@ public class CourseAction {
 	public void setCourse(Course course) {
 		this.course = course;
 	}
-	public void list(){
-		if(courseSearchBean==null){
-			courseSearchBean=new CourseSearchBean();
+
+	public void list()
+	{
+		if(courseSearchBean == null)
+		{
+			courseSearchBean = new CourseSearchBean();
 		}
 		courseSearchBean.setPage(page);
 		courseSearchBean.setRows(rows);
-		List<Course> list=courseService.getCourseList(courseSearchBean);
-		int total=courseService.getCourseListSize(courseSearchBean);
-		DatagridBean<Course> datagridBean=new DatagridBean<Course>();
+
+		List<Course> list = courseService.getCourseList(courseSearchBean);
+
+		int total = courseService.getCourseListSize(courseSearchBean);
+		DatagridBean<Course> datagridBean = new DatagridBean<Course>();
 		datagridBean.setRows(list);
 		datagridBean.setTotal(total);
+
 		String result=JSON.toJSONString(datagridBean);
 		jsonUtil.writeJson(result);
+
 		System.out.println(result);
-		
 	}
 	public void add(){
 		courseService.addCourse(course);
 	}
+
 	public void update(){
 		courseService.updateCourse(course);
 	}
+
 	public void delete(){
 		List<Integer> list=new ArrayList<Integer>();
 		String[] ids=idString.split(",");

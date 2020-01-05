@@ -1,55 +1,69 @@
 package com.beacon.sms.bean;
 /**
  * 
- * ×÷Õß:beacon
- * ´´½¨ÈÕÆÚ:2017Äê10ÔÂ30ÈÕÉÏÎç10:12:51
- * ÃèÊö:µØÖ·ÊµÌåÀà
+ * ä½œè€…:beacon
+ * åˆ›å»ºæ—¥æœŸ:2017å¹´10æœˆ30æ—¥ä¸Šåˆ10:12:51
+ * æè¿°:åœ°å€å®ä½“ç±»
  */
-public class Address {
-	private String province;
-	private String city;
-	private String county;
-	private String detailedAddress;
-	private String address;
+public class Address
+{
+	private String province;			//çœä»½
+
+	private String city;				//åŸå¸‚
+
+	private String county;				//å¿
+
+	private String detailedAddress;		//è¯¦ç»†ä½å€
+
+	private String address;				//ä½å€
 	
-	public String getAddress() {
-		
-		this.address=province+"Ê¡"+city+"ÊĞ"+county+detailedAddress;
+	public String getAddress()
+	{
+		this.address=province+"çœ"+city+"å¸‚"+county+detailedAddress;
 		
 		return address;
 	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	public String getProvince() {
-		return province;
-	}
-	public void setProvince(String province) {
-		this.province = province;
-	}
-	public String getCity() {
-		return city;
-	}
-	public void setCity(String city) {
-		this.city = city;
-	}
-	public String getCounty() {
-		return county;
-	}
-	public void setCounty(String county) {
-		this.county = county;
-	}
-	public String getDetailedAddress() {
-		return detailedAddress;
-	}
-	public void setDetailedAddress(String detailedAddress) {
-		this.detailedAddress = detailedAddress;
-	}
+
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return "Address [province=" + province + ", city=" + city + ", county=" + county + ", detailedAddress="
 				+ detailedAddress + ", address=" + address + "]";
 	}
-	
-	
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getProvince() {
+		return province;
+	}
+
+	public void setProvince(String province) {
+		this.province = province;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getCounty() {
+		return county;
+	}
+
+	public void setCounty(String county) {
+		this.county = county;
+	}
+
+	public String getDetailedAddress() {
+		return detailedAddress;
+	}
+
+	public void setDetailedAddress(String detailedAddress) {
+		this.detailedAddress = detailedAddress;
+	}
 }
